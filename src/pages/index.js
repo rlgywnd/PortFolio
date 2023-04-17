@@ -1,13 +1,19 @@
-import { Link } from 'react-router-dom';
+import * as S from './style';
+// import Main from './main';
+// import Projects from './projects';
 
 const Home = () => {
   return (
-    <>
-      <div>여기는 Home</div>
-      <div>
-        <Link to={'/main'}>Main으로 가기</Link>
-      </div>
-    </>
+    <S.HomeContainer>
+      <S.TextDiv>
+        <S.TitleDiv>김효중 포트폴리오</S.TitleDiv>
+        <div>
+          <S.LinkDiv to={'/main'}>CLICK!</S.LinkDiv>
+        </div>
+      </S.TextDiv>
+      {/* <Main />
+      <Projects /> */}
+    </S.HomeContainer>
   );
 };
 
