@@ -7,23 +7,17 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 5vh;
+  height: 60px;
   padding: 0 15% 0 15%;
   position: sticky;
   top: 0;
   opacity: 0.8;
-  /* backdrop-filter: blur(30px); */
-  /* position: sticky;
-  top: 0; */
-  /* position: fixed;
-  top: 0;
-  left: 0; */
 `;
 
-export const RightDiv = styled.div`
+export const LeftDiv = styled.div`
   display: flex;
 `;
-export const LeftDiv = styled.div`
+export const RightDiv = styled.div`
   display: flex;
   gap: 25px;
   div {
@@ -32,6 +26,17 @@ export const LeftDiv = styled.div`
     :hover {
       color: #4285f4;
     }
+    :visited {
+      color: #4285f4;
+    }
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+`;
+export const Hamburger = styled.button`
+  @media (min-width: 801px) {
+    display: none;
   }
 `;
 

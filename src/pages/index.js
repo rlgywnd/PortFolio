@@ -1,6 +1,4 @@
 import * as S from './style';
-// import Main from './main';
-// import Projects from './projects';
 
 const Home = () => {
   return (
@@ -11,8 +9,6 @@ const Home = () => {
           <S.LinkDiv to={'/main'}>CLICK!</S.LinkDiv>
         </div>
       </S.TextDiv>
-      {/* <Main />
-      <Projects /> */}
     </S.HomeContainer>
   );
 };

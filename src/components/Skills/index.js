@@ -3,7 +3,8 @@ import * as S from './style';
 const Skills = () => {
   return (
     <S.SkillsContainer id='skills'>
-      <div>Skills 컴포</div>
+      <S.SkillsTitleDiv>SKILLS</S.SkillsTitleDiv>
+      <div>js,react, redux, redux-toolkit, recoil, msw 등~</div>
     </S.SkillsContainer>
   );
 };

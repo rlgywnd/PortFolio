@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 // import moliImg from '../assets/moli.png';
-// import videoImg from '../assets/video4.gif';
-import videoImg2 from '../assets/background4.gif';
+import videoImg from '../assets/video4.gif';
+// import videoImg2 from '../assets/background4.gif';
 import { Link } from 'react-router-dom';
 
 /* color: #4285f4; 푸른색  */
@@ -25,7 +25,7 @@ export const HomeContainer = styled.div`
   } */
   font-size: 50px;
   color: black;
-  background: url(${videoImg2}) center no-repeat;
+  background: url(${videoImg}) center no-repeat;
   background-size: cover;
 `;
 export const TextDiv = styled.div`

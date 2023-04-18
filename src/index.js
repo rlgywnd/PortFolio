@@ -11,6 +11,30 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   ${reset}
   @font-face {
+    font-family: 'NanumBarunpen';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'NanumBarunpen' !important;
+    margin: 0;
+    padding: 0;
+  }
+  /* @font-face {
+    font-family: 'KimjungchulGothic-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+* {
+    box-sizing: border-box;
+    font-family: 'KimjungchulGothic-Bold' !important;
+    margin: 0;
+    padding: 0;
+  } */
+  /* @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
@@ -21,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Pretendard-Regular' !important;
     margin: 0;
     padding: 0;
-  }
+  } */
 `;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
