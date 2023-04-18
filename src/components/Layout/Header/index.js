@@ -1,16 +1,14 @@
 import * as S from './style';
-// import useMoveScroll from 'hooks/useMoveScroll';
 import { Link } from 'react-scroll';
 
 const Header = () => {
-  // const { element, onMoveToElement } = useMoveScroll();
-
+  console.log('scrollTop() : ', window.scrollX);
   return (
     <S.HeaderContainer>
-      <S.RightDiv>
-        <S.HomeBtn to={'/'}>PORTFOLIO</S.HomeBtn>
-      </S.RightDiv>
       <S.LeftDiv>
+        <S.HomeBtn to={'/'}>PORTFOLIO</S.HomeBtn>
+      </S.LeftDiv>
+      <S.RightDiv>
         <div>
           <Link to='about' spy={true} smooth={true}>
             ABOUT
@@ -24,7 +22,8 @@ const Header = () => {
         <div>PROJECTS</div>
         <div>EXPERIENCE</div>
         <div>ELSE</div>
-      </S.LeftDiv>
+        <S.Hamburger>=</S.Hamburger>
+      </S.RightDiv>
     </S.HeaderContainer>
   );
 };
