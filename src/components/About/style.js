@@ -10,7 +10,6 @@ export const AboutContainer = styled.div`
   border: 1px solid green;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 `;
 
@@ -21,26 +20,42 @@ export const ShortAboutDiv = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
-  /* gap: 100px; */
-  /* background-color: #4285f4; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     // 배경만 투명도 주기
     url(${backgroundImg});
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  p {
+  section {
     font-size: 60px;
     color: white;
     font-weight: bold;
-    h1 {
+    @media (max-width: 1100px) {
+      font-size: 50px;
+    }
+    @media (max-width: 500px) {
+      font-size: 40px;
+    }
+    div {
+      font-size: 60px;
       margin-bottom: 20px;
+      @media (max-width: 1100px) {
+        font-size: 50px;
+      }
+      @media (max-width: 500px) {
+        font-size: 40px;
+      }
     }
     span {
       font-size: 90px;
-      /* padding: 30px 0 30px 0; */
       border-bottom: 13px solid rgb(248, 205, 7);
       display: inline-block;
+      @media (max-width: 1100px) {
+        font-size: 70px;
+      }
+      @media (max-width: 500px) {
+        font-size: 50px;
+      }
     }
   }
   div {
@@ -52,15 +67,20 @@ export const ShortAboutDiv = styled.div`
     color: white;
     font-weight: bold;
     font-size: 25px;
+    @media (max-width: 1100px) {
+      font-size: 20px;
+    }
+    @media (max-width: 500px) {
+      font-size: 15px;
+    }
   }
 `;
+export const ArrowContainer = styled.div``;
 export const ArrowDiv = styled.div`
   position: absolute;
-  /* display: inline-block; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top: 500px; */
   width: 0;
   height: 0;
   border-top: 15px solid;
@@ -73,22 +93,22 @@ export const ArrowDiv = styled.div`
   animation: horizontal 1.5s ease-in infinite;
   @keyframes horizontal {
     0% {
-      margin-top: 500px;
+      margin-top: 300px;
     }
     30% {
-      margin-top: 570px;
+      margin-top: 370px;
     }
     40% {
-      margin-top: 550px;
+      margin-top: 350px;
     }
     47% {
-      margin-top: 565px;
+      margin-top: 365px;
     }
     90% {
-      margin-top: 565px;
+      margin-top: 365px;
     }
     100% {
-      margin-top: 500px;
+      margin-top: 300px;
     }
   }
 `;
