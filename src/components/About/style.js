@@ -7,7 +7,7 @@ export const AboutContainer = styled.div`
   position: relative;
   height: 100vh;
   width: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   align-items: center;

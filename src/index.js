@@ -9,7 +9,45 @@ import reset from 'styled-reset';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  ${reset}
+${reset}
+@font-face {
+    font-family: 'Arita-dotum-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Arita-dotum-Medium' !important;
+    margin: 0;
+    padding: 0;
+  }
+/* @font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'LINESeedKR-Bd' !important;
+    margin: 0;
+    padding: 0;
+  } */
+  /* @font-face {
+    font-family: 'BMHANNAAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'BMHANNAAir' !important;
+    margin: 0;
+    padding: 0;
+  } */
+
+  /*
   @font-face {
     font-family: 'NanumBarunpen';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
@@ -21,7 +59,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'NanumBarunpen' !important;
     margin: 0;
     padding: 0;
-  }
+  } */
   /* @font-face {
     font-family: 'KimjungchulGothic-Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
