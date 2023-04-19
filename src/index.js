@@ -11,17 +11,35 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 ${reset}
 @font-face {
-    font-family: 'Arita-dotum-Medium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'TheJamsil5Bold' !important;
+    margin: 0;
+    padding: 0;
+  }
+/* @font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 * {
     box-sizing: border-box;
-    font-family: 'Arita-dotum-Medium' !important;
+    font-family: 'KIMM_Bold' !important;
     margin: 0;
     padding: 0;
-  }
+  } */
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 /* @font-face {
     font-family: 'LINESeedKR-Bd';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
@@ -43,44 +61,6 @@ ${reset}
 * {
     box-sizing: border-box;
     font-family: 'BMHANNAAir' !important;
-    margin: 0;
-    padding: 0;
-  } */
-
-  /*
-  @font-face {
-    font-family: 'NanumBarunpen';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-* {
-    box-sizing: border-box;
-    font-family: 'NanumBarunpen' !important;
-    margin: 0;
-    padding: 0;
-  } */
-  /* @font-face {
-    font-family: 'KimjungchulGothic-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-  }
-* {
-    box-sizing: border-box;
-    font-family: 'KimjungchulGothic-Bold' !important;
-    margin: 0;
-    padding: 0;
-  } */
-  /* @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-  }
-  * {
-    box-sizing: border-box;
-    font-family: 'Pretendard-Regular' !important;
     margin: 0;
     padding: 0;
   } */

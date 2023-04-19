@@ -13,8 +13,9 @@ npm run start
 # 개인 프로젝트
 
 |                                   김효중                                   |
-| :------------------------------------------------------------------------: | -------------------------------------- |
-| <img src="https://avatars.githubusercontent.com/u/89366562?v=4" width=150> | [@rlgywnd](https://github.com/rlgywnd) |
+| :------------------------------------------------------------------------: |
+| <img src="https://avatars.githubusercontent.com/u/89366562?v=4" width=150> |
+|                   [@rlgywnd](https://github.com/rlgywnd)                   |
 
 <br />
 
