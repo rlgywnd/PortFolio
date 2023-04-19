@@ -7,6 +7,9 @@ export const SideBarReal = styled.div`
   border: 5px solid red; */
   display: grid;
   grid-template-columns: 250px 800px;
+  /* background-color: #f8f8ff; */
+  /* background-color: #fffaf0; */
+  background-color: #f5f5f5;
 `;
 export const SideBarContainer = styled.div`
   display: flex;
@@ -14,9 +17,28 @@ export const SideBarContainer = styled.div`
   position: sticky;
   top: 0;
   padding: 110px 0 0 30px;
-  border: 1px solid red;
   height: 100vh;
-  /* height: 100%; */
+
+  ul {
+    margin: 0 10px 10px 0;
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    li {
+      color: #667085;
+      font-weight: bold;
+      list-style-type: disc;
+      list-style-position: inside;
+      margin-bottom: 5px;
+      cursor: pointer;
+      :hover {
+        color: #d6d9dc;
+      }
+    }
+  }
+
   @media (max-width: 1100px) {
     display: none;
   }
@@ -25,7 +47,7 @@ export const AllComponentsDiv = styled.div`
   /* width: 60vw; */
   width: 65vw;
   padding: 110px 0 0 30px;
-  border: 5px solid pink;
+  /* border: 5px solid pink; */
   @media (min-width: 1100px) {
   }
   @media() {
