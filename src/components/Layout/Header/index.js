@@ -15,11 +15,10 @@ const Header = () => {
           </Link>
         </div>
         <div>
-          <Link to='skills' spy={true} smooth={true}>
-            SKILLS
+          <Link to='projects' spy={true} smooth={true}>
+            PROJECTS
           </Link>
         </div>
-        <div>PROJECTS</div>
         <div>EXPERIENCE</div>
         <div>ELSE</div>
         <S.Hamburger>=</S.Hamburger>
