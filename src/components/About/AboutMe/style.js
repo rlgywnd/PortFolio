@@ -28,10 +28,7 @@ export const AboutMeProfileDiv = styled.div`
   grid-template-columns: 400px 700px;
   grid-template-rows: 600px;
   column-gap: 100px;
-  /* border: 1px solid blue; */
   @media (max-width: 1100px) {
-    /* grid-template-columns: 400px;
-    grid-template-rows: 500px; */
     column-gap: 50px;
   }
   @media (max-width: 800px) {
@@ -51,7 +48,6 @@ export const ProfileImgDiv = styled.div`
     background-position: center;
     background-size: cover;
     @media (max-width: 570px) {
-      /* border: 1px solid red; */
       width: 100vw;
       margin: 0 100px 0 0;
     }
@@ -59,7 +55,6 @@ export const ProfileImgDiv = styled.div`
 `;
 export const ProfileUl = styled.ul`
   display: grid;
-  /* border: 1px solid black; */
   padding: 92px 0 15px 20px;
   grid-template-columns: 600px;
   grid-template-rows: 100px 100px 100px 100px 100px;
@@ -73,30 +68,44 @@ export const ProfileLi = styled.li`
   display: flex;
   gap: 15px;
   font-size: 20px;
+  @media (max-width: 1100px) {
+      font-size: 18px;
+    }
+    @media (max-width: 500px) {
+      font-size: 17px;
+    }
   h4 {
-    font-weight: bold;
   }
   div {
-    color: #667085;
-    font-weight: 400;
+    font-family: 'NEXON Lv2 Gothic' !important
   }
+
   h5 {
-    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    color: 
+    font-family: 'NEXON Lv2 Gothic' !important;
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-property: all;
+    width: 0px;
     font-weight: bold;
-    /* font-size: 25px; */
     :active {
       color: #4285f4;
     }
     :hover {
-      color: #4285f4;
+      width: 100%;
+      background-color: rgb(255, 218, 55);
+    }
+    :not(:hover) {
+      transition: 0.3s ease-out;
     }
   }
 `;
-
 export const IntroUl = styled.div`
   margin-top: 50px;
   font-size: 20px;
-  font-weight: 600;
   @media (min-width: 801px) {
     width: 1500px;
   }
@@ -109,13 +118,25 @@ export const IntroUl = styled.div`
 `;
 export const IntroLi = styled.div`
   h1 {
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 40px;
+    @media (max-width: 1100px) {
+      font-size: 35px;
+    }
+    @media (max-width: 500px) {
+      font-size: 30px;
+    }
   }
   div {
-    color: #667085;
     font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 20px;
+    font-family: 'NEXON Lv2 Gothic' !important;
+    margin-bottom: 10px;
+    @media (max-width: 1100px) {
+      font-size: 17px;
+    }
+    @media (max-width: 500px) {
+      font-size: 15px;
+    }
   }
 `;

@@ -16,18 +16,33 @@ const Projects = () => {
           <S.ProjectsNameDiv>우유부단</S.ProjectsNameDiv>
           <div>
             <div>
-              <div>INTRO</div>
+              <div>프로젝트 소개</div>
               <div>일상 속 결정장애를 위한 공개 투표 서비스</div>
             </div>
-            <div>img,gif</div>
             <div>
-              <div></div>
+              <div>img,gif</div>
+            </div>
+            <div>
+              <div>레이아웃,회원가입,로그인,로그아웃,마이페이지</div>
               <div></div>
               <div></div>
               <div></div>
             </div>
           </div>
-          <div>사용기술</div>
+          <div>
+            <div>사용기술</div>
+            <div>React</div>
+            <div>Typescript</div>
+            <div>Next.js</div>
+            <div>Redux</div>
+            <div>Redux-ToolKit</div>
+            <div>Styled-Components</div>
+            <div>React-hook-form</div>
+            <div>Axios</div>
+            <div>ESLint</div>
+            <div>Prettier</div>
+            <div>Styled-reset</div>
+          </div>
           <div>관련링크</div>
         </S.UyouBooDanDiv>
         <S.BoBeDiv>
