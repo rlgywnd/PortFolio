@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <S.AboutMeContainer id='about_me'>
       <S.TitleUnderlineDiv>
-        <S.AboutMeTitleH1>ABOUT ME</S.AboutMeTitleH1>
+        <S.AboutMeTitleH1>ABOUT ME.</S.AboutMeTitleH1>
       </S.TitleUnderlineDiv>
       <S.AboutMeProfileDiv id='profile'>
         <S.ProfileImgDiv>
@@ -63,7 +63,7 @@ const AboutMe = () => {
       </S.AboutMeProfileDiv>
       <S.IntroUl id='intro'>
         <S.IntroLi>
-          <h1>INTRO</h1>
+          <h1>INTRO.</h1>
           <div>💡 Javascript 언어와 REACT 중심으로</div>
           <div>
             WEB 개발을 공부하고 있는 프론트엔드 개발자를 꿈꾸는 김효중 입니다.

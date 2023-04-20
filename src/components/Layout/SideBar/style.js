@@ -18,7 +18,6 @@ export const SideBarContainer = styled.div`
   top: 0;
   padding: 110px 0 0 30px;
   height: 100vh;
-
   ul {
     margin: 0 10px 10px 0;
     h4 {
