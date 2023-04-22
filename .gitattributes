@@ -1,4 +1,7 @@
 assets/uyoumain.mp4 filter=lfs diff=lfs merge=lfs -text
 uyoumain.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mp4 !text !filter !merge !diff
+uyoulogin.mp4 filter=lfs diff=lfs merge=lfs -text
+uyoumypage.mp4 filter=lfs diff=lfs merge=lfs -text
+uyousign.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
