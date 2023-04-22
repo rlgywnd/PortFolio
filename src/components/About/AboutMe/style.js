@@ -5,8 +5,8 @@ export const AboutMeContainer = styled.div`
   flex: 1;
 `;
 export const TitleUnderlineDiv = styled.div`
-  border-bottom: 8px solid rgb(248, 205, 7);
-  margin-bottom: 20px;
+  border-bottom: 8px solid #3cb371;
+  margin-bottom: 80px;
   @media (max-width: 1100px) {
     width: 80vw;
   }
@@ -25,40 +25,46 @@ export const AboutMeTitleH1 = styled.h1`
 `;
 export const AboutMeProfileDiv = styled.div`
   display: grid;
-  grid-template-columns: 400px 700px;
-  grid-template-rows: 600px;
-  column-gap: 100px;
+  /* border: 1px solid blue; */
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 400px;
+  column-gap: 40px;
   @media (max-width: 1100px) {
-    column-gap: 50px;
+    column-gap: 30px;
   }
   @media (max-width: 800px) {
-    grid-template-columns: 500px;
-    grid-template-rows: 500px;
+    grid-template-columns: 80vw;
+    grid-template-rows: 480px;
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: 80vw;
+    grid-template-rows: 420px;
   }
 `;
 export const ProfileImgDiv = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
-  div {
-    width: 100%;
-    height: 70%;
-    border-radius: 5px;
-    background-image: url(${backgroundImg2});
-    background-position: center;
-    background-size: cover;
-    @media (max-width: 570px) {
-      width: 100vw;
-      margin: 0 100px 0 0;
-    }
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  background-image: url(${backgroundImg2});
+  background-position: center;
+  background-size: cover;
+  @media (max-width: 800px) {
+    width: 450px;
+    height: 450px;
+  }
+  @media (max-width: 500px) {
+    width: 400px;
+    height: 400px;
   }
 `;
 export const ProfileUl = styled.ul`
   display: grid;
-  padding: 92px 0 15px 20px;
-  grid-template-columns: 600px;
-  grid-template-rows: 100px 100px 100px 100px 100px;
+  grid-template-columns: 400px;
+  grid-template-rows: 80px 80px 80px 80px 80px;
+
   @media (max-width: 800px) {
+    /* border: 1px solid red; */
     padding: 0 0 0 5px;
     grid-template-columns: 600px;
     grid-template-rows: 50px 50px 50px 50px 50px;
@@ -66,25 +72,30 @@ export const ProfileUl = styled.ul`
 `;
 export const ProfileLi = styled.li`
   display: flex;
+  width: 100%;
+  align-items: center;
   gap: 15px;
-  font-size: 20px;
+  font-size: 18px;
+  @media (max-width: 1440px) {
+  }
   @media (max-width: 1100px) {
-      font-size: 18px;
-    }
-    @media (max-width: 500px) {
-      font-size: 17px;
-    }
+    font-size: 18px;
+  }
+  @media (max-width: 800px) {
+    font-size: ;
+  }
+  @media (max-width: 500px) {
+    font-size: 17px;
+  }
   h4 {
   }
   div {
-    font-family: 'NEXON Lv2 Gothic' !important
+    font-family: 'NEXON Lv2 Gothic' !important;
   }
 
   h5 {
     display: flex;
     align-items: center;
-    color: 
-    font-family: 'NEXON Lv2 Gothic' !important;
     box-sizing: border-box;
     transition-duration: 0.3s;
     transition-timing-function: linear;
@@ -96,7 +107,9 @@ export const ProfileLi = styled.li`
     }
     :hover {
       width: 100%;
-      background-color: rgb(255, 218, 55);
+      height: 30px;
+      color: white;
+      background-color: #3cb371;
     }
     :not(:hover) {
       transition: 0.3s ease-out;

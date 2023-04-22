@@ -1,4 +1,5 @@
 import * as S from './style';
+import { RxCheck } from 'react-icons/rx';
 
 const AboutMe = () => {
   const blogUrl = 'https://velog.io/@hyo123';
@@ -10,21 +11,22 @@ const AboutMe = () => {
         <S.AboutMeTitleH1>ABOUT ME.</S.AboutMeTitleH1>
       </S.TitleUnderlineDiv>
       <S.AboutMeProfileDiv id='profile'>
-        <S.ProfileImgDiv>
-          <div></div>
-        </S.ProfileImgDiv>
+        <S.ProfileImgDiv></S.ProfileImgDiv>
         <S.ProfileUl id='프로필'>
           <S.ProfileLi id='name'>
+            <RxCheck size='30' color='#3cb371' />
             <h4>NAME</h4>
             <h4>:</h4>
             <div>김효중</div>
           </S.ProfileLi>
           <S.ProfileLi id='email'>
+            <RxCheck size='30' color='#3cb371' />
             <h4>EMAIL</h4>
             <h4>:</h4>
             <div>rlgywnd@naver.com</div>
           </S.ProfileLi>
           <S.ProfileLi id='github'>
+            <RxCheck size='30' color='#3cb371' />
             <h4>GITHUB</h4>
             <h4>:</h4>
             <span>
@@ -39,6 +41,7 @@ const AboutMe = () => {
             </span>
           </S.ProfileLi>
           <S.ProfileLi id='blog'>
+            <RxCheck size='30' color='#3cb371' />
             <h4>BLOG</h4>
             <h4>:</h4>
             <span>
@@ -55,6 +58,7 @@ const AboutMe = () => {
             </span>
           </S.ProfileLi>
           <S.ProfileLi id='phone'>
+            <RxCheck size='30' color='#3cb371' />
             <h4>PHONE</h4>
             <h4>:</h4>
             <div>010-9603-0416</div>

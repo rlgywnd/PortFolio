@@ -7,9 +7,7 @@ export const SideBarReal = styled.div`
   border: 5px solid red; */
   display: grid;
   grid-template-columns: 250px 800px;
-  /* background-color: #f8f8ff; */
-  /* background-color: #fffaf0; */
-  background-color: #f5f5f5;
+  background-color: rgb(245, 245, 245);
 `;
 export const SideBarContainer = styled.div`
   display: flex;
