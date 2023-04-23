@@ -76,6 +76,10 @@ export const IntroDiv = styled.div`
   flex-direction: column;
   gap: 10px;
   h1 {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 5px; */
+    gap: 3px;
     font-size: 20px;
     font-family: 'NEXON Lv2 Gothic' !important;
     font-weight: bold;
@@ -173,6 +177,34 @@ export const VideoUyouMyPageBtnDiv = styled.div`
   transition: transform 0.3s ease 0s;
   transform: ${(props) => (props.uyoumypage ? 'rotate(180deg)' : '')};
 `;
+export const VideoBobeMainBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.bobemain ? 'rotate(180deg)' : '')};
+`;
+export const VideoBobeSignBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.bobesign ? 'rotate(180deg)' : '')};
+`;
+export const VideoBobeLoginBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.bobelogin ? 'rotate(180deg)' : '')};
+`;
+export const VideoBobeMyPageBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.bobemypage ? 'rotate(180deg)' : '')};
+`;
 
 // video를 담은 div
 export const VideoUyouMainDiv = styled.div`
@@ -212,6 +244,43 @@ export const VideoUyouMyPageDiv = styled.div`
   margin-bottom: 7px;
 `;
 
+export const VideoBobeMainDiv = styled.div`
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s linear;
+  max-height: 0;
+  max-height: ${(props) => (props.bobemain ? '100vh' : '0')};
+  margin-bottom: 7px;
+`;
+export const VideoBobeSignDiv = styled.div`
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s linear;
+  max-height: 0;
+  max-height: ${(props) => (props.bobesign ? '100vh' : '0')};
+  margin-bottom: 7px;
+`;
+export const VideoBobeLoginDiv = styled.div`
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s linear;
+  max-height: 0;
+  max-height: ${(props) => (props.bobelogin ? '100vh' : '0')};
+  margin-bottom: 7px;
+`;
+export const VideoBobeMyPageDiv = styled.div`
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s linear;
+  max-height: 0;
+  max-height: ${(props) => (props.bobemypage ? '100vh' : '0')};
+  margin-bottom: 7px;
+`;
+
 // video태그 자체
 export const UyouMainVideo = styled.video`
   width: 100%;
@@ -243,6 +312,40 @@ export const UyouMyPageVideo = styled.video`
   padding: 15px;
   padding: ${(props) => (props.uyoumypage ? '15px' : '0')};
   margin-bottom: ${(props) => (props.uyoumypage ? '30px' : '0px')};
+  background-color: white;
+`;
+
+export const BobeMainVideo = styled.video`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  padding: ${(props) => (props.bobemain ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.bobemain ? '30px' : '0px')};
+  background-color: white;
+`;
+export const BobeSignVideo = styled.video`
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  padding: ${(props) => (props.bobesign ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.bobesign ? '30px' : '0px')};
+  background-color: white;
+`;
+export const BobeLoginVideo = styled.video`
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  padding: ${(props) => (props.bobelogin ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.bobelogin ? '30px' : '0px')};
+  background-color: white;
+`;
+export const BobeMyPageVideo = styled.video`
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  padding: ${(props) => (props.bobemypage ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.bobemypage ? '30px' : '0px')};
   background-color: white;
 `;
 
@@ -340,6 +443,22 @@ export const UyouLinkContainer = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   /* border: 1px solid yellow; */
 `;
+export const BobeLinkContainer = styled.div`
+  display: grid;
+  grid-template-columns: 700px;
+  grid-template-rows: 40px 40px 40px 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'NEXON Lv2 Gothic' !important;
+`;
+export const PadakLinkContainer = styled.div`
+  display: grid;
+  grid-template-columns: 700px;
+  grid-template-rows: 40px 40px 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'NEXON Lv2 Gothic' !important;
+`;
 // 관련링크안에 각 링크내용, 체크이미지 담은 Div
 export const UyouLinkTextDiv = styled.div`
   display: flex;
@@ -401,6 +520,153 @@ export const UyouLinkTextDiv = styled.div`
       }
       @media (max-width: 500px) {
         width: 342px;
+      }
+    }
+  }
+`;
+
+export const BobeLinkTextDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  @media (max-width: 1100px) {
+    font-size: 16px;
+  }
+  @media (max-width: 500px) {
+    font-size: 12.5px;
+  }
+
+  span {
+    display: block;
+    cursor: pointer;
+    box-sizing: content-box;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-property: all;
+    width: 0;
+    :hover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 25px;
+      color: white;
+      background-color: #3cb371;
+    }
+    :not(:hover) {
+      transition: 0.3s ease-out;
+    }
+    h1 {
+      /* display: block; */
+      box-sizing: border-box;
+      width: 156px;
+      @media (max-width: 1100px) {
+        width: 140px;
+      }
+      @media (max-width: 500px) {
+        width: 109px;
+      }
+    }
+    h2 {
+      width: 133px;
+      @media (max-width: 1100px) {
+        width: 120px;
+      }
+      @media (max-width: 500px) {
+        width: 93px;
+      }
+    }
+    h3 {
+      width: 173px;
+      @media (max-width: 1100px) {
+        width: 155px;
+      }
+      @media (max-width: 500px) {
+        width: 122px;
+      }
+    }
+    h4 {
+      width: 133px;
+      @media (max-width: 1100px) {
+        width: 118px;
+      }
+      @media (max-width: 500px) {
+        width: 90px;
+      }
+    }
+    h5 {
+      width: 367px;
+      @media (max-width: 1100px) {
+        width: 326px;
+      }
+      @media (max-width: 500px) {
+        width: 255px;
+      }
+    }
+  }
+`;
+export const PadakLinkTextDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  @media (max-width: 1100px) {
+    font-size: 16px;
+  }
+  @media (max-width: 500px) {
+    font-size: 12.5px;
+  }
+
+  span {
+    display: block;
+    cursor: pointer;
+    box-sizing: content-box;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-property: all;
+    width: 0;
+    :hover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 25px;
+      color: white;
+      background-color: #3cb371;
+    }
+    :not(:hover) {
+      transition: 0.3s ease-out;
+    }
+    h1 {
+      /* display: block; */
+      box-sizing: border-box;
+      width: 156px;
+      @media (max-width: 1100px) {
+        width: 140px;
+      }
+      @media (max-width: 500px) {
+        width: 109px;
+      }
+    }
+    h2 {
+      width: 133px;
+      @media (max-width: 1100px) {
+        width: 120px;
+      }
+      @media (max-width: 500px) {
+        width: 93px;
+      }
+    }
+    h3 {
+      width: 123px;
+      @media (max-width: 1100px) {
+        width: 110px;
+      }
+      @media (max-width: 500px) {
+        width: 85px;
       }
     }
   }
