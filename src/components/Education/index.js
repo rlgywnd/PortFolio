@@ -41,8 +41,7 @@ const Education = () => {
             <h1>광운대학교</h1>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              광운대학교[컴퓨터공학과]에 입학하였지만, 목표가 있어 바로
-              자퇴하게되었습니다.
+              광운대학교[컴퓨터공학과]에 입학 & 다른 목표로 인해 바로 자퇴.
             </div>
           </S.IntroDiv>
         </S.SchoolDiv>

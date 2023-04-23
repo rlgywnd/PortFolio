@@ -435,7 +435,7 @@ export const LinkTitleDiv = styled.div`
   font-size: 20px;
   font-weight: bold;
   font-family: 'NEXON Lv2 Gothic' !important;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 // 관련링크 최상위 컨테이너
 export const UyouLinkContainer = styled.div`
