@@ -6,7 +6,8 @@ const About = () => {
     <S.AboutContainer id='about'>
       <S.ShortAboutDiv>
         <section>
-          <div>도전을 좋아하는</div>
+          {/* <div>도전을 좋아하는</div> */}
+          <div>항상 도전하려는</div>
           <span>김효중</span>입니다.
         </section>
         <div>

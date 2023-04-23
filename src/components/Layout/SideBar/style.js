@@ -6,7 +6,7 @@ export const SideBarReal = styled.div`
   /* display: flex;
   border: 5px solid red; */
   display: grid;
-  grid-template-columns: 250px 800px;
+  grid-template-columns: 250px 800px 50px;
   background-color: rgb(245, 245, 245);
 `;
 export const SideBarContainer = styled.div`
@@ -17,13 +17,14 @@ export const SideBarContainer = styled.div`
   padding: 110px 0 0 30px;
   height: 100vh;
   ul {
-    margin: 0 10px 10px 0;
+    margin: 0 10px 40px 0;
     h4 {
-      font-size: 20px;
+      font-size: 15px;
       font-weight: bold;
       margin-bottom: 10px;
     }
     li {
+      font-size: 13px;
       color: #667085;
       font-weight: bold;
       list-style-type: disc;
@@ -41,34 +42,24 @@ export const SideBarContainer = styled.div`
   }
 `;
 export const AllComponentsDiv = styled.div`
-  /* width: 60vw; */
   width: 65vw;
   padding: 110px 0 0 30px;
-  /* border: 5px solid pink; */
-  @media (min-width: 1100px) {
-  }
-  @media() {
-  }
-  @media() {
-  }
-  /* @media (min-width: 1800px) {
-    width: 800px;
-  }
-  @media (max-width: 1800px) {
-
-    width: 800px;
-  }
-  @media (max-width: 1380px) {
-    width: 800px;
-
-  }
-  @media (max-width: 840px) {
-    width: 100%;
-    height: 100%;
-  }
-  @media (max-width: 412px) {
-    width: 100%;
-    height: 100%;
-    padding: 0 10px 0 10px;
-  } */
+`;
+export const UpBtnDiv = styled.div`
+  display: flex;
+  /* position: sticky; */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  margin: 0 70px 50px 0;
+  bottom: 0;
+  height: 50px;
+  /* border: 1px solid red; */
+  height: 70px;
+  width: 70px;
+  background-color: #667085;
+  border-radius: 50%;
+  opacity: 0.6;
+  cursor: pointer;
 `;

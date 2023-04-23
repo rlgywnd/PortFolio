@@ -35,7 +35,11 @@ export const RightDiv = styled.div`
     }
   }
 `;
-export const Hamburger = styled.button`
+export const Hamburger = styled.section`
+  cursor: pointer;
+  :hover {
+    color: #4285f4;
+  }
   @media (min-width: 801px) {
     display: none;
   }

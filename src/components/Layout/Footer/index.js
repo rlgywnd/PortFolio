@@ -1,5 +1,13 @@
+import * as S from './style';
+
 const Footer = () => {
-  return <div>FOOTER 컴포</div>;
+  return (
+    <S.FooterContainer>
+      <S.FooterTextDiv>
+        Copyright 2023@ Kim HyoJung all rights reserved.
+      </S.FooterTextDiv>
+    </S.FooterContainer>
+  );
 };
 
 export default Footer;

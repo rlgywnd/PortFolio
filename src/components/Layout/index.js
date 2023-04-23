@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   console.log('children : ', children);
 
   return (
-    <S.LayoutContainer>
+    <S.LayoutContainer id='top'>
       <Header />
       <About />
       <SideBar children={children} />
