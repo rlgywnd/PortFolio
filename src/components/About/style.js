@@ -7,10 +7,10 @@ export const AboutContainer = styled.div`
   position: relative;
   height: 100vh;
   width: 100%;
-  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 `;
 
 export const ShortAboutDiv = styled.div`

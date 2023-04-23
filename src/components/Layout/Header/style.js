@@ -10,6 +10,7 @@ export const HeaderContainer = styled.div`
   width: 100%;
   height: 60px;
   padding: 0 15% 0 15%;
+  z-index: 2;
   position: sticky;
   top: 0;
   opacity: 0.8;
@@ -36,9 +37,30 @@ export const RightDiv = styled.div`
   }
 `;
 export const Hamburger = styled.section`
-  cursor: pointer;
-  :hover {
-    color: #4285f4;
+  margin-top: ${(props) => (props.hamprop ? '190px' : '30px')};
+  margin-left: ${(props) => (props.hamprop ? '105px' : '0')};
+  top: 0;
+  /* opacity: 0.8; */
+  div {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  ul {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: gray;
+    gap: 20px;
+    z-index: 2;
+    width: 140px;
+    li {
+      :hover {
+        color: #4285f4;
+      }
+    }
   }
   @media (min-width: 801px) {
     display: none;

@@ -19,11 +19,11 @@ const Career = () => {
             </div>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              갤럭시 S8 행사 in 평택AK플라자
+              Galaxy S8 행사 in 평택AK플라자
             </div>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              록시땅행사 in 숙명여대축제
+              L'Occitane in 숙명여대
             </div>
           </S.IntroDiv>
         </S.NaratorDiv>
@@ -34,7 +34,7 @@ const Career = () => {
             <h1>피팅모델</h1>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              엠할리데이 의류 회사 피팅모델 근무 경험
+              M.Holiday 의류 피팅모델 근무 경험
             </div>
           </S.IntroDiv>
         </S.FittingDiv>

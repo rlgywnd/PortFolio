@@ -47,7 +47,6 @@ export const AllComponentsDiv = styled.div`
 `;
 export const UpBtnDiv = styled.div`
   display: flex;
-  /* position: sticky; */
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -55,7 +54,6 @@ export const UpBtnDiv = styled.div`
   margin: 0 70px 50px 0;
   bottom: 0;
   height: 50px;
-  /* border: 1px solid red; */
   height: 70px;
   width: 70px;
   background-color: #667085;
