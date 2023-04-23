@@ -6,9 +6,9 @@ import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import { GrTechnology } from 'react-icons/gr';
 
 import uyoumain from '../../assets/uyoumain.mp4';
-// import uyousign from '../../assets/uyousign.mp4';
-// import uyoulogin from '../../assets/uyoulogin.mp4';
-// import uyoumypage from '../../assets/uyoumypage.mp4';
+import uyousign from '../../assets/uyousign.mp4';
+import uyoulogin from '../../assets/uyoulogin.mp4';
+import uyoumypage from '../../assets/uyoumypage.mp4';
 
 import { useState } from 'react';
 
@@ -104,7 +104,7 @@ const Projects = () => {
               <S.VideoUyouSignDiv uyousign={uyouSign}>
                 <S.UyouSignVideo
                   controls='controls'
-                  src={uyoumain}
+                  src={uyousign}
                   alt='빔'
                 ></S.UyouSignVideo>
               </S.VideoUyouSignDiv>
@@ -123,7 +123,7 @@ const Projects = () => {
               <S.VideoUyouLoginDiv uyoulogin={uyouLogin}>
                 <S.UyouLoginVideo
                   controls='controls'
-                  src={uyoumain}
+                  src={uyoulogin}
                   alt='빔'
                 ></S.UyouLoginVideo>
               </S.VideoUyouLoginDiv>
@@ -142,7 +142,7 @@ const Projects = () => {
               <S.VideoUyouMyPageDiv uyoumypage={uyouMyPage}>
                 <S.UyouMyPageVideo
                   controls='controls'
-                  src={uyoumain}
+                  src={uyoumypage}
                   alt='빔'
                 ></S.UyouMyPageVideo>
               </S.VideoUyouMyPageDiv>
