@@ -23,9 +23,15 @@ export const TitleUnderlineDiv = styled.div`
     width: 80vw;
   }
 `;
-
 export const ProjectsDiv = styled.div`
   width: 80vw;
+`;
+// 사이드바 눌러서 scroll 갈때 깔끔하게 하기위해 만든 div
+export const MarginDiv = styled.div`
+  height: 65px;
+  @media (max-width: 1100px) {
+    display: none;
+  }
 `;
 
 export const ProjectsTypeDiv = styled.div`
@@ -667,6 +673,50 @@ export const PadakLinkTextDiv = styled.div`
       }
       @media (max-width: 500px) {
         width: 85px;
+      }
+    }
+  }
+`;
+export const PortLinkTextDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  @media (max-width: 1100px) {
+    font-size: 16px;
+  }
+  @media (max-width: 500px) {
+    font-size: 12.5px;
+  }
+
+  span {
+    display: block;
+    cursor: pointer;
+    box-sizing: content-box;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-property: all;
+    width: 0;
+    :hover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 25px;
+      color: white;
+      background-color: #3cb371;
+    }
+    :not(:hover) {
+      transition: 0.3s ease-out;
+    }
+    h2 {
+      width: 133px;
+      @media (max-width: 1100px) {
+        width: 120px;
+      }
+      @media (max-width: 500px) {
+        width: 93px;
       }
     }
   }

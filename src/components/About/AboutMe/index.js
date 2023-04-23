@@ -12,20 +12,20 @@ const AboutMe = () => {
       </S.TitleUnderlineDiv>
       <S.AboutMeProfileDiv id='profile'>
         <S.ProfileImgDiv></S.ProfileImgDiv>
-        <S.ProfileUl id='프로필'>
-          <S.ProfileLi id='name'>
+        <S.ProfileUl>
+          <S.ProfileLi>
             <RxCheck size='30' color='#3cb371' />
             <h4>NAME</h4>
             <h4>:</h4>
             <div>김효중</div>
           </S.ProfileLi>
-          <S.ProfileLi id='email'>
+          <S.ProfileLi>
             <RxCheck size='30' color='#3cb371' />
             <h4>EMAIL</h4>
             <h4>:</h4>
             <div>rlgywnd@naver.com</div>
           </S.ProfileLi>
-          <S.ProfileLi id='github'>
+          <S.ProfileLi>
             <RxCheck size='30' color='#3cb371' />
             <h4>GITHUB</h4>
             <h4>:</h4>
@@ -40,7 +40,7 @@ const AboutMe = () => {
               </h5>
             </span>
           </S.ProfileLi>
-          <S.ProfileLi id='blog'>
+          <S.ProfileLi>
             <RxCheck size='30' color='#3cb371' />
             <h4>BLOG</h4>
             <h4>:</h4>
@@ -57,7 +57,7 @@ const AboutMe = () => {
               </h5>
             </span>
           </S.ProfileLi>
-          <S.ProfileLi id='phone'>
+          <S.ProfileLi>
             <RxCheck size='30' color='#3cb371' />
             <h4>PHONE</h4>
             <h4>:</h4>
@@ -82,17 +82,16 @@ const AboutMe = () => {
           </div>
           <br />
           <div>
-            비전공자에 컴퓨터로는 게임만 할 줄 알던 제가 처음에는 진입방벽이
-            너무 높았습니다.
+            비전공자에 컴퓨터로는 게임만 할 줄 알던 저에겐 처음에는 코딩의
+            진입방벽이 너무 높았습니다.
           </div>
-          <div>다른사람들과 페어프로그래밍을 할때마다 나 빼고</div>
+          <div>다른사람들과 페어프로그래밍을 할때마다</div>
           <div>다들 잘알고 잘하는걸 느끼고 좌절할 뻔 했습니다. </div>
-          <div>하지만, 계속해서 도전하였고, 팀원과의 의사소통,협업을 하며 </div>
+          <div>하지만, 포기않고 도전하였고 팀원과 협업을 하며 </div>
           <div>적응하고 해결해나가는 저의 모습에 가능성을 보았습니다.</div>
           <br />
           <div>
-            아직도 많이 어렵긴하지만 계속 도전하며 문제를 차근차근 해결해
-            나갈때면
+            아직도 많이 어렵지만 계속 도전하며 문제를 차근차근 해결해 나갈때면
           </div>
           <div>너무 재밌기에 계속해서 성장하고 싶습니다.</div>
           <br />

@@ -11,6 +11,7 @@ export const TitleUnderlineDiv = styled.div`
     width: 80vw;
   }
 `;
+// 사이드바 눌러서 scroll 갈때 깔끔하게 하기위해 만든 div
 export const AboutMeTitleH1 = styled.h1`
   display: flex;
   padding: 110px 0 0 0;
@@ -102,9 +103,6 @@ export const ProfileLi = styled.li`
     transition-property: all;
     width: 0px;
     font-weight: bold;
-    :active {
-      color: #4285f4;
-    }
     :hover {
       width: 100%;
       height: 30px;

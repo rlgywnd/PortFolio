@@ -34,7 +34,7 @@ const Projects = () => {
     'http://padakmon-client-bucket.s3-website.ap-northeast-2.amazonaws.com/';
   const padakGitUrl = 'https://github.com/codestates-seb/seb40_pre_003';
   const padakDemoUrl = 'https://www.youtube.com/watch?v=T6uEMcfgvec';
-
+  const portGitUrl = 'https://github.com/rlgywnd/PortFolio';
   // 버튼 열고닫기 state
   const [uyouMain, setUyouMain] = useState(false);
   const [uyouSign, setUyouSign] = useState(false);
@@ -51,11 +51,42 @@ const Projects = () => {
         <S.ProjectsTitleH1>PROJECTS.</S.ProjectsTitleH1>
       </S.TitleUnderlineDiv>
       <S.ProjectsDiv>
-        <S.PortFolioDiv>
+        <S.PortFolioDiv id='pj_portfolio'>
+          <S.MarginDiv></S.MarginDiv>
           <S.ProjectsTypeDiv>개인 프로젝트</S.ProjectsTypeDiv>
           <S.ProjectsNameDiv>김효중 포트폴리오</S.ProjectsNameDiv>
+          <S.IntroAndWorkDetail>
+            <S.IntroDateDiv>
+              <S.IntroDiv>
+                <h1>서비스 소개</h1>
+                <div>
+                  <RxCheck size='30' color='#3cb371' />
+                  김효중의 포트폴리오입니다.
+                </div>
+              </S.IntroDiv>
+            </S.IntroDateDiv>
+          </S.IntroAndWorkDetail>
+          <S.LinkTitleDiv>
+            <AiOutlineLink size='30' />
+            관련링크
+          </S.LinkTitleDiv>
+          <S.PadakLinkContainer>
+            <S.PadakLinkTextDiv>
+              <RxCheck size='30' color='#3cb371' />
+              <div>
+                <span
+                  onClick={() => {
+                    window.open(portGitUrl);
+                  }}
+                >
+                  <h2>깃헙 Repository</h2>
+                </span>
+              </div>
+            </S.PadakLinkTextDiv>
+          </S.PadakLinkContainer>
         </S.PortFolioDiv>
-        <S.UyouBooDanDiv>
+        <S.UyouBooDanDiv id='pj_uyou'>
+          <S.MarginDiv></S.MarginDiv>
           <S.ProjectsTypeDiv>팀 프로젝트</S.ProjectsTypeDiv>
           <S.ProjectsNameDiv>우유부단 : 공개 투표 서비스</S.ProjectsNameDiv>
           <S.IntroAndWorkDetail>
@@ -306,7 +337,8 @@ const Projects = () => {
             </S.UyouLinkTextDiv>
           </S.UyouLinkContainer>
         </S.UyouBooDanDiv>
-        <S.BoBeDiv>
+        <S.BoBeDiv id='pj_bobe'>
+          <S.MarginDiv></S.MarginDiv>
           <S.ProjectsTypeDiv>팀 프로젝트</S.ProjectsTypeDiv>
           <S.ProjectsNameDiv>
             보배빌림 : 전기차 보조베터리 대여 서비스
@@ -444,23 +476,22 @@ const Projects = () => {
             <S.SkillsTextAndDetailDiv>
               <S.SkillsTextDiv>
                 <RxCheck size='30' color='#3cb371' />
-                Daum-Postcode
+                Vite
               </S.SkillsTextDiv>
-              React는 Component를 이용하여 재사용이 가능하고, 유지보수의
-              용이함이있습니다.
-              <br /> 많은 커뮤니티가 있어, 자료가 굉장히 방대합니다.
+              Vite는 Esbuild를 기반으로 만들어진 빌드툴 입니다.
+              <br />
+              CRA는 Javascript로 구성된 Webpack을 사용하는데 속도가 느립니다.
+              <br /> Vite는 위와같은 단점을 해결해줍니다.
             </S.SkillsTextAndDetailDiv>
             {/* {} */}
             <S.SkillsTextAndDetailDiv>
               <S.SkillsTextDiv>
                 <RxCheck size='30' color='#3cb371' />
-                Vite
+                Daum-PostCode
               </S.SkillsTextDiv>
-              Next.JS는 React에서 Rendering을 쉽게 할 수 있게 해주는
-              프레임워크입니다.
+              Daum-PostCode는 주소 찾기를 도와주는 라이브러리입니다.
               <br />
-              서버사이드렌더링(SSR) 방식이라 몇가지 에러가 많았지만, SSR만의
-              장점이 많은 프레임워크입니다.
+              npm으로 react전용 Daum-PostCode를 설치하여 사용할 수 있습니다.
             </S.SkillsTextAndDetailDiv>
             {/*  */}
             <S.SkillsTextAndDetailDiv>
@@ -468,9 +499,11 @@ const Projects = () => {
                 <RxCheck size='30' color='#3cb371' />
                 Recoil
               </S.SkillsTextDiv>
-              Redux는 전역에서 상태를 관리하게 해주는 라이브러리입니다.
-              <br /> Redux-Toolkit은 Redux의 단점들을 보완해주며 Redux보다 더욱
-              간단하게 쓸 수 있게 해줍니다.
+              Recoil은 전역 상태를 관리하기 위해 사용하는 라이브러리입니다.
+              <br />
+              Redux의 번거로운 초기세팅을 하지 않고 훨씬 쉽게 세팅하고
+              <br />
+              사용할 수 있어서 사용하기 쉬운 전역상태관리 라이브러리였습니다.
             </S.SkillsTextAndDetailDiv>
             <S.SkillsTextAndDetailDiv>
               <S.SkillsTextDiv>
@@ -577,7 +610,8 @@ const Projects = () => {
           </S.BobeLinkContainer>
         </S.BoBeDiv>
         {/* {} */}
-        <S.StackOverDiv>
+        <S.StackOverDiv id='pj_stack'>
+          <S.MarginDiv></S.MarginDiv>
           <S.ProjectsTypeDiv>팀 프로젝트</S.ProjectsTypeDiv>
           <S.ProjectsNameDiv>Stack OverFlow 클론</S.ProjectsNameDiv>
           <S.IntroAndWorkDetail>
@@ -626,8 +660,11 @@ const Projects = () => {
                 Redux
               </S.SkillsTextDiv>
               Redux는 전역에서 상태를 관리하게 해주는 라이브러리입니다.
-              <br /> Redux-Toolkit은 Redux의 단점들을 보완해주며 Redux보다 더욱
-              간단하게 쓸 수 있게 해줍니다.
+              <br />
+              Action - Dispatch - Reducer - Store 순서로 데이터를 단방향으로
+              <br />
+              전달하며 상태가 변경되면 React는 다시 렌더링을 시켜주는 다소
+              복잡한 방식입니다.
             </S.SkillsTextAndDetailDiv>
             <S.SkillsTextAndDetailDiv>
               <S.SkillsTextDiv>
