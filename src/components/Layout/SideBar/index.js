@@ -51,11 +51,6 @@ const SideBar = ({ children }) => {
                 코드스테이츠
               </Link>
             </li>
-            <li>
-              <Link to='school' spy={true} smooth={true}>
-                광운대학교
-              </Link>
-            </li>
           </ul>
           <ul>
             <h4>CAREER</h4>

@@ -11,18 +11,12 @@ import { Link } from 'react-router-dom';
 /* color: #667085; 회색 */
 
 export const HomeContainer = styled.div`
-  /* border: 1px solid black; */
   width: 100vw;
   height: 100vh;
-  /* height: 1335px; */
-  /* background-color: black; */
-  /* color: white; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* div {
-    margin-top: 150px;
-  } */
+
   font-size: 50px;
   color: black;
   background: url(${videoImg}) center no-repeat;
@@ -30,16 +24,11 @@ export const HomeContainer = styled.div`
 `;
 export const TextDiv = styled.div`
   display: flex;
-  /* border: 2px solid black;
-  border-radius: 8px;
-  width: 22.3vh;
-  height: 120px; */
   justify-content: center;
   flex-direction: column;
   margin-top: 300px;
   font-size: 30px;
   font-family: ;
-  /* gap: 10px; */
 `;
 export const TitleDiv = styled.div`
   display: flex;

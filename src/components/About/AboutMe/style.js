@@ -26,7 +26,6 @@ export const AboutMeTitleH1 = styled.h1`
 `;
 export const AboutMeProfileDiv = styled.div`
   display: grid;
-  /* border: 1px solid blue; */
   grid-template-columns: 400px 400px;
   grid-template-rows: 400px;
   column-gap: 40px;
@@ -45,7 +44,6 @@ export const AboutMeProfileDiv = styled.div`
 export const ProfileImgDiv = styled.div`
   display: flex;
   align-items: center;
-  /* border: 1px solid red; */
   border-radius: 5px;
   background-image: url(${backgroundImg2});
   background-position: center;
