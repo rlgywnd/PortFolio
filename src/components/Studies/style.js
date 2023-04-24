@@ -16,6 +16,9 @@ export const StudiesTitleH1 = styled.h1`
   @media (max-width: 500px) {
     font-size: 50px;
   }
+  @media (max-width: 390px) {
+    font-size: 40px;
+  }
 `;
 export const TitleUnderlineDiv = styled.div`
   border-bottom: 8px solid #3cb371;
@@ -50,6 +53,9 @@ export const CareerDate = styled.div`
   @media (max-width: 500px) {
     font-size: 12px;
   }
+  @media (max-width: 390px) {
+    font-size: 11px;
+  }
 `;
 export const IntroDiv = styled.div`
   display: flex;
@@ -69,6 +75,9 @@ export const IntroDiv = styled.div`
     @media (max-width: 500px) {
       font-size: 16px;
     }
+    @media (max-width: 390px) {
+      font-size: 15px;
+    }
   }
   div {
     /* border: 1px solid blue; */
@@ -85,6 +94,9 @@ export const IntroDiv = styled.div`
     }
     @media (max-width: 500px) {
       font-size: 12.5px;
+    }
+    @media (max-width: 390px) {
+      font-size: 12px;
     }
   }
 `;

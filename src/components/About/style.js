@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import backgroundImg from '../../assets/background.jpeg';
-// import backgroundImg2 from '../../assets/background2.JPG';
-// import backgroundImg3 from '../../assets/background3.jpeg';
 
 export const AboutContainer = styled.div`
   position: relative;
@@ -10,7 +8,6 @@ export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1;
 `;
 
 export const ShortAboutDiv = styled.div`

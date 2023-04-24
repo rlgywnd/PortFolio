@@ -14,4 +14,13 @@ export const FooterTextDiv = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #696969;
+  @media (max-width: 1100px) {
+    font-size: 14px;
+  }
+  @media (max-width: 500px) {
+    font-size: 13px;
+  }
+  @media (max-width: 390px) {
+    font-size: 12px;
+  }
 `;

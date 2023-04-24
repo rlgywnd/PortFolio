@@ -15,6 +15,9 @@ export const ProjectsTitleH1 = styled.h1`
   @media (max-width: 500px) {
     font-size: 50px;
   }
+  @media (max-width: 390px) {
+    font-size: 40px;
+  }
 `;
 export const TitleUnderlineDiv = styled.div`
   border-bottom: 8px solid #3cb371;
@@ -44,6 +47,9 @@ export const ProjectsTypeDiv = styled.div`
   @media (max-width: 500px) {
     font-size: 15px;
   }
+  @media (max-width: 390px) {
+    font-size: 14px;
+  }
 `;
 export const ProjectsNameDiv = styled.div`
   font-size: 40px;
@@ -54,6 +60,9 @@ export const ProjectsNameDiv = styled.div`
   }
   @media (max-width: 500px) {
     font-size: 30px;
+  }
+  @media (max-width: 390px) {
+    font-size: 25px;
   }
 `;
 export const IntroAndWorkDetail = styled.div`
@@ -72,6 +81,9 @@ export const WorkDate = styled.div`
   }
   @media (max-width: 500px) {
     font-size: 12px;
+  }
+  @media (max-width: 390px) {
+    font-size: 11px;
   }
 `;
 export const IntroDateDiv = styled.div`
@@ -95,6 +107,9 @@ export const IntroDiv = styled.div`
     @media (max-width: 500px) {
       font-size: 16px;
     }
+    @media (max-width: 390px) {
+      font-size: 14px;
+    }
   }
   div {
     /* border: 1px solid blue; */
@@ -109,6 +124,9 @@ export const IntroDiv = styled.div`
     }
     @media (max-width: 500px) {
       font-size: 12.5px;
+    }
+    @media (max-width: 390px) {
+      font-size: 11px;
     }
   }
 `;
@@ -391,6 +409,10 @@ export const SkillsTextAndDetailDiv = styled.div`
     font-size: 12px;
     grid-template-columns: 150px 250px;
   }
+  @media (max-width: 390px) {
+    font-size: 10px;
+    grid-template-columns: 30vw 50vw;
+  }
 `;
 // Skills 이름, 점 img 감쌀 Text
 export const SkillsTextDiv = styled.div`
@@ -407,6 +429,9 @@ export const SkillsTextDiv = styled.div`
   }
   @media (max-width: 500px) {
     font-size: 13px;
+  }
+  @media (max-width: 390px) {
+    font-size: 11px;
   }
 `;
 
@@ -478,6 +503,9 @@ export const UyouLinkTextDiv = styled.div`
   @media (max-width: 500px) {
     font-size: 12.5px;
   }
+  @media (max-width: 390px) {
+    font-size: 11px;
+  }
 
   span {
     display: block;
@@ -509,6 +537,9 @@ export const UyouLinkTextDiv = styled.div`
       @media (max-width: 500px) {
         width: 109px;
       }
+      @media (max-width: 390px) {
+        width: 97px;
+      }
     }
     h2 {
       width: 133px;
@@ -518,6 +549,9 @@ export const UyouLinkTextDiv = styled.div`
       @media (max-width: 500px) {
         width: 93px;
       }
+      @media (max-width: 390px) {
+        width: 83px;
+      }
     }
     h3 {
       width: 490px;
@@ -526,6 +560,9 @@ export const UyouLinkTextDiv = styled.div`
       }
       @media (max-width: 500px) {
         width: 342px;
+      }
+      @media (max-width: 390px) {
+        width: 300px;
       }
     }
   }
@@ -543,6 +580,9 @@ export const BobeLinkTextDiv = styled.div`
   @media (max-width: 500px) {
     font-size: 12.5px;
   }
+  @media (max-width: 390px) {
+    font-size: 11px;
+  }
 
   span {
     display: block;
@@ -574,6 +614,9 @@ export const BobeLinkTextDiv = styled.div`
       @media (max-width: 500px) {
         width: 109px;
       }
+      @media (max-width: 390px) {
+        width: 98px;
+      }
     }
     h2 {
       width: 133px;
@@ -582,6 +625,9 @@ export const BobeLinkTextDiv = styled.div`
       }
       @media (max-width: 500px) {
         width: 93px;
+      }
+      @media (max-width: 390px) {
+        width: 84px;
       }
     }
     h3 {
@@ -592,6 +638,9 @@ export const BobeLinkTextDiv = styled.div`
       @media (max-width: 500px) {
         width: 122px;
       }
+      @media (max-width: 390px) {
+        width: 107px;
+      }
     }
     h4 {
       width: 133px;
@@ -601,6 +650,9 @@ export const BobeLinkTextDiv = styled.div`
       @media (max-width: 500px) {
         width: 90px;
       }
+      @media (max-width: 390px) {
+        width: 82px;
+      }
     }
     h5 {
       width: 367px;
@@ -609,6 +661,9 @@ export const BobeLinkTextDiv = styled.div`
       }
       @media (max-width: 500px) {
         width: 255px;
+      }
+      @media (max-width: 390px) {
+        width: 226px;
       }
     }
   }
@@ -625,6 +680,9 @@ export const PadakLinkTextDiv = styled.div`
   @media (max-width: 500px) {
     font-size: 12.5px;
   }
+  @media (max-width: 390px) {
+    font-size: 11px;
+  }
 
   span {
     display: block;
@@ -656,6 +714,9 @@ export const PadakLinkTextDiv = styled.div`
       @media (max-width: 500px) {
         width: 109px;
       }
+      @media (max-width: 390px) {
+        width: 98px;
+      }
     }
     h2 {
       width: 133px;
@@ -665,6 +726,9 @@ export const PadakLinkTextDiv = styled.div`
       @media (max-width: 500px) {
         width: 93px;
       }
+      @media (max-width: 390px) {
+        width: 84px;
+      }
     }
     h3 {
       width: 123px;
@@ -673,6 +737,9 @@ export const PadakLinkTextDiv = styled.div`
       }
       @media (max-width: 500px) {
         width: 85px;
+      }
+      @media (max-width: 390px) {
+        width: 76px;
       }
     }
   }

@@ -10,12 +10,12 @@ export const HeaderContainer = styled.div`
   width: 100%;
   height: 60px;
   padding: 0 15% 0 15%;
-  z-index: 2;
   position: sticky;
   top: 0;
   opacity: 0.8;
+  z-index: 1;
 `;
-
+// 1780px
 export const LeftDiv = styled.div`
   display: flex;
 `;
@@ -38,7 +38,7 @@ export const RightDiv = styled.div`
 `;
 export const Hamburger = styled.section`
   margin-top: ${(props) => (props.hamprop ? '190px' : '30px')};
-  margin-left: ${(props) => (props.hamprop ? '105px' : '0')};
+  /* margin-left: ${(props) => (props.hamprop ? '105px' : '0')}; */
   top: 0;
   /* opacity: 0.8; */
   div {

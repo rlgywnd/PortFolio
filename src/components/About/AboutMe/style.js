@@ -23,6 +23,9 @@ export const AboutMeTitleH1 = styled.h1`
   @media (max-width: 500px) {
     font-size: 50px;
   }
+  @media (max-width: 390px) {
+    font-size: 40px;
+  }
 `;
 export const AboutMeProfileDiv = styled.div`
   display: grid;
@@ -40,6 +43,10 @@ export const AboutMeProfileDiv = styled.div`
     grid-template-columns: 80vw;
     grid-template-rows: 420px;
   }
+  @media (max-width: 390px) {
+    grid-template-columns: 80vw;
+    grid-template-rows: 320px;
+  }
 `;
 export const ProfileImgDiv = styled.div`
   display: flex;
@@ -55,6 +62,10 @@ export const ProfileImgDiv = styled.div`
   @media (max-width: 500px) {
     width: 400px;
     height: 400px;
+  }
+  @media (max-width: 390px) {
+    width: 300px;
+    height: 300px;
   }
 `;
 export const ProfileUl = styled.ul`
@@ -85,6 +96,9 @@ export const ProfileLi = styled.li`
   }
   @media (max-width: 500px) {
     font-size: 17px;
+  }
+  @media (max-width: 390px) {
+    font-size: 13px;
   }
   h4 {
   }
@@ -136,6 +150,9 @@ export const IntroLi = styled.div`
     @media (max-width: 500px) {
       font-size: 30px;
     }
+    @media (max-width: 390px) {
+      font-size: 25px;
+    }
   }
   div {
     font-size: 20px;
@@ -146,6 +163,10 @@ export const IntroLi = styled.div`
     }
     @media (max-width: 500px) {
       font-size: 15px;
+    }
+    @media (max-width: 390px) {
+      width: 80vw;
+      font-size: 13px;
     }
   }
 `;

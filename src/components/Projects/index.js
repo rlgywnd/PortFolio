@@ -350,14 +350,14 @@ const Projects = () => {
                 <h1>서비스 소개</h1>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  전기차 충전의 고충을 덜어드리는 전기차 보조배터리 대여
+                  전기차 충전 고충을 덜어드리는 전기차 보조배터리 대여
                   서비스입니다.
                 </div>
                 <h1>작업 내용</h1>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
                   회원가입 - 유효성 & 중복검사를 통한 일반 & 관리자 회원가입
-                  기능 구현
+                  기능
                 </div>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
@@ -366,11 +366,10 @@ const Projects = () => {
                 <div>
                   <RxCheck size='30' color='#3cb371' />
                   로그인 - Window저장객체에 따른 로그인유지 & 관리자로그인 기능
-                  구현
                 </div>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  마이페이지 - 내정보수정 & 나의 대여정보 확인 기능 구현
+                  마이페이지 - 내정보수정 & 나의 대여정보 확인 기능
                 </div>
               </S.IntroDiv>
             </S.IntroDateDiv>
