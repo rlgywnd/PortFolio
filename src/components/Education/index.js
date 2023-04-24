@@ -35,16 +35,6 @@ const Education = () => {
             </div>
           </S.IntroDiv>
         </S.CodeStatesDiv>
-        <S.SchoolDiv id='school'>
-          <S.EduDate>2012.03 - 자퇴</S.EduDate>
-          <S.IntroDiv>
-            <h1>광운대학교</h1>
-            <div>
-              <RxCheck size='30' color='#3cb371' />
-              광운대학교[컴퓨터공학과]에 입학 & 다른 목표로 인해 바로 자퇴.
-            </div>
-          </S.IntroDiv>
-        </S.SchoolDiv>
       </S.EduDiv>
     </S.EduContainer>
   );

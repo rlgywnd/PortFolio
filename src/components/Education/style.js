@@ -85,4 +85,3 @@ export const IntroDiv = styled.div`
     }
   }
 `;
-export const SchoolDiv = styled.div``;
