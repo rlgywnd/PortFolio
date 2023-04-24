@@ -35,6 +35,8 @@ const Projects = () => {
   const padakGitUrl = 'https://github.com/codestates-seb/seb40_pre_003';
   const padakDemoUrl = 'https://www.youtube.com/watch?v=T6uEMcfgvec';
   const portGitUrl = 'https://github.com/rlgywnd/PortFolio';
+  const portBlogUrl =
+    'https://velog.io/@hyo123/Deploy-AWS-S3-%EC%A0%95%EC%A0%81-%EC%9B%B9-%ED%98%B8%EC%8A%A4%ED%8C%85';
   // 버튼 열고닫기 state
   const [uyouMain, setUyouMain] = useState(false);
   const [uyouSign, setUyouSign] = useState(false);
@@ -63,6 +65,23 @@ const Projects = () => {
                   <RxCheck size='30' color='#3cb371' />
                   김효중의 포트폴리오입니다.
                 </div>
+                <h1>작업 내용</h1>
+                <div>
+                  <RxCheck size='30' color='#3cb371' />
+                  SideBar & HeaderBar 구현
+                </div>
+                <div>
+                  <RxCheck size='30' color='#3cb371' />
+                  React-Scroll 사용하여 스크롤 이벤트 구현
+                </div>
+                <div>
+                  <RxCheck size='30' color='#3cb371' />
+                  UI/UX 반응형 & 애니메이션 구현
+                </div>
+                <div>
+                  <RxCheck size='30' color='#3cb371' />
+                  AWS S3 정적 웹 호스팅
+                </div>
               </S.IntroDiv>
             </S.IntroDateDiv>
           </S.IntroAndWorkDetail>
@@ -70,8 +89,8 @@ const Projects = () => {
             <AiOutlineLink size='30' />
             관련링크
           </S.LinkTitleDiv>
-          <S.PadakLinkContainer>
-            <S.PadakLinkTextDiv>
+          <S.PortLinkContainer>
+            <S.PortLinkTextDiv>
               <RxCheck size='30' color='#3cb371' />
               <div>
                 <span
@@ -82,8 +101,20 @@ const Projects = () => {
                   <h2>깃헙 Repository</h2>
                 </span>
               </div>
-            </S.PadakLinkTextDiv>
-          </S.PadakLinkContainer>
+            </S.PortLinkTextDiv>
+            <S.PortLinkTextDiv>
+              <RxCheck size='30' color='#3cb371' />
+              <div>
+                <span
+                  onClick={() => {
+                    window.open(portBlogUrl);
+                  }}
+                >
+                  <h1>AWS S3 정적 웹 호스팅 블로그 포스팅</h1>
+                </span>
+              </div>
+            </S.PortLinkTextDiv>
+          </S.PortLinkContainer>
         </S.PortFolioDiv>
         <S.UyouBooDanDiv id='pj_uyou'>
           <S.MarginDiv></S.MarginDiv>
@@ -154,7 +185,6 @@ const Projects = () => {
                   setUyouSign(!uyouSign);
                 }}
               >
-                {console.log('uyouSign : ', uyouSign)}
                 <S.VideoText>회원가입화면</S.VideoText>
                 <S.VideoUyouSignBtnDiv uyousign={uyouSign}>
                   <MdOutlineKeyboardArrowDown size='25' color='#667085' />
@@ -403,7 +433,6 @@ const Projects = () => {
                   setBobeSign(!bobeSign);
                 }}
               >
-                {/* {console.log('uyouSign : ', uyouSign)} */}
                 <S.VideoText>회원가입화면</S.VideoText>
                 <S.VideoBobeSignBtnDiv bobesign={bobeSign}>
                   <MdOutlineKeyboardArrowDown size='25' color='#667085' />

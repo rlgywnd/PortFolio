@@ -38,9 +38,7 @@ export const RightDiv = styled.div`
 `;
 export const Hamburger = styled.section`
   margin-top: ${(props) => (props.hamprop ? '190px' : '30px')};
-  /* margin-left: ${(props) => (props.hamprop ? '105px' : '0')}; */
   top: 0;
-  /* opacity: 0.8; */
   div {
     display: flex;
     justify-content: flex-end;

@@ -435,23 +435,6 @@ export const SkillsTextDiv = styled.div`
   }
 `;
 
-// export const SkillsDetailDiv = styled.div`
-//   display: flex;
-//   align-items: center;
-//   /* border: 1px solid blue; */
-//   font-size: 14px;
-//   font-family: 'NEXON Lv2 Gothic' !important;
-//   padding: 0 0 0 18px;
-//   margin-bottom: 15px;
-//   width: 900px;
-//   @media (max-width: 1100px) {
-//     font-size: 12px;
-//   }
-//   @media (max-width: 500px) {
-//     font-size: 10px;
-//   }
-// `;
-
 // 관련링크 Title div
 export const LinkTitleDiv = styled.div`
   display: flex;
@@ -464,15 +447,12 @@ export const LinkTitleDiv = styled.div`
 `;
 // 관련링크 최상위 컨테이너
 export const UyouLinkContainer = styled.div`
-  /* display: flex; */
-  /* flex-direction: column; */
   display: grid;
   grid-template-columns: 700px;
   grid-template-rows: 40px 40px 40px;
   margin-bottom: 20px;
   font-size: 20px;
   font-family: 'NEXON Lv2 Gothic' !important;
-  /* border: 1px solid yellow; */
 `;
 export const BobeLinkContainer = styled.div`
   display: grid;
@@ -486,6 +466,14 @@ export const PadakLinkContainer = styled.div`
   display: grid;
   grid-template-columns: 700px;
   grid-template-rows: 40px 40px 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'NEXON Lv2 Gothic' !important;
+`;
+export const PortLinkContainer = styled.div`
+  display: grid;
+  grid-template-columns: 700px;
+  grid-template-rows: 40px 40px;
   margin-bottom: 20px;
   font-size: 20px;
   font-family: 'NEXON Lv2 Gothic' !important;
@@ -528,7 +516,6 @@ export const UyouLinkTextDiv = styled.div`
       transition: 0.3s ease-out;
     }
     h1 {
-      /* display: block; */
       box-sizing: border-box;
       width: 156px;
       @media (max-width: 1100px) {
@@ -776,6 +763,18 @@ export const PortLinkTextDiv = styled.div`
     }
     :not(:hover) {
       transition: 0.3s ease-out;
+    }
+    h1 {
+      width: 290px;
+      @media (max-width: 1100px) {
+        width: 258px;
+      }
+      @media (max-width: 500px) {
+        width: 203px;
+      }
+      @media (max-width: 390px) {
+        width: 201px;
+      }
     }
     h2 {
       width: 133px;

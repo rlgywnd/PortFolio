@@ -38,7 +38,6 @@ const Header = () => {
             STUDIES
           </Link>
         </div>
-        {console.log('hamburger : ', hamburger)}
         {hamburger ? (
           <S.Hamburger hamprop={hamburger}>
             <div

@@ -6,8 +6,6 @@ import SideBar from './SideBar';
 import About from 'components/About';
 
 const Layout = ({ children }) => {
-  console.log('children : ', children);
-
   return (
     <S.LayoutContainer id='top'>
       <Header />

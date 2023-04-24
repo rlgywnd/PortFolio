@@ -3,7 +3,6 @@ import { Link } from 'react-scroll';
 import { TfiArrowUp } from 'react-icons/tfi';
 
 const SideBar = ({ children }) => {
-  console.log('Sidebar children : ', children);
   return (
     <S.SideBarReal>
       <S.SideBarContainer>
