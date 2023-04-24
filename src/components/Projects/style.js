@@ -97,6 +97,7 @@ export const IntroDiv = styled.div`
     display: flex;
     align-items: center;
     /* margin-bottom: 5px; */
+    margin-top: 15px;
     gap: 3px;
     font-size: 20px;
     font-family: 'NEXON Lv2 Gothic' !important;

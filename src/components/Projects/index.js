@@ -63,7 +63,7 @@ const Projects = () => {
                 <h1>서비스 소개</h1>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  김효중의 포트폴리오입니다.
+                  김효중의 개인 포트폴리오
                 </div>
                 <h1>작업 내용</h1>
                 <div>
@@ -127,22 +127,24 @@ const Projects = () => {
                 <h1>서비스 소개</h1>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  현대인들의 결정장애를 해결하기 위한 공개적인 투표
-                  서비스입니다.
+                  현대인들의 결정장애를 해결하기 위한 공개투표 서비스
+                </div>
+                <div>
+                  <RxCheck size='30' color='#3cb371' />
+                  프론트 3명 & 백엔드 3명 & 웹디자이너 1명 협업
                 </div>
                 <h1>작업 내용</h1>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  레이아웃 - 컴포넌트에 공통으로 적용될 레이아웃 틀 구현
+                  레이아웃 - 컴포넌트에 공통으로 적용될 레이아웃 틀
                 </div>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  회원가입 - 유효성 & 중복검사를 통한 회원가입 기능 구현
+                  회원가입 - 유효성 & 중복검사를 통한 회원가입 기능
                 </div>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  로그인 - 일반로그인시 Window저장객체에 따른 로그인유지 기능
-                  구현
+                  로그인 - Window저장객체에 따른 로그인유지 기능
                 </div>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
@@ -150,8 +152,7 @@ const Projects = () => {
                 </div>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  마이페이지 - 내정보수정 & 나의 [투표, 댓글, 게시글] 보기 기능
-                  구현
+                  마이페이지 - 내정보수정 & 나의 게시글 보기 기능
                 </div>
               </S.IntroDiv>
             </S.IntroDateDiv>
@@ -380,22 +381,24 @@ const Projects = () => {
                 <h1>서비스 소개</h1>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  전기차 충전 고충을 덜어드리는 전기차 보조배터리 대여
-                  서비스입니다.
+                  전기차 충전 고충에 덜어드리는 전기차 보조배터리 대여 서비스
+                </div>
+                <div>
+                  <RxCheck size='30' color='#3cb371' />
+                  프론트 4명 & 백엔드 3명 협업
                 </div>
                 <h1>작업 내용</h1>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  회원가입 - 유효성 & 중복검사를 통한 일반 & 관리자 회원가입
-                  기능
+                  회원가입 - 유효성 & 중복검사를 통한 회원가입 기능
                 </div>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  주소찾기 - 회원가입 & 내정보수정에서 주소를 찾고 등록 기능
+                  주소찾기 - 회원가입 & 내정보수정에서 주소를 찾기 기능
                 </div>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  로그인 - Window저장객체에 따른 로그인유지 & 관리자로그인 기능
+                  로그인 - Window저장객체에 따른 로그인유지 기능
                 </div>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
@@ -649,12 +652,16 @@ const Projects = () => {
                 <h1>서비스 소개</h1>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  Stack OverFlow 클론 코딩한 서비스입니다.
+                  Stack OverFlow 클론 코딩한 웹 서비스
+                </div>
+                <div>
+                  <RxCheck size='30' color='#3cb371' />
+                  프론트 3명 & 백엔드 2명 협업
                 </div>
                 <h1>작업 내용</h1>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  메인페이지 - 카테고리 별 글 리스트들이 보이게 구현
+                  메인페이지 - 카테고리 별 게시글 리스트들이 보이게 구현
                 </div>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
