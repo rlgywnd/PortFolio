@@ -10,7 +10,7 @@ const SideBar = ({ children }) => {
           <ul>
             <h4>ABOUT ME</h4>
             <li>
-              <Link to='profile' spy={true} smooth={true}>
+              <Link to='about_me' spy={true} smooth={true}>
                 PROFILE
               </Link>
             </li>
