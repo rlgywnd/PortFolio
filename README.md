@@ -1,4 +1,4 @@
-<div align='center'>
+<!-- <div align='center'> -->
 
 # 📝 김효중 포트폴리오
 
