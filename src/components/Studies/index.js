@@ -15,11 +15,15 @@ const Studies = () => {
             <h1>프론트엔드 프로그래밍 독학</h1>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              Javascript언어 기반 기초지식 학습 & 블로그 포스팅
+              Javascript언어 기반 기초지식 학습
             </div>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              React 프레임워크 학습 & 블로그 포스팅
+              React 프레임워크 학습
+            </div>
+            <div>
+              <RxCheck size='30' color='#3cb371' />
+              블로그 포스팅
             </div>
           </S.IntroDiv>
         </S.SelfStudyDiv>
@@ -30,7 +34,7 @@ const Studies = () => {
             <h1>검찰공무원 9급 준비</h1>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              9급 검찰을 목표로 법검단기 수강하며 공부
+              인강 법검단기 9급 검찰직 수강
             </div>
           </S.IntroDiv>
         </S.PoliceDiv>

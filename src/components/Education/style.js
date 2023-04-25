@@ -61,7 +61,7 @@ export const IntroDiv = styled.div`
   h1 {
     display: flex;
     align-items: center;
-    /* margin-bottom: 5px; */
+    margin-top: 5px;
     gap: 3px;
     font-size: 20px;
     font-family: 'NEXON Lv2 Gothic' !important;
@@ -95,5 +95,99 @@ export const IntroDiv = styled.div`
     @media (max-width: 390px) {
       font-size: 11px;
     }
+  }
+`;
+// ---------
+export const RatingTitleH1 = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  gap: 3px;
+  font-size: 20px;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  font-weight: bold;
+  @media (max-width: 1100px) {
+    font-size: 18px;
+  }
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
+  @media (max-width: 390px) {
+    font-size: 15px;
+  }
+`;
+
+export const RatingContainer = styled.div`
+  font-family: 'NEXON Lv2 Gothic' !important;
+  width: 80%;
+
+  position: relative;
+  @media (max-width: 500px) {
+    width: 80vw;
+  }
+`;
+export const RatingTextAndBtn = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 45px;
+  padding: 0 15px 0 15px;
+  cursor: pointer;
+  border-radius: 5px;
+`;
+// Skill 이름 Div
+export const RatingTextDiv = styled.div`
+  font-size: 14px;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+`;
+
+export const RatingBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.rating ? 'rotate(180deg)' : '')};
+`;
+export const RatingImgContainer = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.rating ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.rating ? 'auto' : 'none')};
+
+  h1 {
+    margin-bottom: 10px;
+    font-family: 'NEXON Lv2 Gothic' !important;
+    font-size: 12px;
+  }
+`;
+
+export const RatingImgDiv = styled.div`
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.rating ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.rating ? '30px' : '0px')};
+  background-color: white;
+  img {
+    padding: 10px;
+    object-fit: contain;
+    width: 2000px;
+    height: 400px;
   }
 `;

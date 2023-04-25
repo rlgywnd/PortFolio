@@ -173,7 +173,7 @@ const Projects = () => {
                 </div>
                 <div>
                   <RxCheck size='30' color='#3cb371' />
-                  로그인 - 소셜로그인 기능 구현 (카카오 & 구글)
+                  로그인 - OAuth방식 소셜로그인 기능 구현 (카카오 & 구글)
                 </div>
                 <div>
                   <RxCheck size='30' color='#3cb371' />

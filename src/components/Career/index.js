@@ -15,15 +15,19 @@ const Career = () => {
             <h1>나레이터모델</h1>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              행사 관련 나레이터모델 근무 경험
+              행사 / 판촉 나레이터모델 근무
             </div>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              Galaxy S8 행사 in 평택AK플라자
+              Galaxy S8 in 평택AK플라자 Galaxy S8 홍보
             </div>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              L'Occitane in 숙명여대
+              L'Occitane in 숙명여대 화장품 홍보
+            </div>
+            <div>
+              <RxCheck size='30' color='#3cb371' />
+              상대방을 편안하게 만드는 커뮤니케이션을 할 수 있었습니다.
             </div>
           </S.IntroDiv>
         </S.NaratorDiv>
@@ -34,7 +38,7 @@ const Career = () => {
             <h1>피팅모델</h1>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              M.Holiday 의류 피팅모델 근무 경험
+              M.Holiday 의류 피팅모델 근무
             </div>
           </S.IntroDiv>
         </S.FittingDiv>
