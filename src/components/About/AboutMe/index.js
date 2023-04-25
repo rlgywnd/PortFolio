@@ -65,7 +65,7 @@ const AboutMe = () => {
           </S.ProfileLi>
         </S.ProfileUl>
       </S.AboutMeProfileDiv>
-      <div id='intro' style={{ paddingTop: '30px' }}>
+      <S.IntroDiv id='intro'>
         <S.IntroUl>
           <S.IntroLi>
             <h1>INTRO.</h1>
@@ -102,7 +102,7 @@ const AboutMe = () => {
             </div>
           </S.IntroLi>
         </S.IntroUl>
-      </div>
+      </S.IntroDiv>
     </S.AboutMeContainer>
   );
 };

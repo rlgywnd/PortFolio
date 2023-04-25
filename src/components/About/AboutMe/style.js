@@ -126,6 +126,9 @@ export const ProfileLi = styled.li`
     }
   }
 `;
+export const IntroDiv = styled.div`
+  padding-top: 30px;
+`;
 export const IntroUl = styled.div`
   margin-top: 50px;
   font-size: 20px;
