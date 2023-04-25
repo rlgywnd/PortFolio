@@ -18,14 +18,13 @@ npm install
 
 ```
 npm run start
-
 ```
 
 <br /><br /><br />
 
 ---
 
-# 개인 프로젝트
+## 개인 프로젝트
 
 |                                   김효중                                   |
 | :------------------------------------------------------------------------: |
@@ -36,7 +35,7 @@ npm run start
 
 ---
 
-# 🔎 Skills
+## 🔎 Skills
 
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/styled_components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white">
 

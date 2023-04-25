@@ -18,6 +18,7 @@ import bobemypage from '../../assets/bobemypage.mp4';
 import { useState } from 'react';
 
 const Projects = () => {
+  // url 링크
   const uyouDeployUrl =
     'http://uyouboodan-bucket-deploy.s3-website.ap-northeast-2.amazonaws.com/';
   const uyouGitUrl = 'https://github.com/Team-Big-Dipper/UYouBooDan/tree/fe';
@@ -37,7 +38,7 @@ const Projects = () => {
   const portGitUrl = 'https://github.com/rlgywnd/PortFolio';
   const portBlogUrl =
     'https://velog.io/@hyo123/Deploy-AWS-S3-%EC%A0%95%EC%A0%81-%EC%9B%B9-%ED%98%B8%EC%8A%A4%ED%8C%85';
-  // 버튼 열고닫기 state
+  // 구현모습쪽 버튼 열고닫기 state
   const [uyouMain, setUyouMain] = useState(false);
   const [uyouSign, setUyouSign] = useState(false);
   const [uyouLogin, setUyouLogin] = useState(false);
@@ -46,6 +47,30 @@ const Projects = () => {
   const [bobeSign, setBobeSign] = useState(false);
   const [bobeLogin, setBobeLogin] = useState(false);
   const [bobeMyPage, setBobeMyPage] = useState(false);
+
+  // 스킬셋쪽 버튼 열고닫기 state
+  const [uyouReact, setUyouReact] = useState(false);
+  const [uyouType, setUyouType] = useState(false);
+  const [uyouNext, setUyouNext] = useState(false);
+  const [uyouToolkit, setUyouToolkit] = useState(false);
+  const [uyouMsw, setUyouMsw] = useState(false);
+  const [uyouStyled, setUyouStyled] = useState(false);
+  const [uyouHook, setUyouHook] = useState(false);
+  const [uyouAxios, setUyouAxios] = useState(false);
+
+  const [bobeReact, setBobeReact] = useState(false);
+  const [bobeVite, setBobeVite] = useState(false);
+  const [bobeDaum, setBobeDaum] = useState(false);
+  const [bobeRecoil, setBobeRecoil] = useState(false);
+  const [bobeMsw, setBobeMsw] = useState(false);
+  const [bobeStyled, setBobeStyled] = useState(false);
+  const [bobeHook, setBobeHook] = useState(false);
+  const [bobeAxios, setBobeAxios] = useState(false);
+
+  const [padakReact, setPadakReact] = useState(false);
+  const [padakRedux, setPadakRedux] = useState(false);
+  const [padakStyled, setPadakStyled] = useState(false);
+  const [padakAxios, setPadakAxios] = useState(false);
 
   return (
     <S.ProjectsContainer id='projects'>
@@ -245,83 +270,156 @@ const Projects = () => {
             사용기술
           </S.SkillsTitleDiv>
           <S.SkillsContainer>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                React
-              </S.SkillsTextDiv>
-              React는 Component를 이용하여 재사용이 가능하고, 유지보수의
-              용이함이있습니다.
-              <br /> 많은 커뮤니티가 있어, 자료가 굉장히 방대합니다.
-            </S.SkillsTextAndDetailDiv>
+            <S.SkillsTextAndBtn
+              uyoureact={uyouReact}
+              onClick={() => {
+                setUyouReact(!uyouReact);
+              }}
+            >
+              <S.SkillName>React</S.SkillName>
+              <S.UyouReactBtnDiv uyoureact={uyouReact}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.UyouReactBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.UyouReactTextDiv uyoureact={uyouReact}>
+              <S.UyouReact>
+                React는 Component를 이용하여 재사용이 가능하고, 유지보수의
+                용이함이있습니다. 많은 커뮤니티가 있어, 자료가 굉장히 방대하여
+                문제해결하기 좋습니다.
+              </S.UyouReact>
+            </S.UyouReactTextDiv>
 
             {/*  */}
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                TypeScript
-              </S.SkillsTextDiv>
-              TypeScript는 코드에 목적을 명시하고 목적에 맞지 않는 타입의 변수나
-              함수들에서 에러를 발생시켜 버그를 사전에 제거합니다.
-            </S.SkillsTextAndDetailDiv>
+            <S.SkillsTextAndBtn
+              uyoutype={uyouType}
+              onClick={() => {
+                setUyouType(!uyouType);
+              }}
+            >
+              <S.SkillName>TypeScript</S.SkillName>
+              <S.UyouTypeBtnDiv uyoutype={uyouType}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.UyouTypeBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.UyouTypeTextDiv uyoutype={uyouType}>
+              <S.UyouType>
+                TypeScript는 코드에 목적을 명시하고 목적에 맞지 않는 타입의
+                변수나 함수들에서 에러를 발생시켜 버그를 사전에 제거합니다.
+              </S.UyouType>
+            </S.UyouTypeTextDiv>
             {/*  */}
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                Next.JS
-              </S.SkillsTextDiv>
-              Next.JS는 React에서 Rendering을 쉽게 할 수 있게 해주는
-              프레임워크입니다.
-              <br />
-              서버사이드렌더링(SSR) 방식이라 몇가지 에러가 많았지만, SSR만의
-              장점이 많은 프레임워크입니다.
-            </S.SkillsTextAndDetailDiv>
+            <S.SkillsTextAndBtn
+              uyounext={uyouNext}
+              onClick={() => {
+                setUyouNext(!uyouNext);
+              }}
+            >
+              <S.SkillName>Next.JS</S.SkillName>
+              <S.UyouNextBtnDiv uyounext={uyouNext}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.UyouNextBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.UyouNextTextDiv uyounext={uyouNext}>
+              <S.UyouNext>
+                Next.JS는 React에서 Rendering을 쉽게 할 수 있게 해주는
+                프레임워크입니다.
+              </S.UyouNext>
+            </S.UyouNextTextDiv>
             {/*  */}
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                Redux-Toolkit
-              </S.SkillsTextDiv>
-              Redux는 전역에서 상태를 관리하게 해주는 라이브러리입니다.
-              <br /> Redux-Toolkit은 Redux의 단점들을 보완해주며 Redux보다 더욱
-              간단하게 쓸 수 있게 해줍니다.
-            </S.SkillsTextAndDetailDiv>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                MSW
-              </S.SkillsTextDiv>
-              MSW(Mock Service Worker)는 Mock서버를 구현하지않고도,
-              <br /> 네트워크 수준에서 API를 Mocking 할 수 있습니다. <br />
-              백엔드에서 API가 나오기전에 프론트에서 먼저 HTTP통신을 해 볼 수
-              있었습니다.
-            </S.SkillsTextAndDetailDiv>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                Styled-Components
-              </S.SkillsTextDiv>
-              Styled-Components는 CSS 파일을 밖에 두지 않고, 컴포넌트 내부에
-              넣기 때문에,
-              <br /> CSS가 전역으로 중첩되지 않도록 만들어주는 장점이 있습니다.
-            </S.SkillsTextAndDetailDiv>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                React-Hook-Form
-              </S.SkillsTextDiv>
-              React-hook-form은 회원가입, 로그인 페이지에서 입력창과
-              유효성검사를 더욱 간편하게 만들어주는 라이브러리입니다.
-            </S.SkillsTextAndDetailDiv>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                Axios
-              </S.SkillsTextDiv>
-              Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP 통신
-              라이브러리 입니다. fetch를 사용하는 것 보다 코드를 간결하게 쓸 수
-              있어서 좋았습니다.
-            </S.SkillsTextAndDetailDiv>
+            <S.SkillsTextAndBtn
+              uyoutoolkit={uyouToolkit}
+              onClick={() => {
+                setUyouToolkit(!uyouToolkit);
+              }}
+            >
+              <S.SkillName>Redux Toolkit</S.SkillName>
+              <S.UyouToolkitBtnDiv uyoutoolkit={uyouToolkit}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.UyouToolkitBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.UyouToolkitTextDiv uyoutoolkit={uyouToolkit}>
+              <S.UyouToolkit>
+                Redux는 전역에서 상태를 관리하게 해주는 라이브러리입니다.
+                Redux-Toolkit은 Redux의 단점들을 보완해주며 Redux보다 더욱
+                간단하게 쓸 수 있게 해줍니다.
+              </S.UyouToolkit>
+            </S.UyouToolkitTextDiv>
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              uyoumsw={uyouMsw}
+              onClick={() => {
+                setUyouMsw(!uyouMsw);
+              }}
+            >
+              <S.SkillName>MSW</S.SkillName>
+              <S.UyouMswBtnDiv uyoumsw={uyouMsw}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.UyouMswBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.UyouMswTextDiv uyoumsw={uyouMsw}>
+              <S.UyouMsw>
+                MSW(Mock Service Worker)는 Mock서버를 구현하지않고도, 네트워크
+                수준에서 API를 Mocking 할 수 있습니다. 백엔드에서 API가
+                나오기전에 프론트에서 먼저 HTTP통신을 해 볼 수 있었습니다.
+              </S.UyouMsw>
+            </S.UyouMswTextDiv>
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              uyoustyled={uyouStyled}
+              onClick={() => {
+                setUyouStyled(!uyouStyled);
+              }}
+            >
+              <S.SkillName>Styled Components</S.SkillName>
+              <S.UyouStyledBtnDiv uyoustyled={uyouStyled}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.UyouStyledBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.UyouStyledTextDiv uyoustyled={uyouStyled}>
+              <S.UyouStyled>
+                Styled-Components는 CSS 파일을 밖에 두지 않고, 컴포넌트 내부에
+                넣기 때문에, CSS가 전역으로 중첩되지 않도록 만들어주는 장점이
+                있습니다.
+              </S.UyouStyled>
+            </S.UyouStyledTextDiv>
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              uyouhook={uyouHook}
+              onClick={() => {
+                setUyouHook(!uyouHook);
+              }}
+            >
+              <S.SkillName>React Hook Form</S.SkillName>
+              <S.UyouHookBtnDiv uyouhook={uyouHook}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.UyouHookBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.UyouHookTextDiv uyouhook={uyouHook}>
+              <S.UyouHook>
+                React Hook Form은 회원가입, 로그인 페이지에서 입력창과
+                유효성검사를 더욱 간편하게 만들어주는 라이브러리입니다.
+              </S.UyouHook>
+            </S.UyouHookTextDiv>
+
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              uyouaxios={uyouAxios}
+              onClick={() => {
+                setUyouAxios(!uyouAxios);
+              }}
+            >
+              <S.SkillName>Axios</S.SkillName>
+              <S.UyouAxiosBtnDiv uyouaxios={uyouAxios}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.UyouAxiosBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.UyouAxiosTextDiv uyouaxios={uyouAxios}>
+              <S.UyouAxios>
+                Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP
+                통신 라이브러리 입니다. fetch를 사용하는 것 보다 코드를 간결하게
+                쓸 수 있어서 좋았습니다.
+              </S.UyouAxios>
+            </S.UyouAxiosTextDiv>
           </S.SkillsContainer>
           <S.LinkTitleDiv>
             <AiOutlineLink size='30' />
@@ -494,84 +592,154 @@ const Projects = () => {
             사용기술
           </S.SkillsTitleDiv>
           <S.SkillsContainer>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                React
-              </S.SkillsTextDiv>
-              React는 Component를 이용하여 재사용이 가능하고, 유지보수의
-              용이함이있습니다.
-              <br /> 많은 커뮤니티가 있어, 자료가 굉장히 방대합니다.
-            </S.SkillsTextAndDetailDiv>
+            <S.SkillsTextAndBtn
+              bobereact={bobeReact}
+              onClick={() => {
+                setBobeReact(!bobeReact);
+              }}
+            >
+              <S.SkillName>React</S.SkillName>
+              <S.BobeReactBtnDiv bobereact={bobeReact}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.BobeReactBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.BobeReactTextDiv bobereact={bobeReact}>
+              <S.BobeReact>
+                React는 Component를 이용하여 재사용이 가능하고, 유지보수의
+                용이함이있습니다. 많은 커뮤니티가 있어, 자료가 굉장히 방대하여
+                문제해결하기 좋습니다.
+              </S.BobeReact>
+            </S.BobeReactTextDiv>
             {/*  */}
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                Vite
-              </S.SkillsTextDiv>
-              Vite는 Esbuild를 기반으로 만들어진 빌드툴 입니다.
-              <br />
-              CRA는 Javascript로 구성된 Webpack을 사용하는데 속도가 느립니다.
-              <br /> Vite는 위와같은 단점을 해결해줍니다.
-            </S.SkillsTextAndDetailDiv>
+            <S.SkillsTextAndBtn
+              bobevite={bobeVite}
+              onClick={() => {
+                setBobeVite(!bobeVite);
+              }}
+            >
+              <S.SkillName>Vite</S.SkillName>
+              <S.BobeViteBtnDiv bobevite={bobeVite}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.BobeViteBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.BobeViteTextDiv bobevite={bobeVite}>
+              <S.BobeVite>
+                CRA는 Javascript로 구성된 Webpack을 사용하는데 속도가 느립니다.
+                Vite는 위와같은 단점을 해결해줍니다.
+              </S.BobeVite>
+            </S.BobeViteTextDiv>
             {/* {} */}
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                Daum-PostCode
-              </S.SkillsTextDiv>
-              Daum-PostCode는 주소 찾기를 도와주는 라이브러리입니다.
-              <br />
-              npm으로 react전용 Daum-PostCode를 설치하여 사용할 수 있습니다.
-            </S.SkillsTextAndDetailDiv>
+            <S.SkillsTextAndBtn
+              bobedaum={bobeDaum}
+              onClick={() => {
+                setBobeDaum(!bobeDaum);
+              }}
+            >
+              <S.SkillName>Daum PostCode</S.SkillName>
+              <S.BobeDaumBtnDiv bobedaum={bobeDaum}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.BobeDaumBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.BobeDaumTextDiv bobedaum={bobeDaum}>
+              <S.BobeDaum>
+                Daum PostCode는 주소 찾기를 도와주는 라이브러리입니다. npm으로
+                react전용 Daum PostCode를 설치하여 사용할 수 있습니다.
+              </S.BobeDaum>
+            </S.BobeDaumTextDiv>
             {/*  */}
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                Recoil
-              </S.SkillsTextDiv>
-              Recoil은 전역 상태를 관리하기 위해 사용하는 라이브러리입니다.
-              <br />
-              Redux의 번거로운 초기세팅을 하지 않고 훨씬 쉽게 세팅하고
-              <br />
-              사용할 수 있어서 사용하기 쉬운 전역상태관리 라이브러리였습니다.
-            </S.SkillsTextAndDetailDiv>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                MSW
-              </S.SkillsTextDiv>
-              MSW(Mock Service Worker)는 Mock서버를 구현하지않고도,
-              <br /> 네트워크 수준에서 API를 Mocking 할 수 있습니다. <br />
-              백엔드에서 API가 나오기전에 프론트에서 먼저 HTTP통신을 해 볼 수
-              있었습니다.
-            </S.SkillsTextAndDetailDiv>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                Styled-Components
-              </S.SkillsTextDiv>
-              Styled-Components는 CSS 파일을 밖에 두지 않고, 컴포넌트 내부에
-              넣기 때문에,
-              <br /> CSS가 전역으로 중첩되지 않도록 만들어주는 장점이 있습니다.
-            </S.SkillsTextAndDetailDiv>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                React-Hook-Form
-              </S.SkillsTextDiv>
-              React-hook-form은 회원가입, 로그인 페이지에서 입력창과
-              유효성검사를 더욱 간편하게 만들어주는 라이브러리입니다.
-            </S.SkillsTextAndDetailDiv>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                Axios
-              </S.SkillsTextDiv>
-              Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP 통신
-              라이브러리 입니다. fetch를 사용하는 것 보다 코드를 간결하게 쓸 수
-              있어서 좋았습니다.
-            </S.SkillsTextAndDetailDiv>
+            <S.SkillsTextAndBtn
+              boberecoil={bobeRecoil}
+              onClick={() => {
+                setBobeRecoil(!bobeRecoil);
+              }}
+            >
+              <S.SkillName>Recoil</S.SkillName>
+              <S.BobeRecoilBtnDiv boberecoil={bobeRecoil}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.BobeRecoilBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.BobeRecoilTextDiv boberecoil={bobeRecoil}>
+              <S.BobeRecoil>
+                Recoil은 전역 상태를 관리하기 위해 사용하는 라이브러리입니다.
+                Redux의 번거로운 초기세팅을 하지 않고 훨씬 쉽게 세팅하고 사용할
+                수 있어서 사용하기 쉬운 전역상태관리 라이브러리였습니다.
+              </S.BobeRecoil>
+            </S.BobeRecoilTextDiv>
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              bobemsw={bobeMsw}
+              onClick={() => {
+                setBobeMsw(!bobeMsw);
+              }}
+            >
+              <S.SkillName>MSW</S.SkillName>
+              <S.BobeMswBtnDiv bobemsw={bobeMsw}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.BobeMswBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.BobeMswTextDiv bobemsw={bobeMsw}>
+              <S.BobeMsw>
+                MSW(Mock Service Worker)는 Mock서버를 구현하지않고도, 네트워크
+                수준에서 API를 Mocking 할 수 있습니다. 백엔드에서 API가
+                나오기전에 프론트에서 먼저 HTTP통신을 해 볼 수 있었습니다.
+              </S.BobeMsw>
+            </S.BobeMswTextDiv>
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              bobestyled={bobeStyled}
+              onClick={() => {
+                setBobeStyled(!bobeStyled);
+              }}
+            >
+              <S.SkillName>Styled Components</S.SkillName>
+              <S.BobeStyledBtnDiv bobestyled={bobeStyled}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.BobeStyledBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.BobeStyledTextDiv bobestyled={bobeStyled}>
+              <S.BobeStyled>
+                Styled-Components는 CSS 파일을 밖에 두지 않고, 컴포넌트 내부에
+                넣기 때문에, CSS가 전역으로 중첩되지 않도록 만들어주는 장점이
+                있습니다.
+              </S.BobeStyled>
+            </S.BobeStyledTextDiv>
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              bobehook={bobeHook}
+              onClick={() => {
+                setBobeHook(!bobeHook);
+              }}
+            >
+              <S.SkillName>React Hook Form</S.SkillName>
+              <S.BobeHookBtnDiv bobehook={bobeHook}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.BobeHookBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.BobeHookTextDiv bobehook={bobeHook}>
+              <S.BobeHook>
+                React Hook Form은 회원가입, 로그인 페이지에서 입력창과
+                유효성검사를 더욱 간편하게 만들어주는 라이브러리입니다.
+              </S.BobeHook>
+            </S.BobeHookTextDiv>
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              bobeaxios={bobeAxios}
+              onClick={() => {
+                setBobeAxios(!bobeAxios);
+              }}
+            >
+              <S.SkillName>Axios</S.SkillName>
+              <S.BobeAxiosBtnDiv bobeaxios={bobeAxios}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.BobeAxiosBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.BobeAxiosTextDiv bobeaxios={bobeAxios}>
+              <S.BobeAxios>
+                Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP
+                통신 라이브러리 입니다. fetch를 사용하는 것 보다 코드를 간결하게
+                쓸 수 있어서 좋았습니다.
+              </S.BobeAxios>
+            </S.BobeAxiosTextDiv>
           </S.SkillsContainer>
           <S.LinkTitleDiv>
             <AiOutlineLink size='30' />
@@ -679,46 +847,82 @@ const Projects = () => {
             사용기술
           </S.SkillsTitleDiv>
           <S.SkillsContainer>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                React
-              </S.SkillsTextDiv>
-              React는 Component를 이용하여 재사용이 가능하고, 유지보수의
-              용이함이있습니다.
-              <br /> 많은 커뮤니티가 있어, 자료가 굉장히 방대합니다.
-            </S.SkillsTextAndDetailDiv>
+            <S.SkillsTextAndBtn
+              padakreact={padakReact}
+              onClick={() => {
+                setPadakReact(!padakReact);
+              }}
+            >
+              <S.SkillName>React</S.SkillName>
+              <S.PadakReactBtnDiv padakreact={padakReact}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.PadakReactBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.PadakReactTextDiv padakreact={padakReact}>
+              <S.PadakReact>
+                React는 Component를 이용하여 재사용이 가능하고, 유지보수의
+                용이함이있습니다. 많은 커뮤니티가 있어, 자료가 굉장히 방대하여
+                문제해결하기 좋습니다.
+              </S.PadakReact>
+            </S.PadakReactTextDiv>
             {/* {} */}
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                Redux
-              </S.SkillsTextDiv>
-              Redux는 전역에서 상태를 관리하게 해주는 라이브러리입니다.
-              <br />
-              Action - Dispatch - Reducer - Store 순서로 데이터를 단방향으로
-              <br />
-              전달하며 상태가 변경되면 React는 다시 렌더링을 시켜주는 다소
-              복잡한 방식입니다.
-            </S.SkillsTextAndDetailDiv>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                Styled-Components
-              </S.SkillsTextDiv>
-              Styled-Components는 CSS 파일을 밖에 두지 않고, 컴포넌트 내부에
-              넣기 때문에,
-              <br /> CSS가 전역으로 중첩되지 않도록 만들어주는 장점이 있습니다.
-            </S.SkillsTextAndDetailDiv>
-            <S.SkillsTextAndDetailDiv>
-              <S.SkillsTextDiv>
-                <RxCheck size='30' color='#3cb371' />
-                Axios
-              </S.SkillsTextDiv>
-              Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP 통신
-              라이브러리 입니다. fetch를 사용하는 것 보다 코드를 간결하게 쓸 수
-              있어서 좋았습니다.
-            </S.SkillsTextAndDetailDiv>
+            <S.SkillsTextAndBtn
+              padakredux={padakRedux}
+              onClick={() => {
+                setPadakRedux(!padakRedux);
+              }}
+            >
+              <S.SkillName>Redux</S.SkillName>
+              <S.PadakReduxBtnDiv padakredux={padakRedux}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.PadakReduxBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.PadakReduxTextDiv padakredux={padakRedux}>
+              <S.PadakRedux>
+                Redux는 전역에서 상태를 관리하게 해주는 라이브러리입니다. Action
+                - Dispatch - Reducer - Store 순서로 데이터를 단방향으로 전달하며
+                상태가 변경되면 React는 다시 렌더링을 시켜주는 다소 복잡한
+                방식입니다.
+              </S.PadakRedux>
+            </S.PadakReduxTextDiv>
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              padakstyled={padakStyled}
+              onClick={() => {
+                setPadakStyled(!padakStyled);
+              }}
+            >
+              <S.SkillName>Styled Components</S.SkillName>
+              <S.PadakStyledBtnDiv padakstyled={padakStyled}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.PadakStyledBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.PadakStyledTextDiv padakstyled={padakStyled}>
+              <S.PadakStyled>
+                Styled Components는 CSS 파일을 밖에 두지 않고, 컴포넌트 내부에
+                넣기 때문에, CSS가 전역으로 중첩되지 않도록 만들어주는 장점이
+                있습니다.
+              </S.PadakStyled>
+            </S.PadakStyledTextDiv>
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              padakaxios={padakAxios}
+              onClick={() => {
+                setPadakAxios(!padakAxios);
+              }}
+            >
+              <S.SkillName>Axios</S.SkillName>
+              <S.PadakAxiosBtnDiv padakaxios={padakAxios}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.PadakAxiosBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.PadakAxiosTextDiv padakaxios={padakAxios}>
+              <S.PadakAxios>
+                Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP
+                통신 라이브러리 입니다. fetch를 사용하는 것 보다 코드를 간결하게
+                쓸 수 있어서 좋았습니다.
+              </S.PadakAxios>
+            </S.PadakAxiosTextDiv>
           </S.SkillsContainer>
           <S.LinkTitleDiv>
             <AiOutlineLink size='30' />

@@ -374,6 +374,679 @@ export const BobeMyPageVideo = styled.video`
   background-color: white;
 `;
 
+// Skills setting중
+// Skills 이름 + 화살표버튼 담은 Div
+export const SkillsTextAndBtn = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 45px;
+  padding: 0 15px 0 15px;
+  cursor: pointer;
+  border-radius: 5px;
+`;
+// Skill 이름 Div
+export const SkillName = styled.div`
+  font-size: 14px;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+`;
+
+// --- Uyou React 화살표 버튼 Div--------------------
+export const UyouReactBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.uyoureact ? 'rotate(180deg)' : '')};
+`;
+export const UyouTypeBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.uyoutype ? 'rotate(180deg)' : '')};
+`;
+export const UyouNextBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.uyounext ? 'rotate(180deg)' : '')};
+`;
+export const UyouToolkitBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.uyoutoolkit ? 'rotate(180deg)' : '')};
+`;
+export const UyouMswBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.uyoumsw ? 'rotate(180deg)' : '')};
+`;
+export const UyouStyledBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.uyoustyled ? 'rotate(180deg)' : '')};
+`;
+export const UyouHookBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.uyouhook ? 'rotate(180deg)' : '')};
+`;
+export const UyouAxiosBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.uyouaxios ? 'rotate(180deg)' : '')};
+`;
+
+export const BobeReactBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.bobereact ? 'rotate(180deg)' : '')};
+`;
+export const BobeViteBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.bobevite ? 'rotate(180deg)' : '')};
+`;
+export const BobeDaumBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.bobedaum ? 'rotate(180deg)' : '')};
+`;
+export const BobeRecoilBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.boberecoil ? 'rotate(180deg)' : '')};
+`;
+export const BobeMswBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.bobemsw ? 'rotate(180deg)' : '')};
+`;
+export const BobeStyledBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.bobestyled ? 'rotate(180deg)' : '')};
+`;
+export const BobeHookBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.bobehook ? 'rotate(180deg)' : '')};
+`;
+export const BobeAxiosBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.bobeaxios ? 'rotate(180deg)' : '')};
+`;
+
+export const PadakReactBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.padakreact ? 'rotate(180deg)' : '')};
+`;
+export const PadakReduxBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.padakredux ? 'rotate(180deg)' : '')};
+`;
+export const PadakStyledBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.padakstyled ? 'rotate(180deg)' : '')};
+`;
+export const PadakAxiosBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.padakaxios ? 'rotate(180deg)' : '')};
+`;
+
+// -------- Uyou React TextDiv담을 Div -------------
+export const UyouReactTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.uyoureact ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.uyoureact ? 'auto' : 'none')};
+`;
+export const UyouTypeTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.uyoutype ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.uyoutype ? 'auto' : 'none')};
+`;
+export const UyouNextTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.uyounext ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.uyounext ? 'auto' : 'none')};
+`;
+export const UyouToolkitTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.uyoutoolkit ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.uyoutoolkit ? 'auto' : 'none')};
+`;
+export const UyouMswTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.uyoumsw ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.uyoumsw ? 'auto' : 'none')};
+`;
+export const UyouStyledTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.uyoustyled ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.uyoustyled ? 'auto' : 'none')};
+`;
+export const UyouHookTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.uyouhook ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.uyouhook ? 'auto' : 'none')};
+`;
+export const UyouAxiosTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.uyouaxios ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.uyouaxios ? 'auto' : 'none')};
+`;
+
+export const BobeReactTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.bobereact ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.bobereact ? 'auto' : 'none')};
+`;
+export const BobeViteTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.bobevite ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.bobevite ? 'auto' : 'none')};
+`;
+export const BobeDaumTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.bobedaum ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.bobedaum ? 'auto' : 'none')};
+`;
+export const BobeRecoilTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.boberecoil ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.boberecoil ? 'auto' : 'none')};
+`;
+export const BobeMswTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.bobemsw ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.bobemsw ? 'auto' : 'none')};
+`;
+export const BobeStyledTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.bobestyled ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.bobestyled ? 'auto' : 'none')};
+`;
+export const BobeHookTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.bobehook ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.bobehook ? 'auto' : 'none')};
+`;
+export const BobeAxiosTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.bobeaxios ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.bobeaxios ? 'auto' : 'none')};
+`;
+
+export const PadakReactTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.padakreact ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.padakreact ? 'auto' : 'none')};
+`;
+export const PadakReduxTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.padakredux ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.padakredux ? 'auto' : 'none')};
+`;
+export const PadakStyledTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.padakstyled ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.padakstyled ? 'auto' : 'none')};
+`;
+export const PadakAxiosTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.padakaxios ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.padakaxios ? 'auto' : 'none')};
+`;
+
+// ----------  Uyou React Text 담을 Div -----------
+export const UyouReact = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.uyoureact ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.uyoureact ? '30px' : '0px')};
+  background-color: white;
+`;
+
+export const UyouType = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.uyoutype ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.uyoutype ? '30px' : '0px')};
+  background-color: white;
+`;
+export const UyouNext = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.uyounext ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.uyounext ? '30px' : '0px')};
+  background-color: white;
+`;
+export const UyouToolkit = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.uyoutoolkit ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.uyoutoolkit ? '30px' : '0px')};
+  background-color: white;
+`;
+export const UyouMsw = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.uyoumsw ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.uyoumsw ? '30px' : '0px')};
+  background-color: white;
+`;
+export const UyouStyled = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.uyoustyled ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.uyoustyled ? '30px' : '0px')};
+  background-color: white;
+`;
+export const UyouHook = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.uyouhook ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.uyouhook ? '30px' : '0px')};
+  background-color: white;
+`;
+export const UyouAxios = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.uyouaxios ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.uyouaxios ? '30px' : '0px')};
+  background-color: white;
+`;
+export const BobeReact = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.bobereact ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.bobereact ? '30px' : '0px')};
+  background-color: white;
+`;
+export const BobeVite = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.bobevite ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.bobevite ? '30px' : '0px')};
+  background-color: white;
+`;
+export const BobeDaum = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.bobedaum ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.bobedaum ? '30px' : '0px')};
+  background-color: white;
+`;
+export const BobeRecoil = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.boberecoil ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.boberecoil ? '30px' : '0px')};
+  background-color: white;
+`;
+export const BobeMsw = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.bobemsw ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.bobemsw ? '30px' : '0px')};
+  background-color: white;
+`;
+export const BobeStyled = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.bobestyled ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.bobestyled ? '30px' : '0px')};
+  background-color: white;
+`;
+export const BobeHook = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.bobehook ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.bobehook ? '30px' : '0px')};
+  background-color: white;
+`;
+export const BobeAxios = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.bobeaxios ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.bobeaxios ? '30px' : '0px')};
+  background-color: white;
+`;
+
+export const PadakReact = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.padakreact ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.padakreact ? '30px' : '0px')};
+  background-color: white;
+`;
+export const PadakRedux = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.padakredux ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.padakredux ? '30px' : '0px')};
+  background-color: white;
+`;
+export const PadakStyled = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.padakstyled ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.padakstyled ? '30px' : '0px')};
+  background-color: white;
+`;
+export const PadakAxios = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.padakaxios ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.padakaxios ? '30px' : '0px')};
+  background-color: white;
+`;
+
+// 세팅중 여기까지
+
 // 사용기술 제목을 담을 div
 export const SkillsTitleDiv = styled.div`
   display: flex;
@@ -391,48 +1064,10 @@ export const SkillsContainer = styled.div`
   margin-bottom: 20px;
   font-size: 20px;
   font-family: 'NEXON Lv2 Gothic' !important;
-  /* border: 1px solid yellow; */
-`;
-
-export const SkillsTextAndDetailDiv = styled.div`
-  display: grid;
-  grid-template-columns: 230px 40vw;
-  /* font-weight: bold; */
-  font-family: 'NEXON Lv2 Gothic' !important;
-  font-size: 16px;
-  margin-bottom: 15px;
-  line-height: 30px;
-  @media (max-width: 1100px) {
-    font-size: 14px;
-    grid-template-columns: 190px 53%;
-  }
+  width: 80%;
+  position: relative;
   @media (max-width: 500px) {
-    font-size: 12px;
-    grid-template-columns: 150px 250px;
-  }
-  @media (max-width: 390px) {
-    font-size: 10px;
-    grid-template-columns: 30vw 50vw;
-  }
-`;
-// Skills 이름, 점 img 감쌀 Text
-export const SkillsTextDiv = styled.div`
-  font-size: 18px;
-  font-family: 'NEXON Lv2 Gothic' !important;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-weight: bolder;
-  box-sizing: content-box;
-  margin-bottom: 15px;
-  @media (max-width: 1100px) {
-    font-size: 15px;
-  }
-  @media (max-width: 500px) {
-    font-size: 13px;
-  }
-  @media (max-width: 390px) {
-    font-size: 11px;
+    width: 80vw;
   }
 `;
 
