@@ -53,11 +53,11 @@ const SideBar = ({ children }) => {
           </ul>
           <ul>
             <h4>CAREER</h4>
-            {/* <li>
+            <li>
               <Link to='narator' spy={true} smooth={true}>
                 나레이터모델
               </Link>
-            </li> */}
+            </li>
             <li>
               <Link to='fitting' spy={true} smooth={true}>
                 피팅모델

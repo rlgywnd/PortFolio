@@ -8,7 +8,7 @@ const Career = () => {
         <S.CareerTitleH1>CAREER.</S.CareerTitleH1>
       </S.TitleUnderlineDiv>
       <S.CareerDiv>
-        {/* <S.NaratorDiv id='narator'>
+        <S.NaratorDiv id='narator'>
           <S.MarginDiv></S.MarginDiv>
           <S.CareerDate>2016.01 - 2017.05</S.CareerDate>
           <S.IntroDiv>
@@ -26,7 +26,7 @@ const Career = () => {
               L'Occitane in 숙명여대
             </div>
           </S.IntroDiv>
-        </S.NaratorDiv> */}
+        </S.NaratorDiv>
         <S.FittingDiv id='fitting'>
           <S.MarginDiv></S.MarginDiv>
           <S.CareerDate>2013.07 - 2014.05</S.CareerDate>

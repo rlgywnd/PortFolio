@@ -25,7 +25,7 @@ const Studies = () => {
         </S.SelfStudyDiv>
         <S.PoliceDiv id='police'>
           <S.MarginDiv></S.MarginDiv>
-          <S.CareerDate>2020.09 - 2021.05</S.CareerDate>
+          <S.CareerDate>2020.05 - 2021.05</S.CareerDate>
           <S.IntroDiv>
             <h1>검찰공무원 9급 준비</h1>
             <div>
