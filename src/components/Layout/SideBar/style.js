@@ -12,7 +12,8 @@ export const SideBarReal = styled.div`
 export const SideBarContainer = styled.div`
   display: flex;
   word-break: break-all;
-  position: sticky;
+  /* position: sticky; */
+  position: fixed;
   top: 0;
   padding: 110px 0 0 30px;
   height: 100vh;
@@ -44,6 +45,10 @@ export const SideBarContainer = styled.div`
 export const AllComponentsDiv = styled.div`
   width: 65vw;
   padding: 110px 0 0 30px;
+  margin-left: 250px;
+  @media (max-width: 1100px) {
+    margin-left: 0;
+  }
 `;
 export const UpBtnDiv = styled.div`
   display: flex;

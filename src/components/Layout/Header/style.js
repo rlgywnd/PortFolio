@@ -10,12 +10,13 @@ export const HeaderContainer = styled.div`
   width: 100%;
   height: 60px;
   padding: 0 15% 0 15%;
-  position: sticky;
+  /* position: sticky; */
+  position: fixed;
   top: 0;
-  opacity: 0.8;
-  z-index: 1;
+  opacity: 0.9;
+  z-index: 2;
 `;
-// 1780px
+
 export const LeftDiv = styled.div`
   display: flex;
 `;

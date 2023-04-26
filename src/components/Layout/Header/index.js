@@ -86,13 +86,6 @@ const Header = () => {
             </div>
           </S.Hamburger>
         )}
-        {/* <S.Hamburger
-          onClick={() => {
-            setHamburger(!hamburger);
-          }}
-        >
-          <GiHamburgerMenu size='25' />
-        </S.Hamburger> */}
       </S.RightDiv>
     </S.HeaderContainer>
   );
