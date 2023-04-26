@@ -12,32 +12,10 @@ export const SideBarReal = styled.div`
 export const SideBarContainer = styled.div`
   display: flex;
   word-break: break-all;
-  /* position: sticky; */
   position: fixed;
   top: 0;
   padding: 110px 0 0 30px;
   height: 100vh;
-  /* ul {
-    margin: 0 10px 40px 0;
-    h4 {
-      font-weight: bold;
-      margin-bottom: 10px;
-      font-size: ${(props) =>
-    1450 <= props.scrolls && props.scrolls < 1610 ? '17px' : '15px'};
-    }
-    li {
-      font-size: 13px;
-      color: #667085;
-      font-weight: bold;
-      list-style-type: disc;
-      list-style-position: inside;
-      margin-bottom: 5px;
-      cursor: pointer;
-      :hover {
-        color: #d6d9dc;
-      }
-    }
-  } */
   @media (max-width: 1100px) {
     display: none;
   }
@@ -99,7 +77,7 @@ export const StudiesUl = styled.ul`
 export const ProfileLiDiv = styled.div`
   display: flex;
   align-items: center;
-  transition: color 0.25s linear;
+  transition: all 0.25s linear;
   color: ${(props) =>
     1590 <= props.scrolls && props.scrolls < 1969 ? '#3cb371' : '#667085'};
 `;
@@ -270,9 +248,7 @@ export const FitLi = styled.li`
 export const SoloLiDiv = styled.div`
   display: flex;
   align-items: center;
-  transition: color 0.25s linear;
-  color: ${(props) =>
-    1590 <= props.scrolls && props.scrolls < 1969 ? '#3cb371' : '#667085'};
+  color: #667085;
 `;
 export const SoloLi = styled.li`
   font-size: 13px;
@@ -289,9 +265,7 @@ export const SoloLi = styled.li`
 export const PoliceLiDiv = styled.div`
   display: flex;
   align-items: center;
-  transition: color 0.25s linear;
-  color: ${(props) =>
-    1590 <= props.scrolls && props.scrolls < 1969 ? '#3cb371' : '#667085'};
+  color: #667085;
 `;
 export const PoliceLi = styled.li`
   font-size: 13px;
