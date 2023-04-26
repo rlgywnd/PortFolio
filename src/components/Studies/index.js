@@ -15,11 +15,11 @@ const Studies = () => {
             <h1>프론트엔드 프로그래밍 독학</h1>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              Javascript언어 기반 기초지식 학습
+              Javascript언어 기초지식 학습
             </div>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              React 프레임워크 학습
+              React 라이브러리 학습
             </div>
             <div>
               <RxCheck size='30' color='#3cb371' />

@@ -536,6 +536,34 @@ export const PadakAxiosBtnDiv = styled.div`
   transition: transform 0.3s ease 0s;
   transform: ${(props) => (props.padakaxios ? 'rotate(180deg)' : '')};
 `;
+export const PortReactBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.portreact ? 'rotate(180deg)' : '')};
+`;
+export const PortRouterBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.portrouter ? 'rotate(180deg)' : '')};
+`;
+export const PortScrolBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.portscrol ? 'rotate(180deg)' : '')};
+`;
+export const PortStyledBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.portstyled ? 'rotate(180deg)' : '')};
+`;
 
 // -------- Uyou React TextDiv담을 Div -------------
 export const UyouReactTextDiv = styled.div`
@@ -821,6 +849,63 @@ export const PadakAxiosTextDiv = styled.div`
   display: ${(props) => (props.padakaxios ? 'auto' : 'none')};
 `;
 
+export const PortReactTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.portreact ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.portreact ? 'auto' : 'none')};
+`;
+export const PortRouterTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.portrouter ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.portrouter ? 'auto' : 'none')};
+`;
+export const PortScrolTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.portscrol ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.portscrol ? 'auto' : 'none')};
+`;
+export const PortStyledTextDiv = styled.div`
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.portstyled ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.portstyled ? 'auto' : 'none')};
+`;
+
 // ----------  Uyou React Text 담을 Div -----------
 export const UyouReact = styled.div`
   line-height: 30px;
@@ -1042,6 +1127,51 @@ export const PadakAxios = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.padakaxios ? '15px' : '0')};
   margin-bottom: ${(props) => (props.padakaxios ? '30px' : '0px')};
+  background-color: white;
+`;
+
+export const PortReact = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.portreact ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.portreact ? '30px' : '0px')};
+  background-color: white;
+`;
+export const PortRouter = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.portrouter ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.portrouter ? '30px' : '0px')};
+  background-color: white;
+`;
+export const PortScrol = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.portscrol ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.portscrol ? '30px' : '0px')};
+  background-color: white;
+`;
+export const PortStyled = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.portstyled ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.portstyled ? '30px' : '0px')};
   background-color: white;
 `;
 

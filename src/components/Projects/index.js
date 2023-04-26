@@ -72,6 +72,11 @@ const Projects = () => {
   const [padakStyled, setPadakStyled] = useState(false);
   const [padakAxios, setPadakAxios] = useState(false);
 
+  const [portReact, setPortReact] = useState(false);
+  const [portRouter, setPortRouter] = useState(false);
+  const [portScrol, setPortScrol] = useState(false);
+  const [portStyled, setPortStyled] = useState(false);
+
   return (
     <S.ProjectsContainer id='projects'>
       <S.TitleUnderlineDiv>
@@ -110,6 +115,93 @@ const Projects = () => {
               </S.IntroDiv>
             </S.IntroDateDiv>
           </S.IntroAndWorkDetail>
+          {/* {} */}
+          <S.SkillsTitleDiv>
+            <GrTechnology size='25' />
+            사용기술
+          </S.SkillsTitleDiv>
+          <S.SkillsContainer>
+            <S.SkillsTextAndBtn
+              portreact={portReact}
+              onClick={() => {
+                setPortReact(!portReact);
+              }}
+            >
+              <S.SkillName>React</S.SkillName>
+              <S.PortReactBtnDiv portreact={portReact}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.PortReactBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.PortReactTextDiv portreact={portReact}>
+              <S.PortReact>
+                React는 Component를 이용하여 재사용이 가능하고, 유지보수
+                하기에도 좋았습니다. 또한 자료가 굉장히 방대하여 문제해결에도
+                좋았습니다.
+              </S.PortReact>
+            </S.PortReactTextDiv>
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              portrouter={portRouter}
+              onClick={() => {
+                setPortRouter(!portRouter);
+              }}
+            >
+              <S.SkillName>React Router Dom</S.SkillName>
+              <S.PortRouterBtnDiv portrouter={portRouter}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.PortRouterBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.PortRouterTextDiv portrouter={portRouter}>
+              <S.PortRouter>
+                React Router Dom은 SPA(Single Page Application) 즉, 전체
+                페이지를 하나의 페이지에 담아 동적으로 화면을 바꿔가며 표현하게
+                해주는 라이브러리입니다. 이번 프로젝트에선 한 화면에서 모든
+                페이지를 스크롤하게 만들었기때문에 라우팅을 사용한게 첫화면에서
+                한번 뿐 이지만 SPA를 구현하기에 좋은 라이브러리입니다.
+              </S.PortRouter>
+            </S.PortRouterTextDiv>
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              portscrol={portScrol}
+              onClick={() => {
+                setPortScrol(!portScrol);
+              }}
+            >
+              <S.SkillName>React Scroll</S.SkillName>
+              <S.PortScrolBtnDiv portscrol={portScrol}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.PortScrolBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.PortScrolTextDiv portscrol={portScrol}>
+              <S.PortScrol>
+                React Scroll은 링크를 걸어두어 태그의 id값을 확인해 스크롤
+                이동시켜주게 도와주는 라이브러리입니다. 라이브러리 설치후 Router
+                Link말고 scroll Link를 import해서 사용하는 방식이었습니다.
+                Link에 경로 지정해두고 위치할 태그에 id값을 넣어주면 돼서
+                사용하기 편했습니다.
+              </S.PortScrol>
+            </S.PortScrolTextDiv>
+            {/* {} */}
+            <S.SkillsTextAndBtn
+              portstyled={portStyled}
+              onClick={() => {
+                setPortStyled(!portStyled);
+              }}
+            >
+              <S.SkillName>Styled Components</S.SkillName>
+              <S.PortStyledBtnDiv portstyled={portStyled}>
+                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              </S.PortStyledBtnDiv>
+            </S.SkillsTextAndBtn>
+            <S.PortStyledTextDiv portstyled={portStyled}>
+              <S.PortStyled>
+                Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
+                방식인 라이브러리입니다. React props를 활용한 조건부 스타일링이
+                가능하기도해서 좋았습니다.
+              </S.PortStyled>
+            </S.PortStyledTextDiv>
+          </S.SkillsContainer>
+          {/* {} */}
           <S.LinkTitleDiv>
             <AiOutlineLink size='30' />
             관련링크
@@ -283,9 +375,9 @@ const Projects = () => {
             </S.SkillsTextAndBtn>
             <S.UyouReactTextDiv uyoureact={uyouReact}>
               <S.UyouReact>
-                React는 Component를 이용하여 재사용이 가능하고, 유지보수의
-                용이함이있습니다. 많은 커뮤니티가 있어, 자료가 굉장히 방대하여
-                문제해결하기 좋습니다.
+                React는 Component를 이용하여 재사용이 가능하고, 유지보수
+                하기에도 좋았습니다. 또한 자료가 굉장히 방대하여 문제해결에도
+                좋았습니다.
               </S.UyouReact>
             </S.UyouReactTextDiv>
 
@@ -303,8 +395,9 @@ const Projects = () => {
             </S.SkillsTextAndBtn>
             <S.UyouTypeTextDiv uyoutype={uyouType}>
               <S.UyouType>
-                TypeScript는 코드에 목적을 명시하고 목적에 맞지 않는 타입의
-                변수나 함수들에서 에러를 발생시켜 버그를 사전에 제거합니다.
+                TypeScript는 코드에 타입을 명시하고 목적에 맞지 않는 타입의
+                변수나 함수들에서 에러를 발생시켜 버그를 사전에 제거 할 수
+                있었습니다.
               </S.UyouType>
             </S.UyouTypeTextDiv>
             {/*  */}
@@ -321,8 +414,9 @@ const Projects = () => {
             </S.SkillsTextAndBtn>
             <S.UyouNextTextDiv uyounext={uyouNext}>
               <S.UyouNext>
-                Next.JS는 React에서 Rendering을 쉽게 할 수 있게 해주는
-                프레임워크입니다.
+                Next.JS는 React 라이브러리의 프레임워크입니다. 직관적인 페이지
+                기반 라우팅 시스템이있어서 /pages 폴더에서 컴포넌트를 export하면
+                페이지 Route가 돼서 라우팅에 편리했습니다.
               </S.UyouNext>
             </S.UyouNextTextDiv>
             {/*  */}
@@ -339,9 +433,9 @@ const Projects = () => {
             </S.SkillsTextAndBtn>
             <S.UyouToolkitTextDiv uyoutoolkit={uyouToolkit}>
               <S.UyouToolkit>
-                Redux는 전역에서 상태를 관리하게 해주는 라이브러리입니다.
-                Redux-Toolkit은 Redux의 단점들을 보완해주며 Redux보다 더욱
-                간단하게 쓸 수 있게 해줍니다.
+                Redux Toolkit은 react의 전역상태관리 라이브러리입니다. Redux
+                Toolkit은 Redux의 단점들을 보완해주며 특히 Redux 스토어의 복잡한
+                환경설정 세팅을 간단하게 쓸 수 있어서 좋았습니다.
               </S.UyouToolkit>
             </S.UyouToolkitTextDiv>
             {/* {} */}
@@ -377,9 +471,9 @@ const Projects = () => {
             </S.SkillsTextAndBtn>
             <S.UyouStyledTextDiv uyoustyled={uyouStyled}>
               <S.UyouStyled>
-                Styled-Components는 CSS 파일을 밖에 두지 않고, 컴포넌트 내부에
-                넣기 때문에, CSS가 전역으로 중첩되지 않도록 만들어주는 장점이
-                있습니다.
+                Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
+                방식인 라이브러리입니다. React props를 활용한 조건부 스타일링이
+                가능하기도해서 좋았습니다.
               </S.UyouStyled>
             </S.UyouStyledTextDiv>
             {/* {} */}
@@ -397,7 +491,8 @@ const Projects = () => {
             <S.UyouHookTextDiv uyouhook={uyouHook}>
               <S.UyouHook>
                 React Hook Form은 회원가입, 로그인 페이지에서 입력창과
-                유효성검사를 더욱 간편하게 만들어주는 라이브러리입니다.
+                유효성검사를 더욱 효과적이고 간편하게 도와주는 라이브러리입니다.
+                데이터 전송관리하기에도 편해서 좋았습니다.
               </S.UyouHook>
             </S.UyouHookTextDiv>
 
@@ -605,9 +700,9 @@ const Projects = () => {
             </S.SkillsTextAndBtn>
             <S.BobeReactTextDiv bobereact={bobeReact}>
               <S.BobeReact>
-                React는 Component를 이용하여 재사용이 가능하고, 유지보수의
-                용이함이있습니다. 많은 커뮤니티가 있어, 자료가 굉장히 방대하여
-                문제해결하기 좋습니다.
+                React는 Component를 이용하여 재사용이 가능하고, 유지보수
+                하기에도 좋았습니다. 또한 자료가 굉장히 방대하여 문제해결에도
+                좋았습니다.
               </S.BobeReact>
             </S.BobeReactTextDiv>
             {/*  */}
@@ -624,8 +719,10 @@ const Projects = () => {
             </S.SkillsTextAndBtn>
             <S.BobeViteTextDiv bobevite={bobeVite}>
               <S.BobeVite>
-                CRA는 Javascript로 구성된 Webpack을 사용하는데 속도가 느립니다.
-                Vite는 위와같은 단점을 해결해줍니다.
+                Vite는 프랑스어로 빠르다를 의미하는데 말그대로 굉장히 빠른 빌드
+                속도를 보여줍니다. CRA는 Javascript로 구성된 Webpack으로
+                빌드하는데 속도가 느립니다. CRA 웹팩빌드와 비교했을때 정말
+                빨랐습니다.
               </S.BobeVite>
             </S.BobeViteTextDiv>
             {/* {} */}
@@ -643,7 +740,7 @@ const Projects = () => {
             <S.BobeDaumTextDiv bobedaum={bobeDaum}>
               <S.BobeDaum>
                 Daum PostCode는 주소 찾기를 도와주는 라이브러리입니다. npm으로
-                react전용 Daum PostCode를 설치하여 사용할 수 있습니다.
+                react전용 Daum PostCode를 설치하여 사용할 수 있었습니다.
               </S.BobeDaum>
             </S.BobeDaumTextDiv>
             {/*  */}
@@ -698,9 +795,9 @@ const Projects = () => {
             </S.SkillsTextAndBtn>
             <S.BobeStyledTextDiv bobestyled={bobeStyled}>
               <S.BobeStyled>
-                Styled-Components는 CSS 파일을 밖에 두지 않고, 컴포넌트 내부에
-                넣기 때문에, CSS가 전역으로 중첩되지 않도록 만들어주는 장점이
-                있습니다.
+                Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
+                방식인 라이브러리입니다. React props를 활용한 조건부 스타일링이
+                가능하기도해서 좋았습니다.
               </S.BobeStyled>
             </S.BobeStyledTextDiv>
             {/* {} */}
@@ -718,7 +815,8 @@ const Projects = () => {
             <S.BobeHookTextDiv bobehook={bobeHook}>
               <S.BobeHook>
                 React Hook Form은 회원가입, 로그인 페이지에서 입력창과
-                유효성검사를 더욱 간편하게 만들어주는 라이브러리입니다.
+                유효성검사를 더욱 효과적이고 간편하게 도와주는 라이브러리입니다.
+                데이터 전송관리하기에도 편해서 좋았습니다.
               </S.BobeHook>
             </S.BobeHookTextDiv>
             {/* {} */}
@@ -882,7 +980,7 @@ const Projects = () => {
                 Redux는 전역에서 상태를 관리하게 해주는 라이브러리입니다. Action
                 - Dispatch - Reducer - Store 순서로 데이터를 단방향으로 전달하며
                 상태가 변경되면 React는 다시 렌더링을 시켜주는 다소 복잡한
-                방식입니다.
+                방식이었습니다.
               </S.PadakRedux>
             </S.PadakReduxTextDiv>
             {/* {} */}
@@ -899,9 +997,9 @@ const Projects = () => {
             </S.SkillsTextAndBtn>
             <S.PadakStyledTextDiv padakstyled={padakStyled}>
               <S.PadakStyled>
-                Styled Components는 CSS 파일을 밖에 두지 않고, 컴포넌트 내부에
-                넣기 때문에, CSS가 전역으로 중첩되지 않도록 만들어주는 장점이
-                있습니다.
+                Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
+                방식인 라이브러리입니다. React props를 활용한 조건부 스타일링이
+                가능하기도해서 좋았습니다.
               </S.PadakStyled>
             </S.PadakStyledTextDiv>
             {/* {} */}

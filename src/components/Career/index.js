@@ -27,7 +27,7 @@ const Career = () => {
             </div>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              상대방을 편안하게 만드는 커뮤니케이션을 할 수 있었습니다.
+              편안한 분위기로 커뮤니케이션 할 수 있었습니다.
             </div>
           </S.IntroDiv>
         </S.NaratorDiv>
