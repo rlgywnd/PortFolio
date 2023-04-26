@@ -72,9 +72,7 @@ export const ProfileUl = styled.ul`
   display: grid;
   grid-template-columns: 400px;
   grid-template-rows: 80px 80px 80px 80px 80px;
-
   @media (max-width: 800px) {
-    /* border: 1px solid red; */
     padding: 0 0 0 5px;
     grid-template-columns: 600px;
     grid-template-rows: 50px 50px 50px 50px 50px;
@@ -84,7 +82,7 @@ export const ProfileLi = styled.li`
   display: flex;
   width: 100%;
   align-items: center;
-  gap: 15px;
+  gap: 7px;
   font-size: 18px;
   @media (max-width: 1440px) {
   }
@@ -101,9 +99,12 @@ export const ProfileLi = styled.li`
     font-size: 13px;
   }
   h4 {
+    font-family: 'NEXON Lv2 Gothic' !important;
+    font-weight: bold;
   }
   div {
     font-family: 'NEXON Lv2 Gothic' !important;
+    font-weight: bold;
   }
 
   h5 {
@@ -116,7 +117,7 @@ export const ProfileLi = styled.li`
     width: 0px;
     font-weight: bold;
     :hover {
-      width: 100%;
+      width: 101%;
       height: 30px;
       color: white;
       background-color: #3cb371;
