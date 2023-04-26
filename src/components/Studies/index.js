@@ -19,6 +19,10 @@ const Studies = () => {
             </div>
             <div>
               <RxCheck size='30' color='#3cb371' />
+              HTML / CSS 기초지식 학습
+            </div>
+            <div>
+              <RxCheck size='30' color='#3cb371' />
               React 라이브러리 학습
             </div>
             <div>

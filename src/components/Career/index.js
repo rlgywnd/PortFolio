@@ -15,15 +15,15 @@ const Career = () => {
             <h1>나레이터모델</h1>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              행사 / 판촉 나레이터모델 근무
+              행사 / 안내 나레이터모델 근무
             </div>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              Galaxy S8 in 평택AK플라자 Galaxy S8 홍보
+              Galaxy S8 in 평택AK플라자 Galaxy S8 시현
             </div>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              L'Occitane in 숙명여대 화장품 홍보
+              L'Occitane in 숙명여대 축제 L'Occitane 프로모션
             </div>
             <div>
               <RxCheck size='30' color='#3cb371' />
