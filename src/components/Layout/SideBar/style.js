@@ -15,7 +15,7 @@ export const SideBarContainer = styled.div`
   position: fixed;
   top: 0;
   padding: 110px 0 0 30px;
-  height: 100vh;
+  /* height: 100vh; */
   @media (max-width: 1100px) {
     display: none;
   }
@@ -29,7 +29,7 @@ export const AboutMeUl = styled.ul`
     margin-bottom: 10px;
     transition: font-size 0.2s linear;
     font-size: ${(props) =>
-      1266 <= props.scrolls && props.scrolls < 1590 ? '18px' : '15px'};
+      844 <= props.scrolls && props.scrolls < 1034 ? '18px' : '15px'};
   }
 `;
 export const ProjectsUl = styled.ul`
@@ -39,7 +39,7 @@ export const ProjectsUl = styled.ul`
     margin-bottom: 10px;
     transition: font-size 0.2s linear;
     font-size: ${(props) =>
-      2589 <= props.scrolls && props.scrolls < 3038 ? '18px' : '15px'};
+      2107 <= props.scrolls && props.scrolls < 2413 ? '18px' : '15px'};
   }
 `;
 export const EducationUl = styled.ul`
@@ -49,7 +49,7 @@ export const EducationUl = styled.ul`
     margin-bottom: 10px;
     transition: font-size 0.2s linear;
     font-size: ${(props) =>
-      7820 <= props.scrolls && props.scrolls < 8290 ? '18px' : '15px'};
+      7482 <= props.scrolls && props.scrolls < 7840 ? '18px' : '15px'};
   }
 `;
 export const CareerUl = styled.ul`
@@ -59,7 +59,7 @@ export const CareerUl = styled.ul`
     margin-bottom: 10px;
     transition: font-size 0.2s linear;
     font-size: ${(props) =>
-      8759 <= props.scrolls && props.scrolls < 9270 ? '18px' : '15px'};
+      8445 <= props.scrolls && props.scrolls < 8817 ? '18px' : '15px'};
   }
 `;
 export const StudiesUl = styled.ul`
@@ -69,7 +69,7 @@ export const StudiesUl = styled.ul`
     margin-bottom: 10px;
     transition: font-size 0.2s linear;
     font-size: ${(props) =>
-      9728 <= props.scrolls && props.scrolls < 10000 ? '18px' : '15px'};
+      9427 <= props.scrolls && props.scrolls < 9724 ? '18px' : '15px'};
   }
 `;
 
@@ -79,7 +79,7 @@ export const ProfileLiDiv = styled.div`
   align-items: center;
   transition: all 0.25s linear;
   color: ${(props) =>
-    1590 <= props.scrolls && props.scrolls < 1969 ? '#3cb371' : '#667085'};
+    1034 <= props.scrolls && props.scrolls < 1514 ? '#3cb371' : '#667085'};
 `;
 export const ProfileLi = styled.li`
   font-size: 13px;
@@ -98,7 +98,7 @@ export const IntroLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    1969 <= props.scrolls && props.scrolls < 2589 ? '#3cb371' : '#667085'};
+    1514 <= props.scrolls && props.scrolls < 2107 ? '#3cb371' : '#667085'};
 `;
 export const IntroLi = styled.li`
   font-size: 13px;
@@ -117,7 +117,7 @@ export const PortLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    3038 <= props.scrolls && props.scrolls < 3805 ? '#3cb371' : '#667085'};
+    2413 <= props.scrolls && props.scrolls < 3347 ? '#3cb371' : '#667085'};
 `;
 export const PortLi = styled.li`
   font-size: 13px;
@@ -136,7 +136,7 @@ export const UyouLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    3805 <= props.scrolls && props.scrolls < 5319 ? '#3cb371' : '#667085'};
+    3347 <= props.scrolls && props.scrolls < 4904 ? '#3cb371' : '#667085'};
 `;
 export const UyouLi = styled.li`
   font-size: 13px;
@@ -155,7 +155,7 @@ export const BobeLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    5319 <= props.scrolls && props.scrolls < 6815 ? '#3cb371' : '#667085'};
+    4904 <= props.scrolls && props.scrolls < 6494 ? '#3cb371' : '#667085'};
 `;
 export const BobeLi = styled.li`
   font-size: 13px;
@@ -174,7 +174,7 @@ export const PadakLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    6815 <= props.scrolls && props.scrolls < 7820 ? '#3cb371' : '#667085'};
+    6494 <= props.scrolls && props.scrolls < 7482 ? '#3cb371' : '#667085'};
 `;
 export const PadakLi = styled.li`
   font-size: 13px;
@@ -193,7 +193,7 @@ export const CodeLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    8290 <= props.scrolls && props.scrolls < 8759 ? '#3cb371' : '#667085'};
+    7840 <= props.scrolls && props.scrolls < 8445 ? '#3cb371' : '#667085'};
 `;
 export const CodeLi = styled.li`
   font-size: 13px;
@@ -212,7 +212,7 @@ export const NaraLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    9270 <= props.scrolls && props.scrolls < 9497 ? '#3cb371' : '#667085'};
+    8817 <= props.scrolls && props.scrolls < 9179 ? '#3cb371' : '#667085'};
 `;
 export const NaraLi = styled.li`
   font-size: 13px;
@@ -231,7 +231,7 @@ export const FitLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    9497 <= props.scrolls && props.scrolls < 9728 ? '#3cb371' : '#667085'};
+    9179 <= props.scrolls && props.scrolls < 9427 ? '#3cb371' : '#667085'};
 `;
 export const FitLi = styled.li`
   font-size: 13px;
@@ -248,7 +248,9 @@ export const FitLi = styled.li`
 export const SoloLiDiv = styled.div`
   display: flex;
   align-items: center;
-  color: #667085;
+  transition: color 0.25s linear;
+  color: ${(props) =>
+    9724 <= props.scrolls && props.scrolls < 10104 ? '#3cb371' : '#667085'};
 `;
 export const SoloLi = styled.li`
   font-size: 13px;
@@ -265,7 +267,9 @@ export const SoloLi = styled.li`
 export const PoliceLiDiv = styled.div`
   display: flex;
   align-items: center;
-  color: #667085;
+  transition: color 0.25s linear;
+  color: ${(props) =>
+    10104 <= props.scrolls && props.scrolls < 11000 ? '#3cb371' : '#667085'};
 `;
 export const PoliceLi = styled.li`
   font-size: 13px;

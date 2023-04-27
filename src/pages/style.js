@@ -56,8 +56,14 @@ export const LinkDiv = styled(Link)`
   text-decoration-line: none;
   font-weight: bold;
   color: #4285f4;
+
   :hover {
+    transition: all 0.2s linear;
+    font-size: 35px;
     color: red;
+  }
+  :not(:hover) {
+    transition: all 0.2s linear;
   }
   :active {
     color: blue;
