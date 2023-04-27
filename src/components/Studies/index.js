@@ -15,6 +15,12 @@ const Studies = () => {
             <h1>프론트엔드 프로그래밍 독학</h1>
             <div>
               <RxCheck size='30' color='#3cb371' />
+              <span>
+                <h2>윤인성 혼공자 강의 학습하며 블로그 포스팅</h2>
+              </span>
+            </div>
+            <div>
+              <RxCheck size='30' color='#3cb371' />
               Javascript언어 기초지식 학습
             </div>
             <div>
@@ -38,7 +44,7 @@ const Studies = () => {
             <h1>검찰공무원 9급 준비</h1>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              인강 법검단기 9급 검찰직 수강
+              법검단기 프리패스 과정 9급 검찰직 수강
             </div>
           </S.IntroDiv>
         </S.PoliceDiv>

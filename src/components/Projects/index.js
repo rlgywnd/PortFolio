@@ -121,85 +121,97 @@ const Projects = () => {
             사용기술
           </S.SkillsTitleDiv>
           <S.SkillsContainer>
-            <S.SkillsTextAndBtn
-              portreact={portReact}
-              onClick={() => {
-                setPortReact(!portReact);
-              }}
-            >
-              <S.SkillName>React</S.SkillName>
-              <S.PortReactBtnDiv portreact={portReact}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.PortReactBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.PortReactTextDiv portreact={portReact}>
-              <S.PortReact>
-                React는 Component를 이용하여 재사용이 가능하고, 유지보수
-                하기에도 좋았습니다. 또한 자료가 굉장히 방대하여 문제해결에도
-                좋았습니다.
-              </S.PortReact>
-            </S.PortReactTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                portreact={portReact}
+                onClick={() => {
+                  setPortReact(!portReact);
+                }}
+              >
+                <S.SkillName>React</S.SkillName>
+                <S.PortReactBtnDiv portreact={portReact}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.PortReactBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.PortReactTextDiv portreact={portReact}>
+                <S.PortReact>
+                  React는 Component를 이용하여 재사용이 가능하고, 유지보수
+                  하기에도 좋았습니다. 또한 자료가 굉장히 방대하여 문제해결에도
+                  좋았습니다.
+                </S.PortReact>
+              </S.PortReactTextDiv>
+            </S.SkillsSection>
+
             {/* {} */}
-            <S.SkillsTextAndBtn
-              portrouter={portRouter}
-              onClick={() => {
-                setPortRouter(!portRouter);
-              }}
-            >
-              <S.SkillName>React Router Dom</S.SkillName>
-              <S.PortRouterBtnDiv portrouter={portRouter}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.PortRouterBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.PortRouterTextDiv portrouter={portRouter}>
-              <S.PortRouter>
-                React Router Dom은 SPA(Single Page Application) 즉, 전체
-                페이지를 하나의 페이지에 담아 동적으로 화면을 바꿔가며 표현하게
-                해주는 라이브러리입니다. 이번 프로젝트에선 한 화면에서 모든
-                페이지를 스크롤하게 만들었기때문에 라우팅을 사용한게 첫화면에서
-                한번 뿐 이지만 SPA를 구현하기에 좋은 라이브러리입니다.
-              </S.PortRouter>
-            </S.PortRouterTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                portrouter={portRouter}
+                onClick={() => {
+                  setPortRouter(!portRouter);
+                }}
+              >
+                <S.SkillName>React Router Dom</S.SkillName>
+                <S.PortRouterBtnDiv portrouter={portRouter}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.PortRouterBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.PortRouterTextDiv portrouter={portRouter}>
+                <S.PortRouter>
+                  React Router Dom은 SPA(Single Page Application) 즉, 전체
+                  페이지를 하나의 페이지에 담아 동적으로 화면을 바꿔가며
+                  표현하게 해주는 라이브러리입니다. 이번 프로젝트에선 한
+                  화면에서 모든 페이지를 스크롤하게 만들었기때문에 라우팅을
+                  사용한게 첫화면에서 한번 뿐 이지만 SPA를 구현하기에 좋은
+                  라이브러리입니다.
+                </S.PortRouter>
+              </S.PortRouterTextDiv>
+            </S.SkillsSection>
+
             {/* {} */}
-            <S.SkillsTextAndBtn
-              portscrol={portScrol}
-              onClick={() => {
-                setPortScrol(!portScrol);
-              }}
-            >
-              <S.SkillName>React Scroll</S.SkillName>
-              <S.PortScrolBtnDiv portscrol={portScrol}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.PortScrolBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.PortScrolTextDiv portscrol={portScrol}>
-              <S.PortScrol>
-                React Scroll은 링크를 걸어두어 태그의 id값을 확인해 스크롤
-                이동시켜주게 도와주는 라이브러리입니다. 라이브러리 설치후 Router
-                Link말고 scroll Link를 import해서 사용하는 방식이었습니다.
-                Link에 경로 지정해두고 위치할 태그에 id값을 넣어주면 돼서
-                사용하기 편했습니다.
-              </S.PortScrol>
-            </S.PortScrolTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                portscrol={portScrol}
+                onClick={() => {
+                  setPortScrol(!portScrol);
+                }}
+              >
+                <S.SkillName>React Scroll</S.SkillName>
+                <S.PortScrolBtnDiv portscrol={portScrol}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.PortScrolBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.PortScrolTextDiv portscrol={portScrol}>
+                <S.PortScrol>
+                  React Scroll은 링크를 걸어두어 태그의 id값을 확인해 스크롤
+                  이동시켜주게 도와주는 라이브러리입니다. 라이브러리 설치후
+                  Router Link말고 scroll Link를 import해서 사용하는
+                  방식이었습니다. Link에 경로 지정해두고 위치할 태그에 id값을
+                  넣어주면 돼서 사용하기 편했습니다.
+                </S.PortScrol>
+              </S.PortScrolTextDiv>
+            </S.SkillsSection>
+
             {/* {} */}
-            <S.SkillsTextAndBtn
-              portstyled={portStyled}
-              onClick={() => {
-                setPortStyled(!portStyled);
-              }}
-            >
-              <S.SkillName>Styled Components</S.SkillName>
-              <S.PortStyledBtnDiv portstyled={portStyled}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.PortStyledBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.PortStyledTextDiv portstyled={portStyled}>
-              <S.PortStyled>
-                Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
-                방식인 라이브러리입니다. React props를 활용한 조건부 스타일링이
-                가능하기도해서 좋았습니다.
-              </S.PortStyled>
-            </S.PortStyledTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                portstyled={portStyled}
+                onClick={() => {
+                  setPortStyled(!portStyled);
+                }}
+              >
+                <S.SkillName>Styled Components</S.SkillName>
+                <S.PortStyledBtnDiv portstyled={portStyled}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.PortStyledBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.PortStyledTextDiv portstyled={portStyled}>
+                <S.PortStyled>
+                  Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
+                  방식인 라이브러리입니다. React props를 활용한 조건부
+                  스타일링이 가능하기도해서 좋았습니다.
+                </S.PortStyled>
+              </S.PortStyledTextDiv>
+            </S.SkillsSection>
           </S.SkillsContainer>
           {/* {} */}
           <S.LinkTitleDiv>
@@ -362,159 +374,180 @@ const Projects = () => {
             사용기술
           </S.SkillsTitleDiv>
           <S.SkillsContainer>
-            <S.SkillsTextAndBtn
-              uyoureact={uyouReact}
-              onClick={() => {
-                setUyouReact(!uyouReact);
-              }}
-            >
-              <S.SkillName>React</S.SkillName>
-              <S.UyouReactBtnDiv uyoureact={uyouReact}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.UyouReactBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.UyouReactTextDiv uyoureact={uyouReact}>
-              <S.UyouReact>
-                React는 Component를 이용하여 재사용이 가능하고, 유지보수
-                하기에도 좋았습니다. 또한 자료가 굉장히 방대하여 문제해결에도
-                좋았습니다.
-              </S.UyouReact>
-            </S.UyouReactTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                uyoureact={uyouReact}
+                onClick={() => {
+                  setUyouReact(!uyouReact);
+                }}
+              >
+                <S.SkillName>React</S.SkillName>
+                <S.UyouReactBtnDiv uyoureact={uyouReact}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.UyouReactBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.UyouReactTextDiv uyoureact={uyouReact}>
+                <S.UyouReact>
+                  React는 Component를 이용하여 재사용이 가능하고, 유지보수
+                  하기에도 좋았습니다. 또한 자료가 굉장히 방대하여 문제해결에도
+                  좋았습니다.
+                </S.UyouReact>
+              </S.UyouReactTextDiv>
+            </S.SkillsSection>
 
             {/*  */}
-            <S.SkillsTextAndBtn
-              uyoutype={uyouType}
-              onClick={() => {
-                setUyouType(!uyouType);
-              }}
-            >
-              <S.SkillName>TypeScript</S.SkillName>
-              <S.UyouTypeBtnDiv uyoutype={uyouType}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.UyouTypeBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.UyouTypeTextDiv uyoutype={uyouType}>
-              <S.UyouType>
-                TypeScript는 코드에 타입을 명시하고 목적에 맞지 않는 타입의
-                변수나 함수들에서 에러를 발생시켜 버그를 사전에 제거 할 수
-                있었습니다.
-              </S.UyouType>
-            </S.UyouTypeTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                uyoutype={uyouType}
+                onClick={() => {
+                  setUyouType(!uyouType);
+                }}
+              >
+                <S.SkillName>TypeScript</S.SkillName>
+                <S.UyouTypeBtnDiv uyoutype={uyouType}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.UyouTypeBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.UyouTypeTextDiv uyoutype={uyouType}>
+                <S.UyouType>
+                  TypeScript는 코드에 타입을 명시하고 목적에 맞지 않는 타입의
+                  변수나 함수들에서 에러를 발생시켜 버그를 사전에 제거 할 수
+                  있었습니다.
+                </S.UyouType>
+              </S.UyouTypeTextDiv>
+            </S.SkillsSection>
+
             {/*  */}
-            <S.SkillsTextAndBtn
-              uyounext={uyouNext}
-              onClick={() => {
-                setUyouNext(!uyouNext);
-              }}
-            >
-              <S.SkillName>Next.JS</S.SkillName>
-              <S.UyouNextBtnDiv uyounext={uyouNext}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.UyouNextBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.UyouNextTextDiv uyounext={uyouNext}>
-              <S.UyouNext>
-                Next.JS는 React 라이브러리의 프레임워크입니다. 직관적인 페이지
-                기반 라우팅 시스템이있어서 /pages 폴더에서 컴포넌트를 export하면
-                페이지 Route가 돼서 라우팅에 편리했습니다.
-              </S.UyouNext>
-            </S.UyouNextTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                uyounext={uyouNext}
+                onClick={() => {
+                  setUyouNext(!uyouNext);
+                }}
+              >
+                <S.SkillName>Next.JS</S.SkillName>
+                <S.UyouNextBtnDiv uyounext={uyouNext}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.UyouNextBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.UyouNextTextDiv uyounext={uyouNext}>
+                <S.UyouNext>
+                  Next.JS는 React 라이브러리의 프레임워크입니다. 직관적인 페이지
+                  기반 라우팅 시스템이있어서 /pages 폴더에서 컴포넌트를
+                  export하면 페이지 Route가 돼서 라우팅에 편리했습니다.
+                </S.UyouNext>
+              </S.UyouNextTextDiv>
+            </S.SkillsSection>
+
             {/*  */}
-            <S.SkillsTextAndBtn
-              uyoutoolkit={uyouToolkit}
-              onClick={() => {
-                setUyouToolkit(!uyouToolkit);
-              }}
-            >
-              <S.SkillName>Redux Toolkit</S.SkillName>
-              <S.UyouToolkitBtnDiv uyoutoolkit={uyouToolkit}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.UyouToolkitBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.UyouToolkitTextDiv uyoutoolkit={uyouToolkit}>
-              <S.UyouToolkit>
-                Redux Toolkit은 react의 전역상태관리 라이브러리입니다. Redux
-                Toolkit은 Redux의 단점들을 보완해주며 특히 Redux 스토어의 복잡한
-                환경설정 세팅을 간단하게 쓸 수 있어서 좋았습니다.
-              </S.UyouToolkit>
-            </S.UyouToolkitTextDiv>
-            {/* {} */}
-            <S.SkillsTextAndBtn
-              uyoumsw={uyouMsw}
-              onClick={() => {
-                setUyouMsw(!uyouMsw);
-              }}
-            >
-              <S.SkillName>MSW</S.SkillName>
-              <S.UyouMswBtnDiv uyoumsw={uyouMsw}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.UyouMswBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.UyouMswTextDiv uyoumsw={uyouMsw}>
-              <S.UyouMsw>
-                MSW(Mock Service Worker)는 Mock서버를 구현하지않고도, 네트워크
-                수준에서 API를 Mocking 할 수 있습니다. 백엔드에서 API가
-                나오기전에 프론트에서 먼저 HTTP통신을 해 볼 수 있었습니다.
-              </S.UyouMsw>
-            </S.UyouMswTextDiv>
-            {/* {} */}
-            <S.SkillsTextAndBtn
-              uyoustyled={uyouStyled}
-              onClick={() => {
-                setUyouStyled(!uyouStyled);
-              }}
-            >
-              <S.SkillName>Styled Components</S.SkillName>
-              <S.UyouStyledBtnDiv uyoustyled={uyouStyled}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.UyouStyledBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.UyouStyledTextDiv uyoustyled={uyouStyled}>
-              <S.UyouStyled>
-                Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
-                방식인 라이브러리입니다. React props를 활용한 조건부 스타일링이
-                가능하기도해서 좋았습니다.
-              </S.UyouStyled>
-            </S.UyouStyledTextDiv>
-            {/* {} */}
-            <S.SkillsTextAndBtn
-              uyouhook={uyouHook}
-              onClick={() => {
-                setUyouHook(!uyouHook);
-              }}
-            >
-              <S.SkillName>React Hook Form</S.SkillName>
-              <S.UyouHookBtnDiv uyouhook={uyouHook}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.UyouHookBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.UyouHookTextDiv uyouhook={uyouHook}>
-              <S.UyouHook>
-                React Hook Form은 회원가입, 로그인 페이지에서 입력창과
-                유효성검사를 더욱 효과적이고 간편하게 도와주는 라이브러리입니다.
-                데이터 전송관리하기에도 편해서 좋았습니다.
-              </S.UyouHook>
-            </S.UyouHookTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                uyoutoolkit={uyouToolkit}
+                onClick={() => {
+                  setUyouToolkit(!uyouToolkit);
+                }}
+              >
+                <S.SkillName>Redux Toolkit</S.SkillName>
+                <S.UyouToolkitBtnDiv uyoutoolkit={uyouToolkit}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.UyouToolkitBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.UyouToolkitTextDiv uyoutoolkit={uyouToolkit}>
+                <S.UyouToolkit>
+                  Redux Toolkit은 react의 전역상태관리 라이브러리입니다. Redux
+                  Toolkit은 Redux의 단점들을 보완해주며 특히 Redux 스토어의
+                  복잡한 환경설정 세팅을 간단하게 쓸 수 있어서 좋았습니다.
+                </S.UyouToolkit>
+              </S.UyouToolkitTextDiv>
+            </S.SkillsSection>
 
             {/* {} */}
-            <S.SkillsTextAndBtn
-              uyouaxios={uyouAxios}
-              onClick={() => {
-                setUyouAxios(!uyouAxios);
-              }}
-            >
-              <S.SkillName>Axios</S.SkillName>
-              <S.UyouAxiosBtnDiv uyouaxios={uyouAxios}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.UyouAxiosBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.UyouAxiosTextDiv uyouaxios={uyouAxios}>
-              <S.UyouAxios>
-                Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP
-                통신 라이브러리 입니다. fetch를 사용하는 것 보다 코드를 간결하게
-                쓸 수 있어서 좋았습니다.
-              </S.UyouAxios>
-            </S.UyouAxiosTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                uyoumsw={uyouMsw}
+                onClick={() => {
+                  setUyouMsw(!uyouMsw);
+                }}
+              >
+                <S.SkillName>MSW</S.SkillName>
+                <S.UyouMswBtnDiv uyoumsw={uyouMsw}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.UyouMswBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.UyouMswTextDiv uyoumsw={uyouMsw}>
+                <S.UyouMsw>
+                  MSW(Mock Service Worker)는 Mock서버를 구현하지않고도, 네트워크
+                  수준에서 API를 Mocking 할 수 있습니다. 백엔드에서 API가
+                  나오기전에 프론트에서 먼저 HTTP통신을 해 볼 수 있었습니다.
+                </S.UyouMsw>
+              </S.UyouMswTextDiv>
+            </S.SkillsSection>
+
+            {/* {} */}
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                uyoustyled={uyouStyled}
+                onClick={() => {
+                  setUyouStyled(!uyouStyled);
+                }}
+              >
+                <S.SkillName>Styled Components</S.SkillName>
+                <S.UyouStyledBtnDiv uyoustyled={uyouStyled}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.UyouStyledBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.UyouStyledTextDiv uyoustyled={uyouStyled}>
+                <S.UyouStyled>
+                  Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
+                  방식인 라이브러리입니다. React props를 활용한 조건부
+                  스타일링이 가능하기도해서 좋았습니다.
+                </S.UyouStyled>
+              </S.UyouStyledTextDiv>
+            </S.SkillsSection>
+
+            {/* {} */}
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                uyouhook={uyouHook}
+                onClick={() => {
+                  setUyouHook(!uyouHook);
+                }}
+              >
+                <S.SkillName>React Hook Form</S.SkillName>
+                <S.UyouHookBtnDiv uyouhook={uyouHook}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.UyouHookBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.UyouHookTextDiv uyouhook={uyouHook}>
+                <S.UyouHook>
+                  React Hook Form은 회원가입, 로그인 페이지에서 입력창과
+                  유효성검사를 더욱 효과적이고 간편하게 도와주는
+                  라이브러리입니다. 데이터 전송관리하기에도 편해서 좋았습니다.
+                </S.UyouHook>
+              </S.UyouHookTextDiv>
+            </S.SkillsSection>
+
+            {/* {} */}
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                uyouaxios={uyouAxios}
+                onClick={() => {
+                  setUyouAxios(!uyouAxios);
+                }}
+              >
+                <S.SkillName>Axios</S.SkillName>
+                <S.UyouAxiosBtnDiv uyouaxios={uyouAxios}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.UyouAxiosBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.UyouAxiosTextDiv uyouaxios={uyouAxios}>
+                <S.UyouAxios>
+                  Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP
+                  통신 라이브러리 입니다. fetch를 사용하는 것 보다 코드를
+                  간결하게 쓸 수 있어서 좋았습니다.
+                </S.UyouAxios>
+              </S.UyouAxiosTextDiv>
+            </S.SkillsSection>
           </S.SkillsContainer>
           <S.LinkTitleDiv>
             <AiOutlineLink size='30' />
@@ -687,157 +720,181 @@ const Projects = () => {
             사용기술
           </S.SkillsTitleDiv>
           <S.SkillsContainer>
-            <S.SkillsTextAndBtn
-              bobereact={bobeReact}
-              onClick={() => {
-                setBobeReact(!bobeReact);
-              }}
-            >
-              <S.SkillName>React</S.SkillName>
-              <S.BobeReactBtnDiv bobereact={bobeReact}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.BobeReactBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.BobeReactTextDiv bobereact={bobeReact}>
-              <S.BobeReact>
-                React는 Component를 이용하여 재사용이 가능하고, 유지보수
-                하기에도 좋았습니다. 또한 자료가 굉장히 방대하여 문제해결에도
-                좋았습니다.
-              </S.BobeReact>
-            </S.BobeReactTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                bobereact={bobeReact}
+                onClick={() => {
+                  setBobeReact(!bobeReact);
+                }}
+              >
+                <S.SkillName>React</S.SkillName>
+                <S.BobeReactBtnDiv bobereact={bobeReact}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.BobeReactBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.BobeReactTextDiv bobereact={bobeReact}>
+                <S.BobeReact>
+                  React는 Component를 이용하여 재사용이 가능하고, 유지보수
+                  하기에도 좋았습니다. 또한 자료가 굉장히 방대하여 문제해결에도
+                  좋았습니다.
+                </S.BobeReact>
+              </S.BobeReactTextDiv>
+            </S.SkillsSection>
+
             {/*  */}
-            <S.SkillsTextAndBtn
-              bobevite={bobeVite}
-              onClick={() => {
-                setBobeVite(!bobeVite);
-              }}
-            >
-              <S.SkillName>Vite</S.SkillName>
-              <S.BobeViteBtnDiv bobevite={bobeVite}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.BobeViteBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.BobeViteTextDiv bobevite={bobeVite}>
-              <S.BobeVite>
-                Vite는 프랑스어로 빠르다를 의미하는데 말그대로 굉장히 빠른 빌드
-                속도를 보여줍니다. CRA는 Javascript로 구성된 Webpack으로
-                빌드하는데 속도가 느립니다. CRA 웹팩빌드와 비교했을때 정말
-                빨랐습니다.
-              </S.BobeVite>
-            </S.BobeViteTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                bobevite={bobeVite}
+                onClick={() => {
+                  setBobeVite(!bobeVite);
+                }}
+              >
+                <S.SkillName>Vite</S.SkillName>
+                <S.BobeViteBtnDiv bobevite={bobeVite}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.BobeViteBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.BobeViteTextDiv bobevite={bobeVite}>
+                <S.BobeVite>
+                  Vite는 프랑스어로 빠르다를 의미하는데 말그대로 굉장히 빠른
+                  빌드 속도를 보여줍니다. CRA는 Javascript로 구성된 Webpack으로
+                  빌드하는데 속도가 느립니다. CRA 웹팩빌드와 비교했을때 정말
+                  빨랐습니다.
+                </S.BobeVite>
+              </S.BobeViteTextDiv>
+            </S.SkillsSection>
+
             {/* {} */}
-            <S.SkillsTextAndBtn
-              bobedaum={bobeDaum}
-              onClick={() => {
-                setBobeDaum(!bobeDaum);
-              }}
-            >
-              <S.SkillName>Daum PostCode</S.SkillName>
-              <S.BobeDaumBtnDiv bobedaum={bobeDaum}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.BobeDaumBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.BobeDaumTextDiv bobedaum={bobeDaum}>
-              <S.BobeDaum>
-                Daum PostCode는 주소 찾기를 도와주는 라이브러리입니다. npm으로
-                react전용 Daum PostCode를 설치하여 사용할 수 있었습니다.
-              </S.BobeDaum>
-            </S.BobeDaumTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                bobedaum={bobeDaum}
+                onClick={() => {
+                  setBobeDaum(!bobeDaum);
+                }}
+              >
+                <S.SkillName>Daum PostCode</S.SkillName>
+                <S.BobeDaumBtnDiv bobedaum={bobeDaum}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.BobeDaumBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.BobeDaumTextDiv bobedaum={bobeDaum}>
+                <S.BobeDaum>
+                  Daum PostCode는 주소 찾기를 도와주는 라이브러리입니다. npm으로
+                  react전용 Daum PostCode를 설치하여 사용할 수 있었습니다.
+                </S.BobeDaum>
+              </S.BobeDaumTextDiv>
+            </S.SkillsSection>
+
             {/*  */}
-            <S.SkillsTextAndBtn
-              boberecoil={bobeRecoil}
-              onClick={() => {
-                setBobeRecoil(!bobeRecoil);
-              }}
-            >
-              <S.SkillName>Recoil</S.SkillName>
-              <S.BobeRecoilBtnDiv boberecoil={bobeRecoil}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.BobeRecoilBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.BobeRecoilTextDiv boberecoil={bobeRecoil}>
-              <S.BobeRecoil>
-                Recoil은 전역 상태를 관리하기 위해 사용하는 라이브러리입니다.
-                Redux의 번거로운 초기세팅을 하지 않고 훨씬 쉽게 세팅하고 사용할
-                수 있어서 사용하기 쉬운 전역상태관리 라이브러리였습니다.
-              </S.BobeRecoil>
-            </S.BobeRecoilTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                boberecoil={bobeRecoil}
+                onClick={() => {
+                  setBobeRecoil(!bobeRecoil);
+                }}
+              >
+                <S.SkillName>Recoil</S.SkillName>
+                <S.BobeRecoilBtnDiv boberecoil={bobeRecoil}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.BobeRecoilBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.BobeRecoilTextDiv boberecoil={bobeRecoil}>
+                <S.BobeRecoil>
+                  Recoil은 전역 상태를 관리하기 위해 사용하는 라이브러리입니다.
+                  Redux의 번거로운 초기세팅을 하지 않고 훨씬 쉽게 세팅하고
+                  사용할 수 있어서 사용하기 쉬운 전역상태관리
+                  라이브러리였습니다.
+                </S.BobeRecoil>
+              </S.BobeRecoilTextDiv>
+            </S.SkillsSection>
+
             {/* {} */}
-            <S.SkillsTextAndBtn
-              bobemsw={bobeMsw}
-              onClick={() => {
-                setBobeMsw(!bobeMsw);
-              }}
-            >
-              <S.SkillName>MSW</S.SkillName>
-              <S.BobeMswBtnDiv bobemsw={bobeMsw}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.BobeMswBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.BobeMswTextDiv bobemsw={bobeMsw}>
-              <S.BobeMsw>
-                MSW(Mock Service Worker)는 Mock서버를 구현하지않고도, 네트워크
-                수준에서 API를 Mocking 할 수 있습니다. 백엔드에서 API가
-                나오기전에 프론트에서 먼저 HTTP통신을 해 볼 수 있었습니다.
-              </S.BobeMsw>
-            </S.BobeMswTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                bobemsw={bobeMsw}
+                onClick={() => {
+                  setBobeMsw(!bobeMsw);
+                }}
+              >
+                <S.SkillName>MSW</S.SkillName>
+                <S.BobeMswBtnDiv bobemsw={bobeMsw}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.BobeMswBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.BobeMswTextDiv bobemsw={bobeMsw}>
+                <S.BobeMsw>
+                  MSW(Mock Service Worker)는 Mock서버를 구현하지않고도, 네트워크
+                  수준에서 API를 Mocking 할 수 있습니다. 백엔드에서 API가
+                  나오기전에 프론트에서 먼저 HTTP통신을 해 볼 수 있었습니다.
+                </S.BobeMsw>
+              </S.BobeMswTextDiv>
+            </S.SkillsSection>
+
             {/* {} */}
-            <S.SkillsTextAndBtn
-              bobestyled={bobeStyled}
-              onClick={() => {
-                setBobeStyled(!bobeStyled);
-              }}
-            >
-              <S.SkillName>Styled Components</S.SkillName>
-              <S.BobeStyledBtnDiv bobestyled={bobeStyled}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.BobeStyledBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.BobeStyledTextDiv bobestyled={bobeStyled}>
-              <S.BobeStyled>
-                Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
-                방식인 라이브러리입니다. React props를 활용한 조건부 스타일링이
-                가능하기도해서 좋았습니다.
-              </S.BobeStyled>
-            </S.BobeStyledTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                bobestyled={bobeStyled}
+                onClick={() => {
+                  setBobeStyled(!bobeStyled);
+                }}
+              >
+                <S.SkillName>Styled Components</S.SkillName>
+                <S.BobeStyledBtnDiv bobestyled={bobeStyled}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.BobeStyledBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.BobeStyledTextDiv bobestyled={bobeStyled}>
+                <S.BobeStyled>
+                  Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
+                  방식인 라이브러리입니다. React props를 활용한 조건부
+                  스타일링이 가능하기도해서 좋았습니다.
+                </S.BobeStyled>
+              </S.BobeStyledTextDiv>
+            </S.SkillsSection>
+
             {/* {} */}
-            <S.SkillsTextAndBtn
-              bobehook={bobeHook}
-              onClick={() => {
-                setBobeHook(!bobeHook);
-              }}
-            >
-              <S.SkillName>React Hook Form</S.SkillName>
-              <S.BobeHookBtnDiv bobehook={bobeHook}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.BobeHookBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.BobeHookTextDiv bobehook={bobeHook}>
-              <S.BobeHook>
-                React Hook Form은 회원가입, 로그인 페이지에서 입력창과
-                유효성검사를 더욱 효과적이고 간편하게 도와주는 라이브러리입니다.
-                데이터 전송관리하기에도 편해서 좋았습니다.
-              </S.BobeHook>
-            </S.BobeHookTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                bobehook={bobeHook}
+                onClick={() => {
+                  setBobeHook(!bobeHook);
+                }}
+              >
+                <S.SkillName>React Hook Form</S.SkillName>
+                <S.BobeHookBtnDiv bobehook={bobeHook}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.BobeHookBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.BobeHookTextDiv bobehook={bobeHook}>
+                <S.BobeHook>
+                  React Hook Form은 회원가입, 로그인 페이지에서 입력창과
+                  유효성검사를 더욱 효과적이고 간편하게 도와주는
+                  라이브러리입니다. 데이터 전송관리하기에도 편해서 좋았습니다.
+                </S.BobeHook>
+              </S.BobeHookTextDiv>
+            </S.SkillsSection>
+
             {/* {} */}
-            <S.SkillsTextAndBtn
-              bobeaxios={bobeAxios}
-              onClick={() => {
-                setBobeAxios(!bobeAxios);
-              }}
-            >
-              <S.SkillName>Axios</S.SkillName>
-              <S.BobeAxiosBtnDiv bobeaxios={bobeAxios}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.BobeAxiosBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.BobeAxiosTextDiv bobeaxios={bobeAxios}>
-              <S.BobeAxios>
-                Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP
-                통신 라이브러리 입니다. fetch를 사용하는 것 보다 코드를 간결하게
-                쓸 수 있어서 좋았습니다.
-              </S.BobeAxios>
-            </S.BobeAxiosTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                bobeaxios={bobeAxios}
+                onClick={() => {
+                  setBobeAxios(!bobeAxios);
+                }}
+              >
+                <S.SkillName>Axios</S.SkillName>
+                <S.BobeAxiosBtnDiv bobeaxios={bobeAxios}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.BobeAxiosBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.BobeAxiosTextDiv bobeaxios={bobeAxios}>
+                <S.BobeAxios>
+                  Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP
+                  통신 라이브러리 입니다. fetch를 사용하는 것 보다 코드를
+                  간결하게 쓸 수 있어서 좋았습니다.
+                </S.BobeAxios>
+              </S.BobeAxiosTextDiv>
+            </S.SkillsSection>
           </S.SkillsContainer>
           <S.LinkTitleDiv>
             <AiOutlineLink size='30' />
@@ -945,82 +1002,93 @@ const Projects = () => {
             사용기술
           </S.SkillsTitleDiv>
           <S.SkillsContainer>
-            <S.SkillsTextAndBtn
-              padakreact={padakReact}
-              onClick={() => {
-                setPadakReact(!padakReact);
-              }}
-            >
-              <S.SkillName>React</S.SkillName>
-              <S.PadakReactBtnDiv padakreact={padakReact}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.PadakReactBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.PadakReactTextDiv padakreact={padakReact}>
-              <S.PadakReact>
-                React는 Component를 이용하여 재사용이 가능하고, 유지보수의
-                용이함이있습니다. 많은 커뮤니티가 있어, 자료가 굉장히 방대하여
-                문제해결하기 좋습니다.
-              </S.PadakReact>
-            </S.PadakReactTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                padakreact={padakReact}
+                onClick={() => {
+                  setPadakReact(!padakReact);
+                }}
+              >
+                <S.SkillName>React</S.SkillName>
+                <S.PadakReactBtnDiv padakreact={padakReact}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.PadakReactBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.PadakReactTextDiv padakreact={padakReact}>
+                <S.PadakReact>
+                  React는 Component를 이용하여 재사용이 가능하고, 유지보수의
+                  용이함이있습니다. 많은 커뮤니티가 있어, 자료가 굉장히 방대하여
+                  문제해결하기 좋습니다.
+                </S.PadakReact>
+              </S.PadakReactTextDiv>
+            </S.SkillsSection>
+
             {/* {} */}
-            <S.SkillsTextAndBtn
-              padakredux={padakRedux}
-              onClick={() => {
-                setPadakRedux(!padakRedux);
-              }}
-            >
-              <S.SkillName>Redux</S.SkillName>
-              <S.PadakReduxBtnDiv padakredux={padakRedux}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.PadakReduxBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.PadakReduxTextDiv padakredux={padakRedux}>
-              <S.PadakRedux>
-                Redux는 전역에서 상태를 관리하게 해주는 라이브러리입니다. Action
-                - Dispatch - Reducer - Store 순서로 데이터를 단방향으로 전달하며
-                상태가 변경되면 React는 다시 렌더링을 시켜주는 다소 복잡한
-                방식이었습니다.
-              </S.PadakRedux>
-            </S.PadakReduxTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                padakredux={padakRedux}
+                onClick={() => {
+                  setPadakRedux(!padakRedux);
+                }}
+              >
+                <S.SkillName>Redux</S.SkillName>
+                <S.PadakReduxBtnDiv padakredux={padakRedux}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.PadakReduxBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.PadakReduxTextDiv padakredux={padakRedux}>
+                <S.PadakRedux>
+                  Redux는 전역에서 상태를 관리하게 해주는 라이브러리입니다.
+                  Action - Dispatch - Reducer - Store 순서로 데이터를 단방향으로
+                  전달하며 상태가 변경되면 React는 다시 렌더링을 시켜주는 다소
+                  복잡한 방식이었습니다.
+                </S.PadakRedux>
+              </S.PadakReduxTextDiv>
+            </S.SkillsSection>
+
             {/* {} */}
-            <S.SkillsTextAndBtn
-              padakstyled={padakStyled}
-              onClick={() => {
-                setPadakStyled(!padakStyled);
-              }}
-            >
-              <S.SkillName>Styled Components</S.SkillName>
-              <S.PadakStyledBtnDiv padakstyled={padakStyled}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.PadakStyledBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.PadakStyledTextDiv padakstyled={padakStyled}>
-              <S.PadakStyled>
-                Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
-                방식인 라이브러리입니다. React props를 활용한 조건부 스타일링이
-                가능하기도해서 좋았습니다.
-              </S.PadakStyled>
-            </S.PadakStyledTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                padakstyled={padakStyled}
+                onClick={() => {
+                  setPadakStyled(!padakStyled);
+                }}
+              >
+                <S.SkillName>Styled Components</S.SkillName>
+                <S.PadakStyledBtnDiv padakstyled={padakStyled}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.PadakStyledBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.PadakStyledTextDiv padakstyled={padakStyled}>
+                <S.PadakStyled>
+                  Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
+                  방식인 라이브러리입니다. React props를 활용한 조건부
+                  스타일링이 가능하기도해서 좋았습니다.
+                </S.PadakStyled>
+              </S.PadakStyledTextDiv>
+            </S.SkillsSection>
+
             {/* {} */}
-            <S.SkillsTextAndBtn
-              padakaxios={padakAxios}
-              onClick={() => {
-                setPadakAxios(!padakAxios);
-              }}
-            >
-              <S.SkillName>Axios</S.SkillName>
-              <S.PadakAxiosBtnDiv padakaxios={padakAxios}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-              </S.PadakAxiosBtnDiv>
-            </S.SkillsTextAndBtn>
-            <S.PadakAxiosTextDiv padakaxios={padakAxios}>
-              <S.PadakAxios>
-                Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP
-                통신 라이브러리 입니다. fetch를 사용하는 것 보다 코드를 간결하게
-                쓸 수 있어서 좋았습니다.
-              </S.PadakAxios>
-            </S.PadakAxiosTextDiv>
+            <S.SkillsSection>
+              <S.SkillsTextAndBtn
+                padakaxios={padakAxios}
+                onClick={() => {
+                  setPadakAxios(!padakAxios);
+                }}
+              >
+                <S.SkillName>Axios</S.SkillName>
+                <S.PadakAxiosBtnDiv padakaxios={padakAxios}>
+                  <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                </S.PadakAxiosBtnDiv>
+              </S.SkillsTextAndBtn>
+              <S.PadakAxiosTextDiv padakaxios={padakAxios}>
+                <S.PadakAxios>
+                  Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP
+                  통신 라이브러리 입니다. fetch를 사용하는 것 보다 코드를
+                  간결하게 쓸 수 있어서 좋았습니다.
+                </S.PadakAxios>
+              </S.PadakAxiosTextDiv>
+            </S.SkillsSection>
           </S.SkillsContainer>
           <S.LinkTitleDiv>
             <AiOutlineLink size='30' />

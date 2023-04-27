@@ -6,8 +6,8 @@ import { useState, useEffect } from 'react';
 const SideBar = ({ children }) => {
   // scroll 이벤트
   const [scrollPosition, setScrollPosition] = useState(0);
-  console.log('window.scrollY : ', window.scrollY);
-  console.log('scrollPosition : ', scrollPosition);
+  // console.log('window.scrollY : ', window.scrollY);
+  // console.log('scrollPosition : ', scrollPosition);
   const onScroll = () => {
     setScrollPosition(window.scrollY);
   };

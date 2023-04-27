@@ -384,7 +384,7 @@ export const SkillsTextAndBtn = styled.div`
   height: 45px;
   padding: 0 15px 0 15px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
 `;
 // Skill 이름 Div
 export const SkillName = styled.div`
@@ -1199,6 +1199,9 @@ export const SkillsContainer = styled.div`
   @media (max-width: 500px) {
     width: 80vw;
   }
+`;
+export const SkillsSection = styled.div`
+  margin-bottom: 7px;
 `;
 
 // 관련링크 Title div

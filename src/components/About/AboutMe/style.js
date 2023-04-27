@@ -111,19 +111,20 @@ export const ProfileLi = styled.li`
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
-    transition-property: all;
+    /* transition-timing-function: linear;
+    transition-property: all; */
     width: 0px;
     font-weight: bold;
     :hover {
+      transition: all 0.3s linear;
       width: 101%;
       height: 30px;
       color: white;
       background-color: #3cb371;
     }
     :not(:hover) {
-      transition: 0.3s ease-out;
+      transition: all 0.3s linear;
+      width: 0px;
     }
   }
 `;

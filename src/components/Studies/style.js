@@ -98,5 +98,52 @@ export const IntroDiv = styled.div`
     @media (max-width: 390px) {
       font-size: 12px;
     }
+    span {
+      height: 20px;
+      padding-top: 3px;
+      cursor: pointer;
+      display: block;
+      box-sizing: content-box;
+      align-items: center;
+      width: 0;
+      :hover {
+        transition: width 0.3s linear;
+        width: 320px;
+        color: white;
+        background-color: #3cb371;
+        @media (max-width: 1100px) {
+        width: 283px;
+        }
+        @media (max-width: 500px) {
+          width: 225px;
+        }
+        @media (max-width: 390px) {
+          width: 210px;
+         }
+      }
+      :not(:hover) {
+        transition: all 0.3s linear;
+        width: 0px;
+      }
+        @media (max-width: 500px) {
+          height: 15px;
+          padding-top: 3px;
+        }
+        @media (max-width: 390px) {
+          width: 210px;
+         }
+    }
+    h2 {
+      display: flex;
+      width: 320px;
+      @media (max-width: 1100px) {
+        width: 285px;
+      }
+      @media (max-width: 500px) {
+        width: 225px;
+      }
+      @media (max-width: 390px) {
+        width: 215px;
+    }
   }
 `;
