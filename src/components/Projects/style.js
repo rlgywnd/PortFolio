@@ -165,7 +165,7 @@ export const VideoTextAndBtn = styled.div`
   padding: 0 15px 0 15px;
   cursor: pointer;
   /* border: 1px solid #d3d3d3; */
-  border-radius: 5px;
+  border-radius: 2px;
 `;
 
 // text div  ex -> 메인화면, 로그인화면 등
@@ -384,7 +384,7 @@ export const SkillsTextAndBtn = styled.div`
   height: 45px;
   padding: 0 15px 0 15px;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 2px;
 `;
 // Skill 이름 Div
 export const SkillName = styled.div`
