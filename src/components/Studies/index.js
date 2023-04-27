@@ -2,6 +2,9 @@ import * as S from './style';
 import { RxCheck } from 'react-icons/rx';
 
 const Studies = () => {
+  const soloStudyBlogUrl =
+    'https://velog.io/@hyo123/series/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8C%A9%EA%B8%B0%EC%B4%88';
+
   return (
     <S.StudiesContainer id='studies'>
       <S.TitleUnderlineDiv>
@@ -15,7 +18,11 @@ const Studies = () => {
             <h1>프론트엔드 프로그래밍 독학</h1>
             <div>
               <RxCheck size='30' color='#3cb371' />
-              <span>
+              <span
+                onClick={() => {
+                  window.open(soloStudyBlogUrl);
+                }}
+              >
                 <h2>윤인성 혼공자 강의 학습하며 블로그 포스팅</h2>
               </span>
             </div>

@@ -164,7 +164,6 @@ export const VideoTextAndBtn = styled.div`
   height: 45px;
   padding: 0 15px 0 15px;
   cursor: pointer;
-  /* border: 1px solid #d3d3d3; */
   border-radius: 2px;
 `;
 
