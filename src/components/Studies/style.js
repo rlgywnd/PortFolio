@@ -98,16 +98,17 @@ export const IntroDiv = styled.div`
     @media (max-width: 390px) {
       font-size: 12px;
     }
+   
     span {
-      height: 20px;
-      padding-top: 3px;
+      height: 23px;
+      padding-top: 4px;
       cursor: pointer;
       display: block;
       box-sizing: content-box;
       align-items: center;
       width: 0;
       :hover {
-        transition: width 0.3s linear;
+        transition: all 0.3s linear;
         width: 320px;
         color: white;
         background-color: #3cb371;

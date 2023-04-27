@@ -115,10 +115,11 @@ export const ProfileLi = styled.li`
     transition-property: all; */
     width: 0px;
     font-weight: bold;
+    height: 28px;
     :hover {
       transition: all 0.3s linear;
       width: 101%;
-      height: 30px;
+      /* height: 30px; */
       color: white;
       background-color: #3cb371;
     }

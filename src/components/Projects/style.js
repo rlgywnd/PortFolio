@@ -1271,17 +1271,16 @@ export const UyouLinkTextDiv = styled.div`
     transition-timing-function: linear;
     transition-property: all;
     width: 0;
+    height: 23px;
+    padding-top: 4px;
     :hover {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      transition: all 0.3s linear;
       width: 100%;
-      height: 25px;
       color: white;
       background-color: #3cb371;
     }
     :not(:hover) {
-      transition: 0.3s ease-out;
+      transition: 0.3s linear;
     }
     h1 {
       box-sizing: border-box;
@@ -1347,17 +1346,16 @@ export const BobeLinkTextDiv = styled.div`
     transition-timing-function: linear;
     transition-property: all;
     width: 0;
+    height: 23px;
+    padding-top: 4px;
     :hover {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      transition: all 0.3s linear;
       width: 100%;
-      height: 25px;
       color: white;
       background-color: #3cb371;
     }
     :not(:hover) {
-      transition: 0.3s ease-out;
+      transition: 0.3s linear;
     }
     h1 {
       /* display: block; */
@@ -1447,17 +1445,16 @@ export const PadakLinkTextDiv = styled.div`
     transition-timing-function: linear;
     transition-property: all;
     width: 0;
+    height: 23px;
+    padding-top: 4px;
     :hover {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      transition: all 0.3s linear;
       width: 100%;
-      height: 25px;
       color: white;
       background-color: #3cb371;
     }
     :not(:hover) {
-      transition: 0.3s ease-out;
+      transition: 0.3s linear;
     }
     h1 {
       /* display: block; */
@@ -1520,17 +1517,16 @@ export const PortLinkTextDiv = styled.div`
     transition-timing-function: linear;
     transition-property: all;
     width: 0;
+    height: 23px;
+    padding-top: 4px;
     :hover {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      transition: all 0.3s linear;
       width: 100%;
-      height: 25px;
       color: white;
       background-color: #3cb371;
     }
     :not(:hover) {
-      transition: 0.3s ease-out;
+      transition: 0.3s linear;
     }
     h1 {
       width: 290px;
