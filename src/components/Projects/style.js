@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
   flex: 1;
-  /* border: 1px solid red; */
 `;
 export const ProjectsTitleH1 = styled.h1`
   display: flex;
@@ -96,7 +95,6 @@ export const IntroDiv = styled.div`
   h1 {
     display: flex;
     align-items: center;
-    /* margin-bottom: 5px; */
     margin-top: 15px;
     gap: 3px;
     font-size: 20px;
@@ -1358,7 +1356,6 @@ export const BobeLinkTextDiv = styled.div`
       transition: 0.3s linear;
     }
     h1 {
-      /* display: block; */
       box-sizing: border-box;
       width: 156px;
       @media (max-width: 1100px) {
@@ -1457,7 +1454,6 @@ export const PadakLinkTextDiv = styled.div`
       transition: 0.3s linear;
     }
     h1 {
-      /* display: block; */
       box-sizing: border-box;
       width: 156px;
       @media (max-width: 1100px) {

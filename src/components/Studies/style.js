@@ -64,7 +64,6 @@ export const IntroDiv = styled.div`
   h1 {
     display: flex;
     align-items: center;
-    /* margin-bottom: 5px; */
     gap: 3px;
     font-size: 20px;
     font-family: 'NEXON Lv2 Gothic' !important;
@@ -80,13 +79,11 @@ export const IntroDiv = styled.div`
     }
   }
   div {
-    /* border: 1px solid blue; */
     font-weight: bold;
     display: grid;
     grid-template-columns: 35px 800px;
     align-items: center;
     font-family: 'NEXON Lv2 Gothic' !important;
-    /* gap: 1px; */
     font-size: 18px;
     font-weight: bold;
     @media (max-width: 1100px) {

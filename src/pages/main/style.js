@@ -4,5 +4,4 @@ export const MainContainer = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  /* overflow-x: hidden; */
 `;

@@ -3,8 +3,6 @@ import styled from 'styled-components';
 // 1100 , 600 에 따라 반응형
 
 export const SideBarReal = styled.div`
-  /* display: flex;
-  border: 5px solid red; */
   display: grid;
   grid-template-columns: 250px 800px 50px;
   background-color: rgb(245, 245, 245);
@@ -15,7 +13,6 @@ export const SideBarContainer = styled.div`
   position: fixed;
   top: 0;
   padding: 110px 0 0 30px;
-  /* height: 100vh; */
   @media (max-width: 1100px) {
     display: none;
   }

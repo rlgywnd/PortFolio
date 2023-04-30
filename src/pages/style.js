@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-// import moliImg from '../assets/moli.png';
 import videoImg from '../assets/video4.gif';
-// import videoImg2 from '../assets/background4.gif';
 import { Link } from 'react-router-dom';
 
 /* color: #4285f4; 푸른색  */

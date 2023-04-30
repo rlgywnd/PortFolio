@@ -5,7 +5,6 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterTextDiv = styled.div`
-  /* border: 1px solid red; */
   font-family: 'NEXON Lv2 Gothic' !important;
   height: 200px;
   color: white;
