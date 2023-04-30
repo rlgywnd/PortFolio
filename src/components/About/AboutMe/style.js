@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroundImg2 from '../../../assets/background2.JPG';
+import backgroundImg2 from '../../../assets/background3.jpeg';
 
 export const AboutMeContainer = styled.div`
   flex: 1;
