@@ -288,7 +288,9 @@ export const AllComponentsDiv = styled.div`
     margin-left: 0;
   }
 `;
-export const UpBtnContainer = styled.div``;
+export const UpBtnContainer = styled.div`
+  position: fixed;
+`;
 export const UpBtnDiv = styled.div`
   display: flex;
   justify-content: center;
