@@ -14,7 +14,6 @@ export const HomeContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-size: 50px;
   color: black;
   background: url(${videoImg}) center no-repeat;
