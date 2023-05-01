@@ -118,6 +118,9 @@ export const ProfileLi = styled.li`
     height: 28px;
     :hover {
       transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+
       width: 101%;
       /* height: 30px; */
       color: white;
@@ -125,6 +128,8 @@ export const ProfileLi = styled.li`
     }
     :not(:hover) {
       transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
       width: 0px;
     }
   }
