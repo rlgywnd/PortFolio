@@ -21,6 +21,13 @@ export const ShortAboutDiv = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     // 배경만 투명도 주기
     url(${backgroundImg});
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(${backgroundImg});
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(${backgroundImg});
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
