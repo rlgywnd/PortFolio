@@ -112,8 +112,7 @@ export const IntroDiv = styled.div`
   }
   h2 {
     font-family: 'NEXON Lv2 Gothic' !important;
-    display: grid;
-    grid-template-columns: 35px 800px;
+    display: flex;
     align-items: center;
     gap: 5px;
     font-size: 18px;
