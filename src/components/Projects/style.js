@@ -111,7 +111,7 @@ export const IntroDiv = styled.div`
     }
   }
   div {
-    /* border: 1px solid blue; */
+    font-family: 'NEXON Lv2 Gothic' !important;
     display: grid;
     grid-template-columns: 35px 800px;
     align-items: center;
