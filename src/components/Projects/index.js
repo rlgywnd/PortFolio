@@ -91,27 +91,27 @@ const Projects = () => {
             <S.IntroDateDiv>
               <S.IntroDiv>
                 <h1>서비스 소개</h1>
-                <div>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   김효중의 개인 포트폴리오
-                </div>
+                </h2>
                 <h1>작업 내용</h1>
-                <div>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   SideBar & HeaderBar 구현
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   React-Scroll 사용하여 스크롤 이벤트 구현
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   UI/UX 반응형 & 애니메이션 구현
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   AWS S3 정적 웹 호스팅
-                </div>
+                </h2>
               </S.IntroDiv>
             </S.IntroDateDiv>
           </S.IntroAndWorkDetail>
