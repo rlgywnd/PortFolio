@@ -127,7 +127,7 @@ export const IntroDiv = styled.div`
       font-size: 11px;
     }
   }
-  div {
+  /* div {
     font-family: 'NEXON Lv2 Gothic' !important;
     display: grid;
     grid-template-columns: 35px 800px;
@@ -144,7 +144,7 @@ export const IntroDiv = styled.div`
     @media (max-width: 390px) {
       font-size: 11px;
     }
-  }
+  } */
 `;
 export const VideoTitleDiv = styled.div`
   display: flex;
@@ -1550,16 +1550,16 @@ export const PortLinkTextDiv = styled.div`
         width: 203px;
       }
       @media (max-width: 390px) {
-        width: 201px;
+        width: 205px;
       }
     }
     h2 {
-      width: 133px;
+      width: 140px;
       @media (max-width: 1100px) {
-        width: 120px;
+        width: 126px;
       }
       @media (max-width: 500px) {
-        width: 93px;
+        width: 98px;
       }
     }
   }

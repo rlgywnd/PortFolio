@@ -76,14 +76,12 @@ export const IntroDiv = styled.div`
       font-size: 15px;
     }
   }
-  div {
-    /* border: 1px solid blue; */
+  h2 {
     font-weight: bold;
-    display: grid;
-    grid-template-columns: 35px 800px;
+    display: flex;
     align-items: center;
     font-family: 'NEXON Lv2 Gothic' !important;
-    /* gap: 1px; */
+    gap: 5px;
     font-size: 18px;
     font-weight: bold;
     @media (max-width: 1100px) {
@@ -96,6 +94,24 @@ export const IntroDiv = styled.div`
       font-size: 11px;
     }
   }
+  /* div {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 35px 800px;
+    align-items: center;
+    font-family: 'NEXON Lv2 Gothic' !important;
+    font-size: 18px;
+    font-weight: bold;
+    @media (max-width: 1100px) {
+      font-size: 16px;
+    }
+    @media (max-width: 500px) {
+      font-size: 12.5px;
+    }
+    @media (max-width: 390px) {
+      font-size: 11px;
+    }
+  } */
 `;
 // ---------
 export const RatingTitleH1 = styled.div`

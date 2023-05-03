@@ -254,35 +254,35 @@ const Projects = () => {
               <S.WorkDate>2023년 1월 - 진행중</S.WorkDate>
               <S.IntroDiv>
                 <h1>서비스 소개</h1>
-                <div>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   현대인들의 결정장애를 해결하기 위한 공개투표 서비스
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   프론트 3명 & 백엔드 3명 & 웹디자이너 1명 협업
-                </div>
+                </h2>
                 <h1>작업 내용</h1>
-                <div>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   레이아웃 - 컴포넌트에 공통으로 적용될 레이아웃 틀
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   회원가입 - 유효성 & 중복검사를 통한 회원가입 기능
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   로그인 - Window저장객체에 따른 로그인유지 기능
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   로그인 - OAuth방식 소셜로그인 기능 구현 (카카오 & 구글)
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   마이페이지 - 내정보수정 & 나의 게시글 보기 기능
-                </div>
+                </h2>
               </S.IntroDiv>
             </S.IntroDateDiv>
             <S.VideoTitleDiv>
@@ -605,31 +605,31 @@ const Projects = () => {
               <S.WorkDate>2022년 11월</S.WorkDate>
               <S.IntroDiv>
                 <h1>서비스 소개</h1>
-                <div>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   전기차 충전 고충에 덜어드리는 전기차 보조배터리 대여 서비스
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   프론트 4명 & 백엔드 3명 협업
-                </div>
+                </h2>
                 <h1>작업 내용</h1>
-                <div>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   회원가입 - 유효성 & 중복검사를 통한 회원가입 기능
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   주소찾기 - 회원가입 & 내정보수정에서 주소를 찾기 기능
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   로그인 - Window저장객체에 따른 로그인유지 기능
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   마이페이지 - 내정보수정 & 나의 대여정보 확인 기능
-                </div>
+                </h2>
               </S.IntroDiv>
             </S.IntroDateDiv>
             <S.VideoTitleDiv>
@@ -973,27 +973,27 @@ const Projects = () => {
               <S.WorkDate>2022년 10월</S.WorkDate>
               <S.IntroDiv>
                 <h1>서비스 소개</h1>
-                <div>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   Stack OverFlow 클론 코딩한 웹 서비스
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   프론트 3명 & 백엔드 2명 협업
-                </div>
+                </h2>
                 <h1>작업 내용</h1>
-                <div>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   메인페이지 - 카테고리 별 게시글 리스트들이 보이게 구현
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   작성페이지 - Toast Editor를 사용한 글 작성 기능 구현
-                </div>
-                <div>
+                </h2>
+                <h2>
                   <RxCheck size='30' color='#3cb371' />
                   검색창 - [단어] 옵션을 이용한 단어 관련 검색기능 구현
-                </div>
+                </h2>
               </S.IntroDiv>
             </S.IntroDateDiv>
           </S.IntroAndWorkDetail>

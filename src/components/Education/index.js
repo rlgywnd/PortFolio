@@ -39,33 +39,33 @@ const Education = () => {
           <S.EduDate>2022.06 - 2022.12</S.EduDate>
           <S.IntroDiv>
             <h1>코드스테이츠(Code States)</h1>
-            <div>
+            <h2>
               <RxCheck size='30' color='#3cb371' />
               software engineering bootcamp, Front-end(40기)
-            </div>
-            <div>
+            </h2>
+            <h2>
               <RxCheck size='30' color='#3cb371' />
               Javascript언어 기반으로 프론트엔드 과정 학습
-            </div>
-            <div>
+            </h2>
+            <h2>
               <RxCheck size='30' color='#3cb371' />
               React 중심 WEB 구현
-            </div>
-            <div>
+            </h2>
+            <h2>
               <RxCheck size='30' color='#3cb371' />
               Node.JS / EXPRESS 로 웹 서버구축
-            </div>
-            <div>
+            </h2>
+            <h2>
               <RxCheck size='30' color='#3cb371' />
               페어 프로그래밍 협업 & 코드 리뷰 경험
-            </div>
-            <div>
+            </h2>
+            <h2>
               <RxCheck size='30' color='#3cb371' />
               알고리즘 문제 풀이
-            </div>
-            <div>
+            </h2>
+            <h2>
               <RxCheck size='30' color='#3cb371' />팀 프로젝트 개발 경험
-            </div>
+            </h2>
           </S.IntroDiv>
           <S.RatingTitleH1>수강생들의 나에 대한 협업 평가</S.RatingTitleH1>
           <S.RatingContainer>
