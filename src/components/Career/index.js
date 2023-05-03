@@ -13,22 +13,22 @@ const Career = () => {
           <S.CareerDate>2016.01 - 2017.05</S.CareerDate>
           <S.IntroDiv>
             <h1>나레이터모델</h1>
-            <div>
+            <h2>
               <RxCheck size='30' color='#3cb371' />
               행사 / 안내 나레이터모델 근무
-            </div>
-            <div>
+            </h2>
+            <h2>
               <RxCheck size='30' color='#3cb371' />
               Galaxy S8 in 평택AK플라자 Galaxy S8 시현
-            </div>
-            <div>
+            </h2>
+            <h2>
               <RxCheck size='30' color='#3cb371' />
               L'Occitane in 숙명여대 축제 L'Occitane 프로모션
-            </div>
-            <div>
+            </h2>
+            <h2>
               <RxCheck size='30' color='#3cb371' />
               편안한 분위기로 커뮤니케이션 할 수 있었습니다.
-            </div>
+            </h2>
           </S.IntroDiv>
         </S.NaratorDiv>
         <S.FittingDiv id='fitting'>
@@ -36,10 +36,10 @@ const Career = () => {
           <S.CareerDate>2013.07 - 2014.05</S.CareerDate>
           <S.IntroDiv>
             <h1>피팅모델</h1>
-            <div>
+            <h2>
               <RxCheck size='30' color='#3cb371' />
               M.Holiday 의류 피팅모델 근무
-            </div>
+            </h2>
           </S.IntroDiv>
         </S.FittingDiv>
       </S.CareerDiv>

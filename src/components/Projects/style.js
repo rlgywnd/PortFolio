@@ -1547,10 +1547,10 @@ export const PortLinkTextDiv = styled.div`
         width: 258px;
       }
       @media (max-width: 500px) {
-        width: 203px;
+        width: 208px;
       }
       @media (max-width: 390px) {
-        width: 205px;
+        width: 208px;
       }
     }
     h2 {

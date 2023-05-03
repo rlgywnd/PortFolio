@@ -75,11 +75,11 @@ export const IntroDiv = styled.div`
       font-size: 15px;
     }
   }
-  div {
+  h2 {
     font-weight: bold;
-    display: grid;
-    grid-template-columns: 35px 800px;
+    display: flex;
     align-items: center;
+    gap: 5px;
     font-family: 'NEXON Lv2 Gothic' !important;
     font-size: 18px;
     font-weight: bold;

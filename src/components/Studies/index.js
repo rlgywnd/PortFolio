@@ -16,7 +16,7 @@ const Studies = () => {
           <S.CareerDate>2021.09 - 2022.02</S.CareerDate>
           <S.IntroDiv>
             <h1>프론트엔드 프로그래밍 독학</h1>
-            <div>
+            <h3>
               <RxCheck size='30' color='#3cb371' />
               <span
                 onClick={() => {
@@ -25,23 +25,23 @@ const Studies = () => {
               >
                 <h2>윤인성 혼공자 강의 학습하며 블로그 포스팅</h2>
               </span>
-            </div>
-            <div>
+            </h3>
+            <h3>
               <RxCheck size='30' color='#3cb371' />
               Javascript언어 기초지식 학습
-            </div>
-            <div>
+            </h3>
+            <h3>
               <RxCheck size='30' color='#3cb371' />
               HTML / CSS 기초지식 학습
-            </div>
-            <div>
+            </h3>
+            <h3>
               <RxCheck size='30' color='#3cb371' />
               React 라이브러리 학습
-            </div>
-            <div>
+            </h3>
+            <h3>
               <RxCheck size='30' color='#3cb371' />
               블로그 포스팅
-            </div>
+            </h3>
           </S.IntroDiv>
         </S.SelfStudyDiv>
         <S.PoliceDiv id='police'>
@@ -49,10 +49,10 @@ const Studies = () => {
           <S.CareerDate>2020.05 - 2021.05</S.CareerDate>
           <S.IntroDiv>
             <h1>검찰공무원 9급 준비</h1>
-            <div>
+            <h3>
               <RxCheck size='30' color='#3cb371' />
               법검단기 프리패스 과정 9급 검찰직 수강
-            </div>
+            </h3>
           </S.IntroDiv>
         </S.PoliceDiv>
       </S.StudiesDiv>
