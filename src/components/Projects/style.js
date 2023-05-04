@@ -1334,6 +1334,18 @@ export const UyouLinkTextDiv = styled.div`
         width: 300px;
       }
     }
+    h4 {
+      width: 280px;
+      @media (max-width: 1100px) {
+        width: 247px;
+      }
+      @media (max-width: 500px) {
+        width: 195px;
+      }
+      @media (max-width: 390px) {
+        width: 175px;
+      }
+    }
   }
 `;
 

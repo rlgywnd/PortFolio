@@ -24,6 +24,8 @@ const Projects = () => {
   const uyouGitUrl = 'https://github.com/Team-Big-Dipper/UYouBooDan/tree/fe';
   const uyouBlogUrl =
     'https://velog.io/@hyo123/Next.js-localStorage-%EC%97%90%EB%9F%AC%ED%95%B8%EB%93%A4%EB%A7%81';
+  const uyouWorkBlogUrl =
+    'https://velog.io/@hyo123/%EC%9A%B0%EC%9C%A0%EB%B6%80%EB%8B%A8-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83';
   const bobeGitUrl = 'https://github.com/codestates-seb/seb40_main_030';
   const bobeNotionUrl =
     'https://www.notion.so/codestates/8e43f8220bae4542b0ae84d8caa06b5a';
@@ -589,6 +591,18 @@ const Projects = () => {
                   <h3>
                     Next.JS에서 window객체 사용시 트러블슈팅 관련 블로그 포스팅
                   </h3>
+                </span>
+              </div>
+            </S.UyouLinkTextDiv>
+            <S.UyouLinkTextDiv>
+              <RxCheck size='30' color='#3cb371' />
+              <div>
+                <span
+                  onClick={() => {
+                    window.open(uyouWorkBlogUrl);
+                  }}
+                >
+                  <h4>우유부단 작업내용정리 블로그 포스팅</h4>
                 </span>
               </div>
             </S.UyouLinkTextDiv>
