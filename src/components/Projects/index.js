@@ -33,6 +33,8 @@ const Projects = () => {
   const bobeDeployUrl =
     'http://battery-bucket-deploy.s3-website.ap-northeast-2.amazonaws.com/';
   const bobeBlogUrl = 'https://velog.io/@hyo123/%EB%A1%9C%EA%B7%B8%EC%9D%B8';
+  const bobeWorkBlogUrl =
+    'https://velog.io/@hyo123/%EB%B3%B4%EB%B0%B0%EB%B9%8C%EB%A6%BC-%EC%9E%91%EC%97%85%EB%82%B4%EC%9A%A9%EC%A0%95%EB%A6%AC';
   const padakDeployUrl =
     'http://padakmon-client-bucket.s3-website.ap-northeast-2.amazonaws.com/';
   const padakGitUrl = 'https://github.com/codestates-seb/seb40_pre_003';
@@ -972,6 +974,18 @@ const Projects = () => {
                   }}
                 >
                   <h5>Window저장객체 관련 로그인구현 블로그 포스팅</h5>
+                </span>
+              </div>
+            </S.BobeLinkTextDiv>
+            <S.BobeLinkTextDiv>
+              <RxCheck size='30' color='#3cb371' />
+              <div>
+                <span
+                  onClick={() => {
+                    window.open(bobeWorkBlogUrl);
+                  }}
+                >
+                  <h6>보배빌림 작업내용정리 블로그 포스팅</h6>
                 </span>
               </div>
             </S.BobeLinkTextDiv>

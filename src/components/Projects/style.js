@@ -1445,6 +1445,18 @@ export const BobeLinkTextDiv = styled.div`
         width: 226px;
       }
     }
+    h6 {
+      width: 280px;
+      @media (max-width: 1100px) {
+        width: 247px;
+      }
+      @media (max-width: 500px) {
+        width: 195px;
+      }
+      @media (max-width: 390px) {
+        width: 175px;
+      }
+    }
   }
 `;
 export const PadakLinkTextDiv = styled.div`
