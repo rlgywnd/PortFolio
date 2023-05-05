@@ -1232,7 +1232,7 @@ export const LinkTitleDiv = styled.div`
 export const UyouLinkContainer = styled.div`
   display: grid;
   grid-template-columns: 700px;
-  grid-template-rows: 40px 40px 40px;
+  grid-template-rows: 40px 40px 40px 40px;
   margin-bottom: 20px;
   font-size: 20px;
   font-family: 'NEXON Lv2 Gothic' !important;
@@ -1240,7 +1240,7 @@ export const UyouLinkContainer = styled.div`
 export const BobeLinkContainer = styled.div`
   display: grid;
   grid-template-columns: 700px;
-  grid-template-rows: 40px 40px 40px 40px;
+  grid-template-rows: 40px 40px 40px 40px 40px 40px;
   margin-bottom: 20px;
   font-size: 20px;
   font-family: 'NEXON Lv2 Gothic' !important;
