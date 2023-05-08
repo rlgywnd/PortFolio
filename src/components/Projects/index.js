@@ -26,6 +26,8 @@ const Projects = () => {
     'https://velog.io/@hyo123/Next.js-localStorage-%EC%97%90%EB%9F%AC%ED%95%B8%EB%93%A4%EB%A7%81';
   const uyouWorkBlogUrl =
     'https://velog.io/@hyo123/%EC%9A%B0%EC%9C%A0%EB%B6%80%EB%8B%A8-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83';
+  const uyouNaverBlogUrl =
+    'https://velog.io/@hyo123/%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%86%8C%EC%85%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8';
   const bobeGitUrl = 'https://github.com/codestates-seb/seb40_main_030';
   const bobeNotionUrl =
     'https://www.notion.so/codestates/8e43f8220bae4542b0ae84d8caa06b5a';
@@ -613,7 +615,7 @@ const Projects = () => {
               <div>
                 <span
                   onClick={() => {
-                    window.open(uyouWorkBlogUrl);
+                    window.open(uyouNaverBlogUrl);
                   }}
                 >
                   <h5>소셜 로그인 구현 블로그 포스팅</h5>
