@@ -281,7 +281,7 @@ const Projects = () => {
                 </h2>
                 <h2>
                   <RxCheck size='30' color='#3cb371' />
-                  로그인 - OAuth방식 소셜로그인 기능 구현 (카카오 & 구글)
+                  로그인 - OAuth방식 소셜로그인 기능 구현 (카카오/구글/네이버)
                 </h2>
                 <h2>
                   <RxCheck size='30' color='#3cb371' />
@@ -605,6 +605,18 @@ const Projects = () => {
                   }}
                 >
                   <h4>우유부단 작업내용정리 블로그 포스팅</h4>
+                </span>
+              </div>
+            </S.UyouLinkTextDiv>
+            <S.UyouLinkTextDiv>
+              <RxCheck size='30' color='#3cb371' />
+              <div>
+                <span
+                  onClick={() => {
+                    window.open(uyouWorkBlogUrl);
+                  }}
+                >
+                  <h5>소셜 로그인 구현 블로그 포스팅</h5>
                 </span>
               </div>
             </S.UyouLinkTextDiv>

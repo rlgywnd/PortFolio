@@ -1232,7 +1232,7 @@ export const LinkTitleDiv = styled.div`
 export const UyouLinkContainer = styled.div`
   display: grid;
   grid-template-columns: 700px;
-  grid-template-rows: 40px 40px 40px 40px;
+  grid-template-rows: 40px 40px 40px 40px 40px;
   margin-bottom: 20px;
   font-size: 20px;
   font-family: 'NEXON Lv2 Gothic' !important;
@@ -1288,6 +1288,12 @@ export const UyouLinkTextDiv = styled.div`
     width: 0;
     height: 23px;
     padding-top: 4px;
+    @media (max-width: 500px) {
+      height: 17px;
+    }
+    @media (max-width: 390px) {
+      height: 15px;
+    }
     :hover {
       transition: all 0.3s linear;
       width: 100%;
@@ -1346,6 +1352,18 @@ export const UyouLinkTextDiv = styled.div`
         width: 175px;
       }
     }
+    h5 {
+      width: 236px;
+      @media (max-width: 1100px) {
+        width: 210px;
+      }
+      @media (max-width: 500px) {
+        width: 165px;
+      }
+      @media (max-width: 390px) {
+        width: 145px;
+      }
+    }
   }
 `;
 
@@ -1375,6 +1393,12 @@ export const BobeLinkTextDiv = styled.div`
     width: 0;
     height: 23px;
     padding-top: 4px;
+    @media (max-width: 500px) {
+      height: 17px;
+    }
+    @media (max-width: 390px) {
+      height: 15px;
+    }
     :hover {
       transition: all 0.3s linear;
       width: 100%;
@@ -1485,6 +1509,12 @@ export const PadakLinkTextDiv = styled.div`
     width: 0;
     height: 23px;
     padding-top: 4px;
+    @media (max-width: 500px) {
+      height: 17px;
+    }
+    @media (max-width: 390px) {
+      height: 15px;
+    }
     :hover {
       transition: all 0.3s linear;
       width: 100%;
@@ -1556,6 +1586,12 @@ export const PortLinkTextDiv = styled.div`
     width: 0;
     height: 23px;
     padding-top: 4px;
+    @media (max-width: 500px) {
+      height: 17px;
+    }
+    @media (max-width: 390px) {
+      height: 15px;
+    }
     :hover {
       transition: all 0.3s linear;
       width: 100%;
