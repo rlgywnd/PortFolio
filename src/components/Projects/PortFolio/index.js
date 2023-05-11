@@ -19,6 +19,7 @@ import {
   SkillName,
   LinkTitleDiv,
 } from '../style';
+import { portWork } from 'data/portwork';
 
 const PortFolio = () => {
   const [portReact, setPortReact] = useState(false);
@@ -40,7 +41,16 @@ const PortFolio = () => {
               김효중의 개인 포트폴리오
             </h2>
             <h1>작업 내용</h1>
-            <h2>
+            {portWork &&
+              portWork.map((el) => {
+                return (
+                  <h2 key={el.id}>
+                    <RxCheck size='30' color='#3cb371' />
+                    {el.text}
+                  </h2>
+                );
+              })}
+            {/* <h2>
               <RxCheck size='30' color='#3cb371' />
               SideBar & HeaderBar 구현
             </h2>
@@ -55,7 +65,7 @@ const PortFolio = () => {
             <h2>
               <RxCheck size='30' color='#3cb371' />
               AWS S3 정적 웹 호스팅
-            </h2>
+            </h2> */}
           </IntroDiv>
         </IntroDateDiv>
       </IntroAndWorkDetail>

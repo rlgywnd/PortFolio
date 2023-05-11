@@ -24,6 +24,9 @@ import {
   LinkTitleDiv,
 } from '../style';
 
+import { padakIntro } from 'data/padakIntro';
+import { padakWork } from 'data/padakWork';
+
 const Padak = () => {
   // 스킬셋쪽 버튼 열고닫기 state
   const [padakReact, setPadakReact] = useState(false);
@@ -41,27 +44,26 @@ const Padak = () => {
           <WorkDate>2022년 10월</WorkDate>
           <IntroDiv>
             <h1>서비스 소개</h1>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              Stack OverFlow 클론 코딩한 웹 서비스
-            </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              프론트 3명 & 백엔드 2명 협업
-            </h2>
+            {padakIntro &&
+              padakIntro.map((el) => {
+                return (
+                  <h2 key={el.id}>
+                    <RxCheck size='30' color='#3cb371' />
+                    {el.text}
+                  </h2>
+                );
+              })}
+            {/* {} */}
             <h1>작업 내용</h1>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              메인페이지 - 카테고리 별 게시글 리스트들이 보이게 구현
-            </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              작성페이지 - Toast Editor를 사용한 글 작성 기능 구현
-            </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              검색창 - [단어] 옵션을 이용한 단어 관련 검색기능 구현
-            </h2>
+            {padakWork &&
+              padakWork.map((el) => {
+                return (
+                  <h2 key={el.id}>
+                    <RxCheck size='30' color='#3cb371' />
+                    {el.text}
+                  </h2>
+                );
+              })}
           </IntroDiv>
         </IntroDateDiv>
       </IntroAndWorkDetail>

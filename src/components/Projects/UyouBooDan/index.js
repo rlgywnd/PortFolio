@@ -29,8 +29,6 @@ import {
   IntroDiv,
   VideoContainer,
   VideoTitleDiv,
-  VideoTextAndBtn,
-  VideoText,
   SkillsContainer,
   SkillsTitleDiv,
   SkillsSection,
@@ -38,6 +36,9 @@ import {
   SkillName,
   LinkTitleDiv,
 } from '../style';
+import VideoBox from 'components/@commons/VideoBox';
+import { uyouWork } from 'data/uyouWork';
+import { uyouIntro } from 'data/uyouIntro';
 
 const UyouBooDan = () => {
   const [uyouMain, setUyouMain] = useState(false);
@@ -64,35 +65,26 @@ const UyouBooDan = () => {
           <WorkDate>2023년 1월 - 진행중</WorkDate>
           <IntroDiv>
             <h1>서비스 소개</h1>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              현대인들의 결정장애를 해결하기 위한 공개투표 서비스
-            </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              프론트 3명 & 백엔드 3명 & 웹디자이너 1명 협업
-            </h2>
+            {uyouIntro &&
+              uyouIntro.map((el) => {
+                return (
+                  <h2 key={el.id}>
+                    <RxCheck size='30' color='#3cb371' />
+                    {el.text}
+                  </h2>
+                );
+              })}
+            {/* {} */}
             <h1>작업 내용</h1>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              레이아웃 - 컴포넌트에 공통으로 적용될 레이아웃 틀
-            </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              회원가입 - 유효성 & 중복검사를 통한 회원가입 기능
-            </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              로그인 - Window저장객체에 따른 로그인유지 기능
-            </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              로그인 - OAuth방식 소셜로그인 기능 구현 (카카오/구글/네이버)
-            </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              마이페이지 - 내정보수정 & 나의 게시글 보기 기능
-            </h2>
+            {uyouWork &&
+              uyouWork.map((el) => {
+                return (
+                  <h2 key={el.id}>
+                    <RxCheck size='30' color='#3cb371' />
+                    {el.text}
+                  </h2>
+                );
+              })}
           </IntroDiv>
         </IntroDateDiv>
         <VideoTitleDiv>
@@ -100,84 +92,37 @@ const UyouBooDan = () => {
           구현모습
         </VideoTitleDiv>
         <VideoContainer>
-          <VideoTextAndBtn
-            uyoumain={uyouMain}
-            onClick={() => {
-              setUyouMain(!uyouMain);
-            }}
-          >
-            <VideoText>메인화면</VideoText>
-            <S.VideoUyouMainBtnDiv uyoumain={uyouMain}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-            </S.VideoUyouMainBtnDiv>
-          </VideoTextAndBtn>
-          <S.VideoUyouMainDiv uyoumain={uyouMain}>
-            <S.UyouMainVideo
-              controls='controls'
-              src={uyoumain}
-              alt='빔'
-            ></S.UyouMainVideo>
-          </S.VideoUyouMainDiv>
+          <VideoBox
+            open={uyouMain}
+            setOpen={setUyouMain}
+            title={'메인화면'}
+            video={uyoumain}
+          />
           {/*  */}
-          <VideoTextAndBtn
-            uyousign={uyouSign}
-            onClick={() => {
-              setUyouSign(!uyouSign);
-            }}
-          >
-            <VideoText>회원가입화면</VideoText>
-            <S.VideoUyouSignBtnDiv uyousign={uyouSign}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-            </S.VideoUyouSignBtnDiv>
-          </VideoTextAndBtn>
-          <S.VideoUyouSignDiv uyousign={uyouSign}>
-            <S.UyouSignVideo
-              controls='controls'
-              src={uyousign}
-              alt='빔'
-            ></S.UyouSignVideo>
-          </S.VideoUyouSignDiv>
+          <VideoBox
+            open={uyouSign}
+            setOpen={setUyouSign}
+            title={'회원가입화면'}
+            video={uyousign}
+          />
           {/*  */}
-          <VideoTextAndBtn
-            uyoulogin={uyouLogin}
-            onClick={() => {
-              setUyouLogin(!uyouLogin);
-            }}
-          >
-            <VideoText>로그인화면</VideoText>
-            <S.VideoUyouLoginBtnDiv uyoulogin={uyouLogin}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-            </S.VideoUyouLoginBtnDiv>
-          </VideoTextAndBtn>
-          <S.VideoUyouLoginDiv uyoulogin={uyouLogin}>
-            <S.UyouLoginVideo
-              controls='controls'
-              src={uyoulogin}
-              alt='빔'
-            ></S.UyouLoginVideo>
-          </S.VideoUyouLoginDiv>
+          <VideoBox
+            open={uyouLogin}
+            setOpen={setUyouLogin}
+            title={'로그인화면'}
+            video={uyoulogin}
+          />
           {/*  */}
-          <VideoTextAndBtn
-            uyoumypage={uyouMyPage}
-            onClick={() => {
-              setUyouMyPage(!uyouMyPage);
-            }}
-          >
-            <VideoText>마이페이지화면</VideoText>
-            <S.VideoUyouMyPageBtnDiv uyoumypage={uyouMyPage}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-            </S.VideoUyouMyPageBtnDiv>
-          </VideoTextAndBtn>
-          <S.VideoUyouMyPageDiv uyoumypage={uyouMyPage}>
-            <S.UyouMyPageVideo
-              controls='controls'
-              src={uyoumypage}
-              alt='빔'
-            ></S.UyouMyPageVideo>
-          </S.VideoUyouMyPageDiv>
+          <VideoBox
+            open={uyouMyPage}
+            setOpen={setUyouMyPage}
+            title={'마이페이지화면'}
+            video={uyoumypage}
+          />
         </VideoContainer>
       </IntroAndWorkDetail>
       {/*  */}
+
       <SkillsTitleDiv>
         <GrTechnology size='25' />
         사용기술

@@ -31,8 +31,6 @@ import {
   IntroDiv,
   VideoContainer,
   VideoTitleDiv,
-  VideoTextAndBtn,
-  VideoText,
   SkillsContainer,
   SkillsTitleDiv,
   SkillsSection,
@@ -40,6 +38,9 @@ import {
   SkillName,
   LinkTitleDiv,
 } from '../style';
+import VideoBox from 'components/@commons/VideoBox';
+import { bobeIntro } from 'data/bobeIntro';
+import { bobeWork } from 'data/bobeWork';
 
 const Bobe = () => {
   // 구현모습쪽 버튼 열고닫기 state
@@ -71,31 +72,26 @@ const Bobe = () => {
           <WorkDate>2022년 11월</WorkDate>
           <IntroDiv>
             <h1>서비스 소개</h1>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              전기차 충전 고충에 덜어드리는 전기차 보조배터리 대여 서비스
-            </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              프론트 4명 & 백엔드 3명 협업
-            </h2>
+            {bobeIntro &&
+              bobeIntro.map((el) => {
+                return (
+                  <h2 key={el.id}>
+                    <RxCheck size='30' color='#3cb371' />
+                    {el.text}
+                  </h2>
+                );
+              })}
+            {/* {} */}
             <h1>작업 내용</h1>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              회원가입 - 유효성 & 중복검사를 통한 회원가입 기능
-            </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              주소찾기 - 회원가입 & 내정보수정에서 주소를 찾기 기능
-            </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              로그인 - Window저장객체에 따른 로그인유지 기능
-            </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              마이페이지 - 내정보수정 & 나의 대여정보 확인 기능
-            </h2>
+            {bobeWork &&
+              bobeWork.map((el) => {
+                return (
+                  <h2 key={el.id}>
+                    <RxCheck size='30' color='#3cb371' />
+                    {el.text}
+                  </h2>
+                );
+              })}
           </IntroDiv>
         </IntroDateDiv>
         <VideoTitleDiv>
@@ -103,82 +99,33 @@ const Bobe = () => {
           구현모습
         </VideoTitleDiv>
         <VideoContainer>
-          <VideoTextAndBtn
-            bobemain={bobeMain}
-            onClick={() => {
-              setBobeMain(!bobeMain);
-            }}
-          >
-            <VideoText>메인화면</VideoText>
-            <S.VideoBobeMainBtnDiv bobemain={bobeMain}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-            </S.VideoBobeMainBtnDiv>
-          </VideoTextAndBtn>
-          <S.VideoBobeMainDiv bobemain={bobeMain}>
-            <S.BobeMainVideo
-              controls='controls'
-              src={bobemain}
-              alt='빔'
-            ></S.BobeMainVideo>
-          </S.VideoBobeMainDiv>
-
-          <VideoTextAndBtn
-            bobesign={bobeSign}
-            onClick={() => {
-              setBobeSign(!bobeSign);
-            }}
-          >
-            <VideoText>회원가입화면</VideoText>
-            <S.VideoBobeSignBtnDiv bobesign={bobeSign}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-            </S.VideoBobeSignBtnDiv>
-          </VideoTextAndBtn>
-          <S.VideoBobeSignDiv bobesign={bobeSign}>
-            <S.BobeSignVideo
-              controls='controls'
-              src={bobesign}
-              alt='빔'
-            ></S.BobeSignVideo>
-          </S.VideoBobeSignDiv>
-          {/*  */}
-          <VideoTextAndBtn
-            bobelogin={bobeLogin}
-            onClick={() => {
-              setBobeLogin(!bobeLogin);
-            }}
-          >
-            <VideoText>로그인화면</VideoText>
-            <S.VideoBobeLoginBtnDiv bobelogin={bobeLogin}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-            </S.VideoBobeLoginBtnDiv>
-          </VideoTextAndBtn>
-          <S.VideoBobeLoginDiv bobelogin={bobeLogin}>
-            <S.BobeLoginVideo
-              controls='controls'
-              src={bobelogin}
-              alt='빔'
-            ></S.BobeLoginVideo>
-          </S.VideoBobeLoginDiv>
-          {/*  */}
-          <VideoTextAndBtn
-            bobemypage={bobeMyPage}
-            onClick={() => {
-              setBobeMyPage(!bobeMyPage);
-            }}
-          >
-            <VideoText>마이페이지화면</VideoText>
-            <S.VideoBobeMyPageBtnDiv bobemypage={bobeMyPage}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
-            </S.VideoBobeMyPageBtnDiv>
-          </VideoTextAndBtn>
-          <S.VideoBobeMyPageDiv bobemypage={bobeMyPage}>
-            <S.BobeMyPageVideo
-              controls='controls'
-              src={bobemypage}
-              alt='빔'
-            ></S.BobeMyPageVideo>
-          </S.VideoBobeMyPageDiv>
+          <VideoBox
+            open={bobeMain}
+            setOpen={setBobeMain}
+            title={'메인화면'}
+            video={bobemain}
+          />
           {/* {} */}
+          <VideoBox
+            open={bobeSign}
+            setOpen={setBobeSign}
+            title={'회원가입화면'}
+            video={bobesign}
+          />
+          {/*  */}
+          <VideoBox
+            open={bobeLogin}
+            setOpen={setBobeLogin}
+            title={'로그인화면'}
+            video={bobelogin}
+          />
+          {/*  */}
+          <VideoBox
+            open={bobeMyPage}
+            setOpen={setBobeMyPage}
+            title={'마이페이지화면'}
+            video={bobemypage}
+          />
         </VideoContainer>
       </IntroAndWorkDetail>
       <SkillsTitleDiv>
