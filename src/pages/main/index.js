@@ -8,13 +8,13 @@ import Career from 'components/Career';
 import Studies from 'components/Studies';
 
 const Main = () => {
-  const components = [
+  const components = Object.freeze([
     <AboutMe />,
     <Projects />,
     <Education />,
     <Career />,
     <Studies />,
-  ];
+  ]);
 
   return (
     <S.MainContainer>
