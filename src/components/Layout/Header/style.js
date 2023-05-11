@@ -13,7 +13,11 @@ export const HeaderContainer = styled.div`
   position: fixed;
   top: 0;
   opacity: 0.9;
+  /* opacity: 1; */
   z-index: 2;
+  @media (max-width: 800px) {
+    opacity: 1;
+  }
 `;
 
 export const LeftDiv = styled.div`
