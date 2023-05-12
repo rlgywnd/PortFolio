@@ -25,10 +25,6 @@ const Career = () => {
               <RxCheck size='30' color='#3cb371' />
               L'Occitane in 숙명여대 축제 L'Occitane 프로모션
             </h2>
-            <h2>
-              <RxCheck size='30' color='#3cb371' />
-              편안한 분위기로 커뮤니케이션 할 수 있었습니다.
-            </h2>
           </S.IntroDiv>
         </S.NaratorDiv>
         <S.FittingDiv id='fitting'>
