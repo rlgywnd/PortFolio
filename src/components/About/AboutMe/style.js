@@ -179,5 +179,21 @@ export const IntroLi = styled.div`
       width: 80vw;
       font-size: 13px;
     }
+    span {
+      font-size: 22px;
+      font-weight: bolder;
+      font-family: 'NEXON Lv2 Gothic' !important;
+      /* background-color: #d6d9dc; */
+      @media (max-width: 1100px) {
+        font-size: 19px;
+      }
+      @media (max-width: 500px) {
+        font-size: 17px;
+      }
+      @media (max-width: 390px) {
+        width: 80vw;
+        font-size: 15px;
+      }
+    }
   }
 `;
