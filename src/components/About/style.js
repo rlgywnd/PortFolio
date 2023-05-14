@@ -32,54 +32,87 @@ export const ShortAboutDiv = styled.div`
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  section {
+`;
+export const ShortAboutSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  animation: fadeInUp 1.5s;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+  @media (max-width: 1100px) {
+    font-size: 50px;
+  }
+  @media (max-width: 500px) {
+    font-size: 40px;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-size: 60px;
-    color: white;
-    font-weight: bold;
+    margin-bottom: 20px;
     @media (max-width: 1100px) {
       font-size: 50px;
     }
     @media (max-width: 500px) {
       font-size: 40px;
     }
-    div {
-      font-size: 60px;
-      margin-bottom: 20px;
-      @media (max-width: 1100px) {
-        font-size: 50px;
-      }
-      @media (max-width: 500px) {
-        font-size: 40px;
-      }
-    }
-    span {
-      font-size: 90px;
-      border-bottom: 13px solid #3cb371;
-      text-underline-offset: 3.5px;
-      display: inline-block;
-      @media (max-width: 1100px) {
-        font-size: 70px;
-      }
-      @media (max-width: 500px) {
-        font-size: 50px;
-      }
-    }
   }
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
+  span {
+    font-size: 90px;
+    border-bottom: 13px solid #3cb371;
+    text-underline-offset: 3.5px;
+    display: inline-block;
     @media (max-width: 1100px) {
-      font-size: 20px;
+      font-size: 70px;
     }
     @media (max-width: 500px) {
-      font-size: 15px;
+      font-size: 50px;
     }
+  }
+`;
+export const ShortAboutTextDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  opacity: 0;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  animation: fadeInUp2 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  @keyframes fadeInUp2 {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+  @media (max-width: 1100px) {
+    font-size: 20px;
+  }
+  @media (max-width: 500px) {
+    font-size: 15px;
   }
 `;
 export const ArrowContainer = styled.div``;
@@ -90,6 +123,7 @@ export const ArrowDiv = styled.div`
   justify-content: center;
   width: 0;
   height: 0;
+  color: white;
   border-top: 15px solid;
   border-right: 15px solid transparent;
   border-bottom: 15px solid transparent;

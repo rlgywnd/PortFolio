@@ -24,15 +24,16 @@ export const TextDiv = styled.div`
   justify-content: center;
   flex-direction: column;
   margin-top: 300px;
+  /* margin-top: 150px; */
   font-size: 30px;
-  font-family: ;
 `;
 export const TitleDiv = styled.div`
   display: flex;
   justify-content: center;
-  width: 25ch;
+  width: 12.5ch;
   height: 30px;
   font-weight: bold;
+  border-right: 2px solid black;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   overflow: hidden;
   @keyframes typing {
@@ -53,7 +54,6 @@ export const LinkDiv = styled(Link)`
   text-decoration-line: none;
   font-weight: bold;
   color: #4285f4;
-
   :hover {
     transition: all 0.2s linear;
     font-size: 35px;

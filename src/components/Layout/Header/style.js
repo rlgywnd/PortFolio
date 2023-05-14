@@ -15,6 +15,7 @@ export const HeaderContainer = styled.div`
   top: 0;
   opacity: 1;
   z-index: 2;
+  transition: background-color 0.5s linear;
   @media (max-width: 800px) {
     opacity: 1;
   }
@@ -22,13 +23,17 @@ export const HeaderContainer = styled.div`
 
 export const LeftDiv = styled.div`
   display: flex;
-  color: ${(props) => (props.scrollPosition === 0 ? 'white' : 'black')};
+  transition: color 0.5s linear;
+  color: ${(props) =>
+    props.scrollPosition === 0 ? 'rgb(245, 245, 245)' : 'black'};
 `;
 export const RightDiv = styled.div`
   display: flex;
   gap: 25px;
   div {
-    color: ${(props) => (props.scrollPosition === 0 ? 'white' : 'black')};
+    transition: color 0.5s linear;
+    color: ${(props) =>
+      props.scrollPosition === 0 ? 'rgb(245, 245, 245)' : 'black'};
     cursor: pointer;
     :hover {
       color: #4285f4;
@@ -55,6 +60,7 @@ export const Hamburger = styled.section`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    transition: color 0.5s linear;
     color: ${(props) => (props.scrollPosition === 0 ? 'white' : 'black')};
     gap: 20px;
     z-index: 2;
@@ -72,6 +78,7 @@ export const Hamburger = styled.section`
 
 export const HomeBtn = styled(Link)`
   text-decoration-line: none;
+  transition: color 0.5s linear;
   color: ${(props) => (props.scrollPosition === 0 ? 'white' : 'black')};
   cursor: pointer;
   :hover {

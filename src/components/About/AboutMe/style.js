@@ -55,7 +55,6 @@ export const ProfileImgDiv = styled.div`
   border-radius: 5px;
   background-image: url(${backgroundImg2});
   background-position: center;
-  /* background-size: cover; */
   background-size: contain;
   background-repeat: no-repeat;
   @media (max-width: 800px) {
@@ -114,8 +113,6 @@ export const ProfileLi = styled.li`
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    /* transition-timing-function: linear;
-    transition-property: all; */
     width: 0px;
     font-weight: bold;
     height: 28px;
@@ -123,9 +120,7 @@ export const ProfileLi = styled.li`
       transition: all 0.3s linear;
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
-
       width: 101%;
-      /* height: 30px; */
       color: white;
       background-color: #3cb371;
     }
@@ -186,7 +181,6 @@ export const IntroLi = styled.div`
       font-size: 22px;
       font-weight: bolder;
       font-family: 'NEXON Lv2 Gothic' !important;
-      /* background-color: #d6d9dc; */
       @media (max-width: 1100px) {
         font-size: 19px;
       }
