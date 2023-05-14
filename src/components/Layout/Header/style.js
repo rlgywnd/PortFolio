@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 export const HeaderContainer = styled.div`
   display: flex;
-  background-color: white;
+  background-color: ${(props) =>
+    props.scrollPosition === 0 ? 'none' : 'white'};
   font-weight: bold;
   justify-content: space-between;
   align-items: center;
@@ -12,8 +13,7 @@ export const HeaderContainer = styled.div`
   padding: 0 15% 0 15%;
   position: fixed;
   top: 0;
-  opacity: 0.9;
-  /* opacity: 1; */
+  opacity: 1;
   z-index: 2;
   @media (max-width: 800px) {
     opacity: 1;
@@ -22,12 +22,13 @@ export const HeaderContainer = styled.div`
 
 export const LeftDiv = styled.div`
   display: flex;
+  color: ${(props) => (props.scrollPosition === 0 ? 'white' : 'black')};
 `;
 export const RightDiv = styled.div`
   display: flex;
   gap: 25px;
   div {
-    color: black;
+    color: ${(props) => (props.scrollPosition === 0 ? 'white' : 'black')};
     cursor: pointer;
     :hover {
       color: #4285f4;
@@ -54,7 +55,7 @@ export const Hamburger = styled.section`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    color: gray;
+    color: ${(props) => (props.scrollPosition === 0 ? 'white' : 'black')};
     gap: 20px;
     z-index: 2;
     width: 140px;
@@ -71,7 +72,7 @@ export const Hamburger = styled.section`
 
 export const HomeBtn = styled(Link)`
   text-decoration-line: none;
-  color: black;
+  color: ${(props) => (props.scrollPosition === 0 ? 'white' : 'black')};
   cursor: pointer;
   :hover {
     color: #4285f4;

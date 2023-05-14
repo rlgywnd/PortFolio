@@ -71,7 +71,7 @@ const AboutMe = () => {
             <h1>INTRO.</h1>
             <div>💡 Javascript 언어와 REACT 중심으로</div>
             <div>
-              WEB 개발을 공부하고 있는 프론트엔드 개발자를 꿈꾸는 김효중입니다.
+              WEB 개발을 공부하며 프론트엔드 개발자를 꿈꾸는 김효중입니다.
             </div>
             <br />
             <div>

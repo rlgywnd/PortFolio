@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import backgroundImg2 from '../../../assets/background3.jpeg';
+// import backgroundImg2 from '../../../assets/background3.jpeg';
+import backgroundImg2 from '../../../assets/background2.JPG';
 
 export const AboutMeContainer = styled.div`
   flex: 1;
@@ -54,7 +55,9 @@ export const ProfileImgDiv = styled.div`
   border-radius: 5px;
   background-image: url(${backgroundImg2});
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: contain;
+  background-repeat: no-repeat;
   @media (max-width: 800px) {
     width: 450px;
     height: 450px;

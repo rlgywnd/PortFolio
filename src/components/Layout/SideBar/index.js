@@ -1,22 +1,19 @@
 import * as S from './style';
 import { Link } from 'react-scroll';
 import { TfiArrowUp } from 'react-icons/tfi';
-import { useState, useEffect } from 'react';
 
-const SideBar = ({ children }) => {
-  // scroll 이벤트
-  const [scrollPosition, setScrollPosition] = useState(0);
-  // console.log('window.scrollY : ', window.scrollY);
-  // console.log('scrollPosition : ', scrollPosition);
-  const onScroll = () => {
-    setScrollPosition(window.scrollY);
-  };
-  useEffect(() => {
-    window.addEventListener('scroll', onScroll);
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, []);
+const SideBar = ({ children, scrollPosition }) => {
+  // const [scrollPosition, setScrollPosition] = useState(0);
+
+  // const onScroll = () => {
+  //   setScrollPosition(window.scrollY);
+  // };
+  // useEffect(() => {
+  //   window.addEventListener('scroll', onScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', onScroll);
+  //   };
+  // }, []);
 
   return (
     <S.SideBarReal>
