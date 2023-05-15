@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import backgroundImg from '../../assets/background4.PNG';
 
 export const AboutContainer = styled.div`
-  /* position: relative; */
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -31,7 +31,7 @@ export const ShortAboutDiv = styled.div`
     url(${backgroundImg});
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 `;
 export const ShortAboutSection = styled.div`
   display: flex;
