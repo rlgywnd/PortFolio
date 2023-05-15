@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import backgroundImg from '../../assets/background4.PNG';
 
 export const AboutContainer = styled.div`
-  position: relative;
+  /* position: relative; */
   height: 100vh;
   width: 100%;
   display: flex;
@@ -19,13 +19,14 @@ export const ShortAboutDiv = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
-  /* linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), */
-  background-image: url(${backgroundImg});
-  /* -webkit-linear-gradient(
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    // 배경만 투명도 주기
+    url(${backgroundImg});
+  background-image: -webkit-linear-gradient(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
-    ), */
-  background-image: url(${backgroundImg});
+    ),
+    url(${backgroundImg});
   background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(${backgroundImg});
   background-position: center;
