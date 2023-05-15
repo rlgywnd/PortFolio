@@ -19,14 +19,13 @@ export const ShortAboutDiv = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    // 배경만 투명도 주기
-    url(${backgroundImg});
-  background-image: -webkit-linear-gradient(
+  /* linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), */
+  background-image: url(${backgroundImg});
+  /* -webkit-linear-gradient(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
-    ),
-    url(${backgroundImg});
+    ), */
+  background-image: url(${backgroundImg});
   background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(${backgroundImg});
   background-position: center;
