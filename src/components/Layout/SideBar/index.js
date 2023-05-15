@@ -3,18 +3,6 @@ import { Link } from 'react-scroll';
 import { TfiArrowUp } from 'react-icons/tfi';
 
 const SideBar = ({ children, scrollposition }) => {
-  // const [scrollPosition, setScrollPosition] = useState(0);
-
-  // const onScroll = () => {
-  //   setScrollPosition(window.scrollY);
-  // };
-  // useEffect(() => {
-  //   window.addEventListener('scroll', onScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', onScroll);
-  //   };
-  // }, []);
-
   return (
     <S.SideBarReal>
       <S.SideBarContainer>

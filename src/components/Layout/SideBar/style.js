@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-// 1100 , 600 에 따라 반응형
-
 export const SideBarReal = styled.div`
   display: grid;
   grid-template-columns: 250px 800px 50px;

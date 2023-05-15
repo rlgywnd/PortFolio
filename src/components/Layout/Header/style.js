@@ -23,6 +23,7 @@ export const HeaderContainer = styled.div`
 
 export const LeftDiv = styled.div`
   display: flex;
+  /* height: 20px; */
   animation: fadeInUp 1.5s forwards 1.8s;
   opacity: 0;
   @keyframes fadeInUp {
@@ -71,8 +72,19 @@ export const RightDiv = styled.div`
   }
 `;
 export const Hamburger = styled.section`
-  margin-top: ${(props) => (props.hamprop ? '190px' : '30px')};
-  top: 0;
+  height: 25px;
+  div {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  @media (min-width: 801px) {
+    display: none;
+  }
+`;
+export const HamburgerOpen = styled.section`
+  max-height: 25px;
   div {
     display: flex;
     justify-content: flex-end;
@@ -82,13 +94,13 @@ export const Hamburger = styled.section`
   ul {
     cursor: pointer;
     display: flex;
+    box-sizing: content-box;
     flex-direction: column;
     align-items: flex-end;
     transition: color 0.5s linear;
     color: ${(props) => (props.scrollposition === 0 ? 'white' : 'black')};
     gap: 20px;
     z-index: 2;
-    width: 140px;
     li {
       :hover {
         color: #4285f4;

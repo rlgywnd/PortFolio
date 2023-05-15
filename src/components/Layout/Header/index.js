@@ -41,7 +41,7 @@ const Header = ({ scrollposition }) => {
           </Link>
         </div>
         {hamburger ? (
-          <S.Hamburger hamprop={hamburger} scrollposition={scrollposition}>
+          <S.HamburgerOpen scrollposition={scrollposition}>
             <div
               onClick={() => {
                 setHamburger(!hamburger);
@@ -76,9 +76,9 @@ const Header = ({ scrollposition }) => {
                 </Link>
               </li>
             </ul>
-          </S.Hamburger>
+          </S.HamburgerOpen>
         ) : (
-          <S.Hamburger hamprop={hamburger} scrollposition={scrollposition}>
+          <S.Hamburger scrollposition={scrollposition}>
             <div
               onClick={() => {
                 setHamburger(!hamburger);

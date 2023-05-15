@@ -15,7 +15,7 @@ export const VideoText = styled.div`
   font-size: 14px;
 `;
 
-export const VideoUyouMainBtnDiv = styled.div`
+export const VideoBtnDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@ export const VideoUyouMainBtnDiv = styled.div`
   transform: ${(props) => (props.open ? 'rotate(180deg)' : '')};
 `;
 
-export const VideoUyouMainDiv = styled.div`
+export const VideoDiv = styled.div`
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
@@ -33,7 +33,7 @@ export const VideoUyouMainDiv = styled.div`
   margin-bottom: 7px;
 `;
 
-export const UyouMainVideo = styled.video`
+export const Video = styled.video`
   width: 100%;
   height: 100%;
   padding: 15px;
