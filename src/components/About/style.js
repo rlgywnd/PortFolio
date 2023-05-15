@@ -134,22 +134,22 @@ export const ArrowDiv = styled.div`
   animation: horizontal 1.5s ease-in infinite;
   @keyframes horizontal {
     0% {
-      margin-top: 300px;
+      margin-top: 50px;
     }
     30% {
-      margin-top: 370px;
+      margin-top: 80px;
     }
     40% {
-      margin-top: 350px;
+      margin-top: 75px;
     }
     47% {
-      margin-top: 365px;
+      margin-top: 80px;
     }
     90% {
-      margin-top: 365px;
+      margin-top: 80px;
     }
     100% {
-      margin-top: 300px;
+      margin-top: 50px;
     }
   }
 `;
