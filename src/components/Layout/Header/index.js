@@ -4,17 +4,17 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
 import { IoIosArrowUp } from 'react-icons/io';
 
-const Header = ({ scrollPosition }) => {
+const Header = ({ scrollposition }) => {
   const [hamburger, setHamburger] = useState(false);
 
   return (
-    <S.HeaderContainer scrollPosition={scrollPosition}>
+    <S.HeaderContainer scrollposition={scrollposition}>
       <S.LeftDiv>
-        <S.HomeBtn to={'/'} scrollPosition={scrollPosition}>
+        <S.HomeBtn to={'/'} scrollposition={scrollposition}>
           PORTFOLIO
         </S.HomeBtn>
       </S.LeftDiv>
-      <S.RightDiv scrollPosition={scrollPosition}>
+      <S.RightDiv scrollposition={scrollposition}>
         <div>
           <Link to='about_me' spy={true} smooth={true}>
             ABOUT
@@ -41,7 +41,7 @@ const Header = ({ scrollPosition }) => {
           </Link>
         </div>
         {hamburger ? (
-          <S.Hamburger hamprop={hamburger} scrollPosition={scrollPosition}>
+          <S.Hamburger hamprop={hamburger} scrollposition={scrollposition}>
             <div
               onClick={() => {
                 setHamburger(!hamburger);
@@ -49,7 +49,7 @@ const Header = ({ scrollPosition }) => {
             >
               <IoIosArrowUp size='30' color='' />
             </div>
-            <ul scrollPosition={scrollPosition}>
+            <ul scrollposition={scrollposition}>
               <li>
                 <Link to='about_me' spy={true} smooth={true}>
                   ABOUT
@@ -78,7 +78,7 @@ const Header = ({ scrollPosition }) => {
             </ul>
           </S.Hamburger>
         ) : (
-          <S.Hamburger hamprop={hamburger} scrollPosition={scrollPosition}>
+          <S.Hamburger hamprop={hamburger} scrollposition={scrollposition}>
             <div
               onClick={() => {
                 setHamburger(!hamburger);

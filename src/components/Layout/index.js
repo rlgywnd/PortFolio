@@ -20,9 +20,9 @@ const Layout = ({ children }) => {
 
   return (
     <S.LayoutContainer id='top'>
-      <Header scrollPosition={scrollPosition} />
+      <Header scrollposition={scrollPosition} />
       <About />
-      <SideBar children={children} scrollPosition={scrollPosition} />
+      <SideBar children={children} scrollposition={scrollPosition} />
       <Footer />
     </S.LayoutContainer>
   );

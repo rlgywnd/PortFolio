@@ -11,7 +11,6 @@ export const AboutContainer = styled.div`
   align-items: center;
   z-index: 1;
 `;
-
 export const ShortAboutDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -31,7 +30,9 @@ export const ShortAboutDiv = styled.div`
     url(${backgroundImg});
   background-position: center;
   background-size: cover;
-  /* background-attachment: fixed; */
+  @media (min-width: 400px) {
+    background-attachment: fixed;
+  }
 `;
 export const ShortAboutSection = styled.div`
   display: flex;

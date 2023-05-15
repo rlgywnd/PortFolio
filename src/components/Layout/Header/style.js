@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const HeaderContainer = styled.div`
   display: flex;
   background-color: ${(props) =>
-    props.scrollPosition === 0 ? 'none' : 'white'};
+    props.scrollposition === 0 ? 'none' : 'white'};
   font-weight: bold;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,7 @@ export const LeftDiv = styled.div`
   }
   transition: color 0.5s linear;
   color: ${(props) =>
-    props.scrollPosition === 0 ? 'rgb(245, 245, 245)' : 'black'};
+    props.scrollposition === 0 ? 'rgb(245, 245, 245)' : 'black'};
 `;
 export const RightDiv = styled.div`
   display: flex;
@@ -57,7 +57,7 @@ export const RightDiv = styled.div`
   div {
     transition: color 0.5s linear;
     color: ${(props) =>
-      props.scrollPosition === 0 ? 'rgb(245, 245, 245)' : 'black'};
+      props.scrollposition === 0 ? 'rgb(245, 245, 245)' : 'black'};
     cursor: pointer;
     :hover {
       color: #4285f4;
@@ -85,7 +85,7 @@ export const Hamburger = styled.section`
     flex-direction: column;
     align-items: flex-end;
     transition: color 0.5s linear;
-    color: ${(props) => (props.scrollPosition === 0 ? 'white' : 'black')};
+    color: ${(props) => (props.scrollposition === 0 ? 'white' : 'black')};
     gap: 20px;
     z-index: 2;
     width: 140px;
@@ -103,7 +103,7 @@ export const Hamburger = styled.section`
 export const HomeBtn = styled(Link)`
   text-decoration-line: none;
   transition: color 0.5s linear;
-  color: ${(props) => (props.scrollPosition === 0 ? 'white' : 'black')};
+  color: ${(props) => (props.scrollposition === 0 ? 'white' : 'black')};
   cursor: pointer;
   :hover {
     color: #4285f4;
