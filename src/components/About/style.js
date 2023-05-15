@@ -95,9 +95,7 @@ export const ShortAboutTextDiv = styled.div`
   color: white;
   font-weight: bold;
   font-size: 25px;
-  animation: fadeInUp2 1.5s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
+  animation: fadeInUp2 1.5s forwards 1s;
   @keyframes fadeInUp2 {
     0% {
       opacity: 0;
@@ -131,7 +129,18 @@ export const ArrowDiv = styled.div`
   margin-top: 7px;
   margin-left: 7px;
   cursor: pointer;
-  animation: horizontal 1.5s ease-in infinite;
+  animation: fadeInUp 1.5s forwards 1.8s, horizontal 1.5s ease-in infinite;
+  opacity: 0;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
   @keyframes horizontal {
     0% {
       margin-top: 50px;

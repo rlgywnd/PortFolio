@@ -23,6 +23,18 @@ export const HeaderContainer = styled.div`
 
 export const LeftDiv = styled.div`
   display: flex;
+  animation: fadeInUp 1.5s forwards 1.8s;
+  opacity: 0;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
   transition: color 0.5s linear;
   color: ${(props) =>
     props.scrollPosition === 0 ? 'rgb(245, 245, 245)' : 'black'};
@@ -30,6 +42,18 @@ export const LeftDiv = styled.div`
 export const RightDiv = styled.div`
   display: flex;
   gap: 25px;
+  animation: fadeInUp 1.5s forwards 1.8s;
+  opacity: 0;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
   div {
     transition: color 0.5s linear;
     color: ${(props) =>
