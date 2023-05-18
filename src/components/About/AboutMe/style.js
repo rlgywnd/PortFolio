@@ -86,13 +86,8 @@ export const ProfileLi = styled.li`
   align-items: center;
   gap: 7px;
   font-size: 18px;
-  @media (max-width: 1440px) {
-  }
   @media (max-width: 1100px) {
     font-size: 18px;
-  }
-  @media (max-width: 800px) {
-    font-size: ;
   }
   @media (max-width: 500px) {
     font-size: 17px;
@@ -110,6 +105,7 @@ export const ProfileLi = styled.li`
   }
 
   h5 {
+    /* font-family: 'NEXON Lv2 Gothic' !important; */
     display: flex;
     align-items: center;
     box-sizing: border-box;

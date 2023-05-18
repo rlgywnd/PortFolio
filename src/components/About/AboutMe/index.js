@@ -69,10 +69,10 @@ const AboutMe = () => {
         <S.IntroUl>
           <S.IntroLi>
             <h1>INTRO.</h1>
-            <div>💡 Javascript 언어와 REACT 중심으로</div>
             <div>
-              WEB 개발을 공부하며 프론트엔드 개발자를 꿈꾸는 김효중입니다.
+              <span>JavaScript</span> 언어와 <span>React</span> 중심으로
             </div>
+            <div>WEB 개발을 하며 프론트엔드 개발자를 꿈꾸는 김효중입니다.</div>
             <br />
             <div>
               문제를 해결할 때, <span>왜?</span> 라는 생각을 많이 하며 제대로
