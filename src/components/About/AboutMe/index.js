@@ -92,13 +92,12 @@ const AboutMe = () => {
             </div>
             <br />
             <div>
-              <span>Javascript</span> 와 <span>React</span> 학습, 최근 사이드
-              프로젝트를 진행하며 사용했던 <span>TypeScript</span>와{' '}
+              최근 사이드 프로젝트를 진행하며 사용했던 <span>TypeScript</span>와{' '}
               <span>NextJS</span>에 대해 공부하고 있고,
             </div>
             <div>
-              기존 프로젝트를 효율적인 폴더 구조와 컴포넌트 분리에 대해 고민하고
-              있습니다.
+              기존 프로젝트를 효율적인 폴더 구조와 컴포넌트 분리에 대해 고민하며
+              리팩토링 하고 있습니다.
             </div>
             <br />
             <div>
