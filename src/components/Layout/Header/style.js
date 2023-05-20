@@ -23,7 +23,6 @@ export const HeaderContainer = styled.div`
 
 export const LeftDiv = styled.div`
   display: flex;
-  /* height: 20px; */
   animation: fadeInUp 1.5s forwards 1.8s;
   opacity: 0;
   @keyframes fadeInUp {
