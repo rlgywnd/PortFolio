@@ -184,9 +184,12 @@ const UyouBooDan = () => {
           </SkillsTextAndBtn>
           <S.UyouNextTextDiv uyounext={uyouNext}>
             <S.UyouNext>
-              Next.JS는 React 라이브러리의 프레임워크입니다. 직관적인 페이지
-              기반 라우팅 시스템이있어서 /pages 폴더에서 컴포넌트를 export하면
-              페이지 Route가 돼서 라우팅에 편리했습니다.
+              Next.JS는 React의 SSR(Server Side Rendering)을 제공해주는
+              프레임워크입니다. 직관적인 페이지 기반 라우팅 시스템이있어서
+              /pages 폴더에서 컴포넌트를 export하면 페이지 Route가 돼서 라우팅에
+              편리했습니다. 서버에서 렌더링이 일어나기 때문에 클라이언트에서
+              브라우저 전용 객체(localStorage 등)를 사용하면 서버에서 읽질
+              못하기 때문에 방법을 찾아 해결 하였습니다.
             </S.UyouNext>
           </S.UyouNextTextDiv>
         </SkillsSection>

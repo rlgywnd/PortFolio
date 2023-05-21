@@ -60,6 +60,7 @@ export const RightDiv = styled.div`
       props.scrollposition === 0 ? 'rgb(245, 245, 245)' : 'black'};
     cursor: pointer;
     :hover {
+      transition: color 0.1s linear;
       color: #4285f4;
     }
     :visited {
@@ -117,6 +118,7 @@ export const HomeBtn = styled(Link)`
   color: ${(props) => (props.scrollposition === 0 ? 'white' : 'black')};
   cursor: pointer;
   :hover {
+    transition: color 0.1s linear;
     color: #4285f4;
   }
 `;
