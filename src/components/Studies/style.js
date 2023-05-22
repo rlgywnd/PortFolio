@@ -121,6 +121,7 @@ export const IntroDiv = styled.div`
       }
       :not(:hover) {
         transition: all 0.3s linear;
+        background-color: #3cb371;
         width: 0px;
       }
         @media (max-width: 500px) {

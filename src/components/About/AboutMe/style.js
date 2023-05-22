@@ -121,10 +121,11 @@ export const ProfileLi = styled.li`
       background-color: #3cb371;
     }
     :not(:hover) {
-      transition: all 0.3s linear;
+      transition: width 0.3s linear;
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
       width: 0px;
+      background-color: #3cb371;
     }
   }
 `;

@@ -318,10 +318,11 @@ export const UyouLinkTextDiv = styled.div`
     }
     :not(:hover) {
       transition: 0.3s linear;
+      background-color: #3cb371;
     }
     h1 {
       box-sizing: border-box;
-      width: 156px;
+      width: 158px;
       @media (max-width: 1100px) {
         width: 140px;
       }
@@ -333,7 +334,7 @@ export const UyouLinkTextDiv = styled.div`
       }
     }
     h2 {
-      width: 133px;
+      width: 136px;
       @media (max-width: 1100px) {
         width: 120px;
       }
@@ -345,7 +346,7 @@ export const UyouLinkTextDiv = styled.div`
       }
     }
     h3 {
-      width: 490px;
+      width: 494px;
       @media (max-width: 1100px) {
         width: 436px;
       }
@@ -357,7 +358,7 @@ export const UyouLinkTextDiv = styled.div`
       }
     }
     h4 {
-      width: 280px;
+      width: 278px;
       @media (max-width: 1100px) {
         width: 247px;
       }
@@ -369,7 +370,7 @@ export const UyouLinkTextDiv = styled.div`
       }
     }
     h5 {
-      width: 236px;
+      width: 234px;
       @media (max-width: 1100px) {
         width: 210px;
       }

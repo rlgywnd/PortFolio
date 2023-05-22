@@ -185,10 +185,11 @@ export const PadakLinkTextDiv = styled.div`
     }
     :not(:hover) {
       transition: 0.3s linear;
+      background-color: #3cb371;
     }
     h1 {
       box-sizing: border-box;
-      width: 156px;
+      width: 160px;
       @media (max-width: 1100px) {
         width: 140px;
       }
@@ -200,7 +201,7 @@ export const PadakLinkTextDiv = styled.div`
       }
     }
     h2 {
-      width: 133px;
+      width: 136px;
       @media (max-width: 1100px) {
         width: 120px;
       }
@@ -212,7 +213,7 @@ export const PadakLinkTextDiv = styled.div`
       }
     }
     h3 {
-      width: 123px;
+      width: 125px;
       @media (max-width: 1100px) {
         width: 110px;
       }

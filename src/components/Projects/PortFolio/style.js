@@ -181,6 +181,7 @@ export const PortLinkTextDiv = styled.div`
     }
     :not(:hover) {
       transition: 0.3s linear;
+      background-color: #3cb371;
     }
     h1 {
       width: 290px;
@@ -195,7 +196,7 @@ export const PortLinkTextDiv = styled.div`
       }
     }
     h2 {
-      width: 140px;
+      width: 137px;
       @media (max-width: 1100px) {
         width: 126px;
       }
