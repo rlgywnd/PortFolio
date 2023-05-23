@@ -15,19 +15,19 @@ const AboutMe = () => {
         <S.ProfileUl>
           <S.ProfileLi>
             <RxCheck size='30' color='#3cb371' />
-            <h4>NAME</h4>
+            <h4>Name</h4>
             <h4>:</h4>
             <div>김효중</div>
           </S.ProfileLi>
           <S.ProfileLi>
             <RxCheck size='30' color='#3cb371' />
-            <h4>EMAIL</h4>
+            <h4>Email</h4>
             <h4>:</h4>
             <div>rlgywnd@naver.com</div>
           </S.ProfileLi>
           <S.ProfileLi>
             <RxCheck size='30' color='#3cb371' />
-            <h4>GITHUB</h4>
+            <h4>GitHub</h4>
             <h4>:</h4>
             <span>
               <h5
@@ -42,7 +42,7 @@ const AboutMe = () => {
           </S.ProfileLi>
           <S.ProfileLi>
             <RxCheck size='30' color='#3cb371' />
-            <h4>BLOG</h4>
+            <h4>Blog</h4>
             <h4>:</h4>
             <span>
               <h5
@@ -59,7 +59,7 @@ const AboutMe = () => {
           </S.ProfileLi>
           <S.ProfileLi>
             <RxCheck size='30' color='#3cb371' />
-            <h4>PHONE</h4>
+            <h4>Phone</h4>
             <h4>:</h4>
             <div>010-9603-0416</div>
           </S.ProfileLi>
@@ -72,13 +72,16 @@ const AboutMe = () => {
             <div>
               <span>JavaScript</span> 언어와 <span>React</span> 중심으로
             </div>
-            <div>WEB 개발을 하며 프론트엔드 개발자를 꿈꾸는 김효중입니다.</div>
+            <div>웹 개발을 하며 프론트엔드 개발자를 꿈꾸는 김효중입니다.</div>
             <br />
             <div>
               문제를 해결할 때, <span>왜?</span> 라는 생각을 많이 하며 제대로
               이해하고 해결하는 걸 좋아하는 편입니다.
             </div>
-            <div>협업할 때, 언제나 상대를 존중하는 커뮤니케이션을 합니다.</div>
+            <div>
+              협업할 때, 언제나 상대를 <span>존중</span>하는 커뮤니케이션을
+              합니다.
+            </div>
             <br />
             <div>
               뒤처지는 게 싫어, 언제나 배우며 다양하게 경험을 쌓고 싶습니다.

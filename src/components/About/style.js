@@ -63,13 +63,13 @@ export const ShortAboutSection = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 60px;
+    font-size: 55px;
     margin-bottom: 20px;
     @media (max-width: 1100px) {
-      font-size: 50px;
+      font-size: 45px;
     }
     @media (max-width: 500px) {
-      font-size: 40px;
+      font-size: 35px;
     }
   }
   span {
@@ -78,10 +78,10 @@ export const ShortAboutSection = styled.div`
     text-underline-offset: 3.5px;
     display: inline-block;
     @media (max-width: 1100px) {
-      font-size: 70px;
+      font-size: 75px;
     }
     @media (max-width: 500px) {
-      font-size: 50px;
+      font-size: 60px;
     }
   }
 `;
@@ -89,7 +89,8 @@ export const ShortAboutTextDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
+  /* font-family: 'NEXON Lv2 Gothic' !important; */
+  gap: 10px;
   opacity: 0;
   align-items: center;
   margin-top: 20px;
