@@ -84,7 +84,7 @@ const AboutMe = () => {
             <br />
             <div>
               사용자에게 좋은 경험을 전달하는 일에 보람을 느끼고, 다양하게
-              도전하며 경험을 쌓고 싶습니다.
+              경험을 하고 싶습니다.
             </div>
             <div>
               UI/UX를 고려하여 1px이라도 수정하여 사용자를 위한 웹 서비스를
@@ -93,7 +93,7 @@ const AboutMe = () => {
             <br />
             <div>
               최근 사이드 프로젝트를 진행하며 사용했던 <span>TypeScript</span>와{' '}
-              <span>NextJS</span>에 대해 공부하고 있고,
+              <span>NextJS</span>에 대해 학습하고 있고,
             </div>
             <div>
               기존 프로젝트를 효율적인 폴더 구조와 컴포넌트 분리에 대해 고민하며
