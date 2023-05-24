@@ -5,7 +5,7 @@ import { TfiArrowUp } from 'react-icons/tfi';
 const SideBar = ({ children, scrollposition }) => {
   return (
     <S.SideBarReal>
-      <S.SideBarContainer>
+      <S.SideBarContainer scrollposition={scrollposition}>
         <div>
           <S.AboutMeUl scrolls={scrollposition}>
             <h4>ABOUT ME</h4>
@@ -88,7 +88,7 @@ const SideBar = ({ children, scrollposition }) => {
       </div>
       <S.UpBtnContainer>
         <Link to='top' spy={true} smooth={true}>
-          <S.UpBtnDiv>
+          <S.UpBtnDiv scrollposition={scrollposition}>
             <TfiArrowUp size='30px' color='white' />
           </S.UpBtnDiv>
         </Link>

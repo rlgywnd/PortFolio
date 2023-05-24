@@ -11,6 +11,31 @@ export const SideBarContainer = styled.div`
   position: fixed;
   top: 0;
   padding: 110px 0 0 30px;
+  animation: ${(props) =>
+    props.scrollposition >= 740
+      ? 'fadeInUp 0.5s forwards 0s'
+      : 'disappear 1.5s forwards 0s'};
+  opacity: 0;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+  @keyframes disappear {
+    0% {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
   @media (max-width: 1100px) {
     display: none;
   }
@@ -304,4 +329,30 @@ export const UpBtnDiv = styled.div`
   border-radius: 50%;
   opacity: 0.6;
   cursor: pointer;
+
+  animation: ${(props) =>
+    props.scrollposition >= 740
+      ? 'fadeInUp 0.5s forwards 0s'
+      : 'disappear 1.5s forwards 0s'};
+  opacity: 0;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+  @keyframes disappear {
+    0% {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
 `;

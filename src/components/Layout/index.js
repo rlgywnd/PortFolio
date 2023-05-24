@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 
 const Layout = ({ children }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  console.log('scrollPosition : ', scrollPosition);
 
   const onScroll = () => {
     setScrollPosition(window.scrollY);
