@@ -36,6 +36,24 @@ export const SideBarContainer = styled.div`
       transform: translate3d(0, 100%, 0);
     }
   }
+  @media (min-height: 840px) {
+    animation: ${(props) =>
+      props.scrollposition >= 900
+        ? 'fadeInUp 0.5s forwards 0s'
+        : 'disappear 1.5s forwards 0s'};
+  }
+  @media (min-height: 1100px) {
+    animation: ${(props) =>
+      props.scrollposition >= 1100
+        ? 'fadeInUp 0.5s forwards 0s'
+        : 'disappear 1.5s forwards 0s'};
+  }
+  @media (min-height: 1300px) {
+    animation: ${(props) =>
+      props.scrollposition >= 1300
+        ? 'fadeInUp 0.5s forwards 0s'
+        : 'disappear 1.5s forwards 0s'};
+  }
   @media (max-width: 1100px) {
     display: none;
   }
@@ -354,5 +372,23 @@ export const UpBtnDiv = styled.div`
       opacity: 0;
       transform: translate3d(0, 100%, 0);
     }
+  }
+  @media (min-height: 840px) {
+    animation: ${(props) =>
+      props.scrollposition >= 900
+        ? 'fadeInUp 0.5s forwards 0s'
+        : 'disappear 1.5s forwards 0s'};
+  }
+  @media (min-height: 1100px) {
+    animation: ${(props) =>
+      props.scrollposition >= 1100
+        ? 'fadeInUp 0.5s forwards 0s'
+        : 'disappear 1.5s forwards 0s'};
+  }
+  @media (min-height: 1300px) {
+    animation: ${(props) =>
+      props.scrollposition >= 1300
+        ? 'fadeInUp 0.5s forwards 0s'
+        : 'disappear 1.5s forwards 0s'};
   }
 `;
