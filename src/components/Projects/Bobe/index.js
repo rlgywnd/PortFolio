@@ -1,6 +1,6 @@
 import * as S from './style';
 import { RxCheck } from 'react-icons/rx';
-import { GrTechnology } from 'react-icons/gr';
+import { BiSearchAlt } from 'react-icons/bi';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import { MdOutlineSmartDisplay } from 'react-icons/md';
 import { AiOutlineLink } from 'react-icons/ai';
@@ -41,8 +41,11 @@ import {
 import VideoBox from 'components/@commons/VideoBox';
 import { bobeIntro } from 'data/bobeIntro';
 import { bobeWork } from 'data/bobeWork';
+import { useRecoilState } from 'recoil';
+import { darkmode } from 'recoil/darkmode';
 
 const Bobe = () => {
+  const [isDark, setIsDark] = useRecoilState(darkmode);
   // 구현모습쪽 버튼 열고닫기 state
   const [bobeMain, setBobeMain] = useState(false);
   const [bobeSign, setBobeSign] = useState(false);
@@ -129,24 +132,28 @@ const Bobe = () => {
         </VideoContainer>
       </IntroAndWorkDetail>
       <SkillsTitleDiv>
-        <GrTechnology size='25' />
+        <BiSearchAlt size='25' />
         사용기술
       </SkillsTitleDiv>
       <SkillsContainer>
         <SkillsSection>
           <SkillsTextAndBtn
             bobereact={bobeReact}
+            isdark={isDark}
             onClick={() => {
               setBobeReact(!bobeReact);
             }}
           >
-            <SkillName>React</SkillName>
+            <SkillName isdark={isDark}>React</SkillName>
             <S.BobeReactBtnDiv bobereact={bobeReact}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              <MdOutlineKeyboardArrowDown
+                size='25'
+                color={isDark ? 'white' : '#667085'}
+              />
             </S.BobeReactBtnDiv>
           </SkillsTextAndBtn>
-          <S.BobeReactTextDiv bobereact={bobeReact}>
-            <S.BobeReact>
+          <S.BobeReactTextDiv bobereact={bobeReact} isdark={isDark}>
+            <S.BobeReact isdark={isDark}>
               React는 Component를 이용하여 재사용이 가능하고, 유지보수 하기에도
               좋았습니다. 또한 자료가 굉장히 방대하여 문제해결에도 좋았습니다.
             </S.BobeReact>
@@ -157,17 +164,21 @@ const Bobe = () => {
         <SkillsSection>
           <SkillsTextAndBtn
             bobevite={bobeVite}
+            isdark={isDark}
             onClick={() => {
               setBobeVite(!bobeVite);
             }}
           >
-            <SkillName>Vite</SkillName>
+            <SkillName isdark={isDark}>Vite</SkillName>
             <S.BobeViteBtnDiv bobevite={bobeVite}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              <MdOutlineKeyboardArrowDown
+                size='25'
+                color={isDark ? 'white' : '#667085'}
+              />
             </S.BobeViteBtnDiv>
           </SkillsTextAndBtn>
-          <S.BobeViteTextDiv bobevite={bobeVite}>
-            <S.BobeVite>
+          <S.BobeViteTextDiv bobevite={bobeVite} isdark={isDark}>
+            <S.BobeVite isdark={isDark}>
               Vite는 프랑스어로 빠르다를 의미하는데 말그대로 굉장히 빠른 빌드
               속도를 보여줍니다. CRA는 Javascript로 구성된 Webpack으로
               빌드하는데 속도가 느립니다. CRA 웹팩빌드와 비교했을때 정말
@@ -180,17 +191,21 @@ const Bobe = () => {
         <SkillsSection>
           <SkillsTextAndBtn
             bobedaum={bobeDaum}
+            isdark={isDark}
             onClick={() => {
               setBobeDaum(!bobeDaum);
             }}
           >
-            <SkillName>Daum PostCode</SkillName>
+            <SkillName isdark={isDark}>Daum PostCode</SkillName>
             <S.BobeDaumBtnDiv bobedaum={bobeDaum}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              <MdOutlineKeyboardArrowDown
+                size='25'
+                color={isDark ? 'white' : '#667085'}
+              />
             </S.BobeDaumBtnDiv>
           </SkillsTextAndBtn>
-          <S.BobeDaumTextDiv bobedaum={bobeDaum}>
-            <S.BobeDaum>
+          <S.BobeDaumTextDiv bobedaum={bobeDaum} isdark={isDark}>
+            <S.BobeDaum isdark={isDark}>
               Daum PostCode는 주소 찾기를 도와주는 라이브러리입니다. npm으로
               react전용 Daum PostCode를 설치하여 사용할 수 있었습니다.
             </S.BobeDaum>
@@ -201,17 +216,21 @@ const Bobe = () => {
         <SkillsSection>
           <SkillsTextAndBtn
             boberecoil={bobeRecoil}
+            isdark={isDark}
             onClick={() => {
               setBobeRecoil(!bobeRecoil);
             }}
           >
-            <SkillName>Recoil</SkillName>
+            <SkillName isdark={isDark}>Recoil</SkillName>
             <S.BobeRecoilBtnDiv boberecoil={bobeRecoil}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              <MdOutlineKeyboardArrowDown
+                size='25'
+                color={isDark ? 'white' : '#667085'}
+              />
             </S.BobeRecoilBtnDiv>
           </SkillsTextAndBtn>
-          <S.BobeRecoilTextDiv boberecoil={bobeRecoil}>
-            <S.BobeRecoil>
+          <S.BobeRecoilTextDiv boberecoil={bobeRecoil} isdark={isDark}>
+            <S.BobeRecoil isdark={isDark}>
               Recoil은 전역 상태를 관리하기 위해 사용하는 라이브러리입니다.
               Redux의 번거로운 초기세팅을 하지 않고 훨씬 쉽게 세팅하고 사용할 수
               있어서 사용하기 쉬운 전역상태관리 라이브러리였습니다.
@@ -223,17 +242,21 @@ const Bobe = () => {
         <SkillsSection>
           <SkillsTextAndBtn
             bobemsw={bobeMsw}
+            isdark={isDark}
             onClick={() => {
               setBobeMsw(!bobeMsw);
             }}
           >
-            <SkillName>MSW</SkillName>
+            <SkillName isdark={isDark}>MSW</SkillName>
             <S.BobeMswBtnDiv bobemsw={bobeMsw}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              <MdOutlineKeyboardArrowDown
+                size='25'
+                color={isDark ? 'white' : '#667085'}
+              />
             </S.BobeMswBtnDiv>
           </SkillsTextAndBtn>
-          <S.BobeMswTextDiv bobemsw={bobeMsw}>
-            <S.BobeMsw>
+          <S.BobeMswTextDiv bobemsw={bobeMsw} isdark={isDark}>
+            <S.BobeMsw isdark={isDark}>
               MSW(Mock Service Worker)는 Mock서버를 구현하지않고도, 네트워크
               수준에서 API를 Mocking 할 수 있습니다. 백엔드에서 API가 나오기전에
               프론트에서 먼저 HTTP통신을 해 볼 수 있었습니다.
@@ -245,17 +268,21 @@ const Bobe = () => {
         <SkillsSection>
           <SkillsTextAndBtn
             bobestyled={bobeStyled}
+            isdark={isDark}
             onClick={() => {
               setBobeStyled(!bobeStyled);
             }}
           >
-            <SkillName>Styled Components</SkillName>
+            <SkillName isdark={isDark}>Styled Components</SkillName>
             <S.BobeStyledBtnDiv bobestyled={bobeStyled}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              <MdOutlineKeyboardArrowDown
+                size='25'
+                color={isDark ? 'white' : '#667085'}
+              />
             </S.BobeStyledBtnDiv>
           </SkillsTextAndBtn>
-          <S.BobeStyledTextDiv bobestyled={bobeStyled}>
-            <S.BobeStyled>
+          <S.BobeStyledTextDiv bobestyled={bobeStyled} isdark={isDark}>
+            <S.BobeStyled isdark={isDark}>
               Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
               방식인 라이브러리입니다. React props를 활용한 조건부 스타일링이
               가능하기도해서 좋았습니다.
@@ -267,17 +294,21 @@ const Bobe = () => {
         <SkillsSection>
           <SkillsTextAndBtn
             bobehook={bobeHook}
+            isdark={isDark}
             onClick={() => {
               setBobeHook(!bobeHook);
             }}
           >
-            <SkillName>React Hook Form</SkillName>
+            <SkillName isdark={isDark}>React Hook Form</SkillName>
             <S.BobeHookBtnDiv bobehook={bobeHook}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              <MdOutlineKeyboardArrowDown
+                size='25'
+                color={isDark ? 'white' : '#667085'}
+              />
             </S.BobeHookBtnDiv>
           </SkillsTextAndBtn>
-          <S.BobeHookTextDiv bobehook={bobeHook}>
-            <S.BobeHook>
+          <S.BobeHookTextDiv bobehook={bobeHook} isdark={isDark}>
+            <S.BobeHook isdark={isDark}>
               React Hook Form은 회원가입, 로그인 페이지에서 입력창과
               유효성검사를 더욱 효과적이고 간편하게 도와주는 라이브러리입니다.
               데이터 전송관리하기에도 편해서 좋았습니다.
@@ -289,17 +320,21 @@ const Bobe = () => {
         <SkillsSection>
           <SkillsTextAndBtn
             bobeaxios={bobeAxios}
+            isdark={isDark}
             onClick={() => {
               setBobeAxios(!bobeAxios);
             }}
           >
-            <SkillName>Axios</SkillName>
+            <SkillName isdark={isDark}>Axios</SkillName>
             <S.BobeAxiosBtnDiv bobeaxios={bobeAxios}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              <MdOutlineKeyboardArrowDown
+                size='25'
+                color={isDark ? 'white' : '#667085'}
+              />
             </S.BobeAxiosBtnDiv>
           </SkillsTextAndBtn>
-          <S.BobeAxiosTextDiv bobeaxios={bobeAxios}>
-            <S.BobeAxios>
+          <S.BobeAxiosTextDiv bobeaxios={bobeAxios} isdark={isDark}>
+            <S.BobeAxios isdark={isDark}>
               Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP 통신
               라이브러리 입니다. fetch를 사용하는 것 보다 코드를 간결하게 쓸 수
               있어서 좋았습니다.

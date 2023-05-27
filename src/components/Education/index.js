@@ -24,8 +24,11 @@ import r20 from '../../assets/r20.png';
 import r21 from '../../assets/r21.png';
 import r22 from '../../assets/r22.png';
 import r23 from '../../assets/r23.png';
+import { useRecoilState } from 'recoil';
+import { darkmode } from '../../recoil/darkmode';
 
 const Education = () => {
+  const [isDark, setIsDark] = useRecoilState(darkmode);
   const [rating, setRating] = useState(false);
 
   return (
@@ -71,13 +74,17 @@ const Education = () => {
           <S.RatingContainer>
             <S.RatingTextAndBtn
               rating={rating}
+              isdark={isDark}
               onClick={() => {
                 setRating(!rating);
               }}
             >
-              <S.RatingTextDiv>협업 평가</S.RatingTextDiv>
+              <S.RatingTextDiv isdark={isDark}>협업 평가</S.RatingTextDiv>
               <S.RatingBtnDiv rating={rating}>
-                <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+                <MdOutlineKeyboardArrowDown
+                  size='25'
+                  color={isDark ? 'white' : '#667085'}
+                />
               </S.RatingBtnDiv>
             </S.RatingTextAndBtn>
             <S.RatingImgContainer rating={rating}>

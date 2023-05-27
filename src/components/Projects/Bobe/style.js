@@ -68,9 +68,10 @@ export const BobeAxiosBtnDiv = styled.div`
 // // -------- Uyou React TextDiv담을 Div -------------
 
 export const BobeReactTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -82,9 +83,10 @@ export const BobeReactTextDiv = styled.div`
   display: ${(props) => (props.bobereact ? 'auto' : 'none')};
 `;
 export const BobeViteTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -96,9 +98,10 @@ export const BobeViteTextDiv = styled.div`
   display: ${(props) => (props.bobevite ? 'auto' : 'none')};
 `;
 export const BobeDaumTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -110,9 +113,10 @@ export const BobeDaumTextDiv = styled.div`
   display: ${(props) => (props.bobedaum ? 'auto' : 'none')};
 `;
 export const BobeRecoilTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -124,9 +128,10 @@ export const BobeRecoilTextDiv = styled.div`
   display: ${(props) => (props.boberecoil ? 'auto' : 'none')};
 `;
 export const BobeMswTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -138,9 +143,10 @@ export const BobeMswTextDiv = styled.div`
   display: ${(props) => (props.bobemsw ? 'auto' : 'none')};
 `;
 export const BobeStyledTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -152,9 +158,10 @@ export const BobeStyledTextDiv = styled.div`
   display: ${(props) => (props.bobestyled ? 'auto' : 'none')};
 `;
 export const BobeHookTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -166,9 +173,10 @@ export const BobeHookTextDiv = styled.div`
   display: ${(props) => (props.bobehook ? 'auto' : 'none')};
 `;
 export const BobeAxiosTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -191,7 +199,7 @@ export const BobeReact = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.bobereact ? '15px' : '0')};
   margin-bottom: ${(props) => (props.bobereact ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const BobeVite = styled.div`
   line-height: 30px;
@@ -202,7 +210,7 @@ export const BobeVite = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.bobevite ? '15px' : '0')};
   margin-bottom: ${(props) => (props.bobevite ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const BobeDaum = styled.div`
   line-height: 30px;
@@ -213,7 +221,7 @@ export const BobeDaum = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.bobedaum ? '15px' : '0')};
   margin-bottom: ${(props) => (props.bobedaum ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const BobeRecoil = styled.div`
   line-height: 30px;
@@ -224,7 +232,7 @@ export const BobeRecoil = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.boberecoil ? '15px' : '0')};
   margin-bottom: ${(props) => (props.boberecoil ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const BobeMsw = styled.div`
   line-height: 30px;
@@ -235,7 +243,7 @@ export const BobeMsw = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.bobemsw ? '15px' : '0')};
   margin-bottom: ${(props) => (props.bobemsw ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const BobeStyled = styled.div`
   line-height: 30px;
@@ -246,7 +254,7 @@ export const BobeStyled = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.bobestyled ? '15px' : '0')};
   margin-bottom: ${(props) => (props.bobestyled ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const BobeHook = styled.div`
   line-height: 30px;
@@ -257,7 +265,7 @@ export const BobeHook = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.bobehook ? '15px' : '0')};
   margin-bottom: ${(props) => (props.bobehook ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const BobeAxios = styled.div`
   line-height: 30px;
@@ -268,7 +276,7 @@ export const BobeAxios = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.bobeaxios ? '15px' : '0')};
   margin-bottom: ${(props) => (props.bobeaxios ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 
 // // 관련링크 최상위 컨테이너

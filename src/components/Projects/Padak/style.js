@@ -33,10 +33,12 @@ export const PadakAxiosBtnDiv = styled.div`
   transform: ${(props) => (props.padakaxios ? 'rotate(180deg)' : '')};
 `;
 
+// -------------------------
 export const PadakReactTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -48,9 +50,10 @@ export const PadakReactTextDiv = styled.div`
   display: ${(props) => (props.padakreact ? 'auto' : 'none')};
 `;
 export const PadakReduxTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -62,9 +65,10 @@ export const PadakReduxTextDiv = styled.div`
   display: ${(props) => (props.padakredux ? 'auto' : 'none')};
 `;
 export const PadakStyledTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -76,9 +80,10 @@ export const PadakStyledTextDiv = styled.div`
   display: ${(props) => (props.padakstyled ? 'auto' : 'none')};
 `;
 export const PadakAxiosTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -90,6 +95,7 @@ export const PadakAxiosTextDiv = styled.div`
   display: ${(props) => (props.padakaxios ? 'auto' : 'none')};
 `;
 
+// -----------------------
 export const PadakReact = styled.div`
   line-height: 30px;
   font-size: 14px;
@@ -99,7 +105,7 @@ export const PadakReact = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.padakreact ? '15px' : '0')};
   margin-bottom: ${(props) => (props.padakreact ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const PadakRedux = styled.div`
   line-height: 30px;
@@ -110,7 +116,7 @@ export const PadakRedux = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.padakredux ? '15px' : '0')};
   margin-bottom: ${(props) => (props.padakredux ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const PadakStyled = styled.div`
   line-height: 30px;
@@ -121,7 +127,7 @@ export const PadakStyled = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.padakstyled ? '15px' : '0')};
   margin-bottom: ${(props) => (props.padakstyled ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const PadakAxios = styled.div`
   line-height: 30px;
@@ -132,7 +138,7 @@ export const PadakAxios = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.padakaxios ? '15px' : '0')};
   margin-bottom: ${(props) => (props.padakaxios ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 
 // 링크 컨테이너

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const SideBarReal = styled.div`
   display: grid;
-  grid-template-columns: 250px 800px 50px;
-  background-color: rgb(245, 245, 245);
+  grid-template-columns: 250px 800px 50px 50px;
+  /* background-color: rgb(245, 245, 245); */
 `;
 export const SideBarContainer = styled.div`
   display: flex;
@@ -329,8 +329,10 @@ export const AllComponentsDiv = styled.div`
     margin-left: 0;
   }
 `;
+
+// ---------- 상단끌어올리기 버튼 ------------
 export const UpBtnContainer = styled.div`
-  position: fixed;
+  /* position: fixed; */
 `;
 export const UpBtnDiv = styled.div`
   display: flex;
@@ -340,13 +342,15 @@ export const UpBtnDiv = styled.div`
   right: 0;
   margin: 0 70px 50px 0;
   bottom: 0;
-  height: 50px;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   background-color: #667085;
   border-radius: 50%;
-  opacity: 0.6;
+  opacity: 0.8;
   cursor: pointer;
+  :hover {
+    background-color: #708090;
+  }
 
   animation: ${(props) =>
     props.scrollposition >= 740
@@ -359,13 +363,149 @@ export const UpBtnDiv = styled.div`
       transform: translate3d(0, 100%, 0);
     }
     to {
-      opacity: 1;
+      opacity: 0.8;
       transform: translateZ(0);
     }
   }
   @keyframes disappear {
     0% {
-      opacity: 1;
+      opacity: 0.8;
+      transform: translateZ(0);
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  @media (min-height: 840px) {
+    animation: ${(props) =>
+      props.scrollposition >= 900
+        ? 'fadeInUp 0.5s forwards 0s'
+        : 'disappear 1.5s forwards 0s'};
+  }
+  @media (min-height: 1100px) {
+    animation: ${(props) =>
+      props.scrollposition >= 1100
+        ? 'fadeInUp 0.5s forwards 0s'
+        : 'disappear 1.5s forwards 0s'};
+  }
+  @media (min-height: 1300px) {
+    animation: ${(props) =>
+      props.scrollposition >= 1300
+        ? 'fadeInUp 0.5s forwards 0s'
+        : 'disappear 1.5s forwards 0s'};
+  }
+`;
+// ---------- 다크모드 버튼 ------------
+export const DarkModeContainer = styled.div`
+  position: fixed;
+`;
+export const DarkModeDiv = styled.div`
+  color: white;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 70px;
+  margin: 0 70px 50px 0;
+  bottom: 0;
+  height: 60px;
+  width: 60px;
+  background-color: #667085;
+  border-radius: 50%;
+  opacity: 0.8;
+  cursor: pointer;
+  :hover {
+    background-color: #708090;
+  }
+
+  animation: ${(props) =>
+    props.scrollposition >= 740
+      ? 'fadeInUp 0.5s forwards 0s'
+      : 'disappear 1.5s forwards 0s'};
+  opacity: 0;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 0.8;
+      transform: translateZ(0);
+    }
+  }
+  @keyframes disappear {
+    0% {
+      opacity: 0.8;
+      transform: translateZ(0);
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  @media (min-height: 840px) {
+    animation: ${(props) =>
+      props.scrollposition >= 900
+        ? 'fadeInUp 0.5s forwards 0s'
+        : 'disappear 1.5s forwards 0s'};
+  }
+  @media (min-height: 1100px) {
+    animation: ${(props) =>
+      props.scrollposition >= 1100
+        ? 'fadeInUp 0.5s forwards 0s'
+        : 'disappear 1.5s forwards 0s'};
+  }
+  @media (min-height: 1300px) {
+    animation: ${(props) =>
+      props.scrollposition >= 1300
+        ? 'fadeInUp 0.5s forwards 0s'
+        : 'disappear 1.5s forwards 0s'};
+  }
+`;
+// -------------- 화이트모드 버튼 ----------------
+export const WhiteModeContainer = styled.div`
+  position: fixed;
+`;
+export const WhiteModeDiv = styled.div`
+  color: white;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 70px;
+  margin: 0 70px 50px 0;
+  bottom: 0;
+  height: 60px;
+  width: 60px;
+  background-color: #667085;
+  border-radius: 50%;
+  opacity: 0.9;
+  cursor: pointer;
+  :hover {
+    background-color: #708090;
+  }
+
+  animation: ${(props) =>
+    props.scrollposition >= 740
+      ? 'fadeInUp 0.5s forwards 0s'
+      : 'disappear 1.5s forwards 0s'};
+  opacity: 0;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 0.9;
+      transform: translateZ(0);
+    }
+  }
+  @keyframes disappear {
+    0% {
+      opacity: 0.9;
       transform: translateZ(0);
     }
     to {

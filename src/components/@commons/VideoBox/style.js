@@ -4,7 +4,8 @@ export const VideoTextAndBtn = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  /* background-color: white; */
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   height: 45px;
   padding: 0 15px 0 15px;
   cursor: pointer;
@@ -13,6 +14,8 @@ export const VideoTextAndBtn = styled.div`
 
 export const VideoText = styled.div`
   font-size: 14px;
+  /* color: black; */
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
 `;
 
 export const VideoBtnDiv = styled.div`

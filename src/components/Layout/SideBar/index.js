@@ -1,8 +1,27 @@
 import * as S from './style';
 import { Link } from 'react-scroll';
 import { TfiArrowUp } from 'react-icons/tfi';
+import { useEffect } from 'react';
+import { useRecoilState } from 'recoil';
+import { darkmode } from '../../../recoil/darkmode';
 
 const SideBar = ({ children, scrollposition }) => {
+  const [isDark, setIsDark] = useRecoilState(darkmode);
+  // console.log('전역 isDark : ', isDark);
+  useEffect(() => {
+    if (localStorage.getItem('port_mode')) {
+      setIsDark(true);
+    } else {
+      setIsDark(false);
+    }
+  }, []);
+  const onClickDarkMode = () => {
+    localStorage.setItem('port_mode', 'DARK');
+  };
+  const onClickWhiteMode = () => {
+    localStorage.removeItem('port_mode');
+  };
+
   return (
     <S.SideBarReal>
       <S.SideBarContainer scrollposition={scrollposition}>
@@ -86,10 +105,35 @@ const SideBar = ({ children, scrollposition }) => {
           return <S.AllComponentsDiv key={el.key}>{el}</S.AllComponentsDiv>;
         })}
       </div>
+      {isDark ? (
+        <S.WhiteModeContainer>
+          <S.WhiteModeDiv
+            scrollposition={scrollposition}
+            onClick={() => {
+              onClickWhiteMode();
+              setIsDark(false);
+            }}
+          >
+            라이트모드
+          </S.WhiteModeDiv>
+        </S.WhiteModeContainer>
+      ) : (
+        <S.DarkModeContainer>
+          <S.DarkModeDiv
+            scrollposition={scrollposition}
+            onClick={() => {
+              onClickDarkMode();
+              setIsDark(true);
+            }}
+          >
+            다크모드
+          </S.DarkModeDiv>
+        </S.DarkModeContainer>
+      )}
       <S.UpBtnContainer>
         <Link to='top' spy={true} smooth={true}>
           <S.UpBtnDiv scrollposition={scrollposition}>
-            <TfiArrowUp size='30px' color='white' />
+            <TfiArrowUp size='23px' color='white' />
           </S.UpBtnDiv>
         </Link>
       </S.UpBtnContainer>

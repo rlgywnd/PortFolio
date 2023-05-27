@@ -119,17 +119,17 @@ export const RatingTitleH1 = styled.div`
 export const RatingContainer = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   width: 80%;
-
   position: relative;
   @media (max-width: 500px) {
     width: 80vw;
   }
 `;
 export const RatingTextAndBtn = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
   height: 45px;
   padding: 0 15px 0 15px;
   cursor: pointer;
@@ -162,8 +162,8 @@ export const RatingImgContainer = styled.div`
   max-height: ${(props) => (props.rating ? '100vh' : '0')};
   margin-bottom: 7px;
   display: ${(props) => (props.rating ? 'auto' : 'none')};
-
   h1 {
+    color: black;
     margin-bottom: 10px;
     font-family: 'NEXON Lv2 Gothic' !important;
     font-size: 12px;

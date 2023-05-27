@@ -150,29 +150,12 @@ export const VideoContainer = styled.div`
   }
 `;
 
-// 동영상나오기전 위에 text랑 화살표모양 담은 박스
-// export const VideoTextAndBtn = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   background-color: white;
-//   height: 45px;
-//   padding: 0 15px 0 15px;
-//   cursor: pointer;
-//   border-radius: 2px;
-// `;
-
-// // text div  ex -> 메인화면, 로그인화면 등
-// export const VideoText = styled.div`
-//   font-size: 14px;
-// `;
-
 // Skills 이름 + 화살표버튼 담은 Div
 export const SkillsTextAndBtn = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   height: 45px;
   padding: 0 15px 0 15px;
   cursor: pointer;
@@ -180,6 +163,7 @@ export const SkillsTextAndBtn = styled.div`
 `;
 // Skill 이름 Div
 export const SkillName = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
   font-size: 14px;
   font-weight: bolder;
   font-family: 'NEXON Lv2 Gothic' !important;

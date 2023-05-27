@@ -64,9 +64,10 @@ export const UyouAxiosBtnDiv = styled.div`
 
 // -------- Uyou React TextDiv담을 Div -------------
 export const UyouReactTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -78,9 +79,10 @@ export const UyouReactTextDiv = styled.div`
   display: ${(props) => (props.uyoureact ? 'auto' : 'none')};
 `;
 export const UyouTypeTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -92,9 +94,10 @@ export const UyouTypeTextDiv = styled.div`
   display: ${(props) => (props.uyoutype ? 'auto' : 'none')};
 `;
 export const UyouNextTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -106,9 +109,10 @@ export const UyouNextTextDiv = styled.div`
   display: ${(props) => (props.uyounext ? 'auto' : 'none')};
 `;
 export const UyouToolkitTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -120,9 +124,10 @@ export const UyouToolkitTextDiv = styled.div`
   display: ${(props) => (props.uyoutoolkit ? 'auto' : 'none')};
 `;
 export const UyouMswTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -134,9 +139,10 @@ export const UyouMswTextDiv = styled.div`
   display: ${(props) => (props.uyoumsw ? 'auto' : 'none')};
 `;
 export const UyouStyledTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -148,9 +154,10 @@ export const UyouStyledTextDiv = styled.div`
   display: ${(props) => (props.uyoustyled ? 'auto' : 'none')};
 `;
 export const UyouHookTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -162,9 +169,10 @@ export const UyouHookTextDiv = styled.div`
   display: ${(props) => (props.uyouhook ? 'auto' : 'none')};
 `;
 export const UyouAxiosTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -186,7 +194,7 @@ export const UyouReact = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.uyoureact ? '15px' : '0')};
   margin-bottom: ${(props) => (props.uyoureact ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 
 export const UyouType = styled.div`
@@ -198,7 +206,7 @@ export const UyouType = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.uyoutype ? '15px' : '0')};
   margin-bottom: ${(props) => (props.uyoutype ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const UyouNext = styled.div`
   line-height: 30px;
@@ -209,7 +217,7 @@ export const UyouNext = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.uyounext ? '15px' : '0')};
   margin-bottom: ${(props) => (props.uyounext ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const UyouToolkit = styled.div`
   line-height: 30px;
@@ -220,7 +228,7 @@ export const UyouToolkit = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.uyoutoolkit ? '15px' : '0')};
   margin-bottom: ${(props) => (props.uyoutoolkit ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const UyouMsw = styled.div`
   line-height: 30px;
@@ -231,7 +239,7 @@ export const UyouMsw = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.uyoumsw ? '15px' : '0')};
   margin-bottom: ${(props) => (props.uyoumsw ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const UyouStyled = styled.div`
   line-height: 30px;
@@ -242,7 +250,7 @@ export const UyouStyled = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.uyoustyled ? '15px' : '0')};
   margin-bottom: ${(props) => (props.uyoustyled ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const UyouHook = styled.div`
   line-height: 30px;
@@ -253,7 +261,7 @@ export const UyouHook = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.uyouhook ? '15px' : '0')};
   margin-bottom: ${(props) => (props.uyouhook ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const UyouAxios = styled.div`
   line-height: 30px;
@@ -264,7 +272,7 @@ export const UyouAxios = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.uyouaxios ? '15px' : '0')};
   margin-bottom: ${(props) => (props.uyouaxios ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 
 // 관련링크 최상위 컨테이너

@@ -1,6 +1,6 @@
 import * as S from './style';
 import { RxCheck } from 'react-icons/rx';
-import { GrTechnology } from 'react-icons/gr';
+import { BiSearchAlt } from 'react-icons/bi';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import { AiOutlineLink } from 'react-icons/ai';
 
@@ -26,8 +26,11 @@ import {
 
 import { padakIntro } from 'data/padakIntro';
 import { padakWork } from 'data/padakWork';
+import { useRecoilState } from 'recoil';
+import { darkmode } from '../../../recoil/darkmode';
 
 const Padak = () => {
+  const [isDark, setIsDark] = useRecoilState(darkmode);
   // 스킬셋쪽 버튼 열고닫기 state
   const [padakReact, setPadakReact] = useState(false);
   const [padakRedux, setPadakRedux] = useState(false);
@@ -68,24 +71,28 @@ const Padak = () => {
         </IntroDateDiv>
       </IntroAndWorkDetail>
       <SkillsTitleDiv>
-        <GrTechnology size='25' />
+        <BiSearchAlt size='25' />
         사용기술
       </SkillsTitleDiv>
       <SkillsContainer>
         <SkillsSection>
           <SkillsTextAndBtn
             padakreact={padakReact}
+            isdark={isDark}
             onClick={() => {
               setPadakReact(!padakReact);
             }}
           >
-            <SkillName>React</SkillName>
+            <SkillName isdark={isDark}>React</SkillName>
             <S.PadakReactBtnDiv padakreact={padakReact}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              <MdOutlineKeyboardArrowDown
+                size='25'
+                color={isDark ? 'white' : '#667085'}
+              />
             </S.PadakReactBtnDiv>
           </SkillsTextAndBtn>
-          <S.PadakReactTextDiv padakreact={padakReact}>
-            <S.PadakReact>
+          <S.PadakReactTextDiv padakreact={padakReact} isdark={isDark}>
+            <S.PadakReact isdark={isDark}>
               React는 Component를 이용하여 재사용이 가능하고, 유지보수의
               용이함이있습니다. 많은 커뮤니티가 있어, 자료가 굉장히 방대하여
               문제해결하기 좋습니다.
@@ -97,17 +104,21 @@ const Padak = () => {
         <SkillsSection>
           <SkillsTextAndBtn
             padakredux={padakRedux}
+            isdark={isDark}
             onClick={() => {
               setPadakRedux(!padakRedux);
             }}
           >
-            <SkillName>Redux</SkillName>
+            <SkillName isdark={isDark}>Redux</SkillName>
             <S.PadakReduxBtnDiv padakredux={padakRedux}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              <MdOutlineKeyboardArrowDown
+                size='25'
+                color={isDark ? 'white' : '#667085'}
+              />
             </S.PadakReduxBtnDiv>
           </SkillsTextAndBtn>
-          <S.PadakReduxTextDiv padakredux={padakRedux}>
-            <S.PadakRedux>
+          <S.PadakReduxTextDiv padakredux={padakRedux} isdark={isDark}>
+            <S.PadakRedux isdark={isDark}>
               Redux는 전역에서 상태를 관리하게 해주는 라이브러리입니다. Action -
               Dispatch - Reducer - Store 순서로 데이터를 단방향으로 전달하며
               상태가 변경되면 React는 다시 렌더링을 시켜주는 다소 복잡한
@@ -120,17 +131,21 @@ const Padak = () => {
         <SkillsSection>
           <SkillsTextAndBtn
             padakstyled={padakStyled}
+            isdark={isDark}
             onClick={() => {
               setPadakStyled(!padakStyled);
             }}
           >
-            <SkillName>Styled Components</SkillName>
+            <SkillName isdark={isDark}>Styled Components</SkillName>
             <S.PadakStyledBtnDiv padakstyled={padakStyled}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              <MdOutlineKeyboardArrowDown
+                size='25'
+                color={isDark ? 'white' : '#667085'}
+              />
             </S.PadakStyledBtnDiv>
           </SkillsTextAndBtn>
-          <S.PadakStyledTextDiv padakstyled={padakStyled}>
-            <S.PadakStyled>
+          <S.PadakStyledTextDiv padakstyled={padakStyled} isdark={isDark}>
+            <S.PadakStyled isdark={isDark}>
               Styled Components는 자바스크립트 안에 CSS를 작성하는 CSS-in-JS
               방식인 라이브러리입니다. React props를 활용한 조건부 스타일링이
               가능하기도해서 좋았습니다.
@@ -142,17 +157,21 @@ const Padak = () => {
         <SkillsSection>
           <SkillsTextAndBtn
             padakaxios={padakAxios}
+            isdark={isDark}
             onClick={() => {
               setPadakAxios(!padakAxios);
             }}
           >
-            <SkillName>Axios</SkillName>
+            <SkillName isdark={isDark}>Axios</SkillName>
             <S.PadakAxiosBtnDiv padakaxios={padakAxios}>
-              <MdOutlineKeyboardArrowDown size='25' color='#667085' />
+              <MdOutlineKeyboardArrowDown
+                size='25'
+                color={isDark ? 'white' : '#667085'}
+              />
             </S.PadakAxiosBtnDiv>
           </SkillsTextAndBtn>
-          <S.PadakAxiosTextDiv padakaxios={padakAxios}>
-            <S.PadakAxios>
+          <S.PadakAxiosTextDiv padakaxios={padakAxios} isdark={isDark}>
+            <S.PadakAxios isdark={isDark}>
               Axios는 Node.js와 브라우저를 위한 Promise API를 활용하는 HTTP 통신
               라이브러리 입니다. fetch를 사용하는 것 보다 코드를 간결하게 쓸 수
               있어서 좋았습니다.

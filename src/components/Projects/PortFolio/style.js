@@ -32,11 +32,20 @@ export const PortStyledBtnDiv = styled.div`
   transition: transform 0.3s ease 0s;
   transform: ${(props) => (props.portstyled ? 'rotate(180deg)' : '')};
 `;
+export const PortRecoilBtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease 0s;
+  transform: ${(props) => (props.portrecoil ? 'rotate(180deg)' : '')};
+`;
 
+// ----------------
 export const PortReactTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -48,9 +57,10 @@ export const PortReactTextDiv = styled.div`
   display: ${(props) => (props.portreact ? 'auto' : 'none')};
 `;
 export const PortRouterTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -62,9 +72,10 @@ export const PortRouterTextDiv = styled.div`
   display: ${(props) => (props.portrouter ? 'auto' : 'none')};
 `;
 export const PortScrolTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -76,9 +87,10 @@ export const PortScrolTextDiv = styled.div`
   display: ${(props) => (props.portscrol ? 'auto' : 'none')};
 `;
 export const PortStyledTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
   width: 100%;
   padding: 25px 15px 25px 15px;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
@@ -89,6 +101,23 @@ export const PortStyledTextDiv = styled.div`
   margin-bottom: 7px;
   display: ${(props) => (props.portstyled ? 'auto' : 'none')};
 `;
+export const PortRecoilTextDiv = styled.div`
+  color: ${(props) => (props.isdark ? 'white' : 'black')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
+  width: 100%;
+  padding: 25px 15px 25px 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  max-height: ${(props) => (props.portrecoil ? '100vh' : '0')};
+  margin-bottom: 7px;
+  display: ${(props) => (props.portrecoil ? 'auto' : 'none')};
+`;
+
+// -----------------------
 
 export const PortReact = styled.div`
   line-height: 30px;
@@ -99,7 +128,7 @@ export const PortReact = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.portreact ? '15px' : '0')};
   margin-bottom: ${(props) => (props.portreact ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const PortRouter = styled.div`
   line-height: 30px;
@@ -110,7 +139,7 @@ export const PortRouter = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.portrouter ? '15px' : '0')};
   margin-bottom: ${(props) => (props.portrouter ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
 export const PortScrol = styled.div`
   line-height: 30px;
@@ -121,8 +150,10 @@ export const PortScrol = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.portscrol ? '15px' : '0')};
   margin-bottom: ${(props) => (props.portscrol ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
+// #27282A
+// #313233
 export const PortStyled = styled.div`
   line-height: 30px;
   font-size: 14px;
@@ -132,8 +163,21 @@ export const PortStyled = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   padding: ${(props) => (props.portstyled ? '15px' : '0')};
   margin-bottom: ${(props) => (props.portstyled ? '30px' : '0px')};
-  background-color: white;
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
 `;
+export const PortRecoil = styled.div`
+  line-height: 30px;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: 'NEXON Lv2 Gothic' !important;
+  padding: ${(props) => (props.portrecoil ? '15px' : '0')};
+  margin-bottom: ${(props) => (props.portrecoil ? '30px' : '0px')};
+  background-color: ${(props) => (props.isdark ? '#313233' : 'white')};
+`;
+
+// -------------------
 
 export const PortLinkContainer = styled.div`
   display: grid;
