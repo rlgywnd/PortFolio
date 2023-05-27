@@ -13,7 +13,7 @@ export const FooterTextDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #696969;
+  background-color: ${(props) => (props.isdark ? '#313233' : '#696969')};
   @media (max-width: 1100px) {
     font-size: 15px;
   }
