@@ -1,6 +1,5 @@
 import * as S from './style';
 import { RxCheck } from 'react-icons/rx';
-import { GrTechnology } from 'react-icons/gr';
 import { BiSearchAlt } from 'react-icons/bi';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import { AiOutlineLink } from 'react-icons/ai';
@@ -21,11 +20,11 @@ import {
   LinkTitleDiv,
 } from '../style';
 import { portWork } from 'data/portwork';
-import { useRecoilState } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { darkmode } from '../../../recoil/darkmode';
 
 const PortFolio = () => {
-  const [isDark, setIsDark] = useRecoilState(darkmode);
+  const isDark = useRecoilValue(darkmode);
 
   const [portReact, setPortReact] = useState(false);
   const [portRouter, setPortRouter] = useState(false);
@@ -43,7 +42,10 @@ const PortFolio = () => {
           <IntroDiv>
             <h1>서비스 소개</h1>
             <h2>
-              <RxCheck size='30' color='#3cb371' />
+              <RxCheck
+                size='30'
+                color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+              />
               김효중의 개인 포트폴리오
             </h2>
             <h1>작업 내용</h1>
@@ -51,7 +53,10 @@ const PortFolio = () => {
               portWork.map((el) => {
                 return (
                   <h2 key={el.id}>
-                    <RxCheck size='30' color='#3cb371' />
+                    <RxCheck
+                      size='30'
+                      color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+                    />
                     {el.text}
                   </h2>
                 );
@@ -206,8 +211,8 @@ const PortFolio = () => {
         관련링크
       </LinkTitleDiv>
       <S.PortLinkContainer>
-        <S.PortLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.PortLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {
@@ -218,8 +223,8 @@ const PortFolio = () => {
             </span>
           </div>
         </S.PortLinkTextDiv>
-        <S.PortLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.PortLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {

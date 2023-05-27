@@ -1,9 +1,9 @@
 import * as S from './style';
-import { useRecoilState } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { darkmode } from '../../../recoil/darkmode';
 
 const Footer = () => {
-  const [isDark, setIsDark] = useRecoilState(darkmode);
+  const isDark = useRecoilValue(darkmode);
 
   return (
     <S.FooterContainer>

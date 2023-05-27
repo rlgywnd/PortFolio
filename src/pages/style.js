@@ -24,7 +24,6 @@ export const TextDiv = styled.div`
   justify-content: center;
   flex-direction: column;
   margin-top: 300px;
-  /* margin-top: 150px; */
   font-size: 30px;
 `;
 export const TitleDiv = styled.div`

@@ -41,11 +41,11 @@ import {
 import VideoBox from 'components/@commons/VideoBox';
 import { bobeIntro } from 'data/bobeIntro';
 import { bobeWork } from 'data/bobeWork';
-import { useRecoilState } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { darkmode } from 'recoil/darkmode';
 
 const Bobe = () => {
-  const [isDark, setIsDark] = useRecoilState(darkmode);
+  const isDark = useRecoilValue(darkmode);
   // 구현모습쪽 버튼 열고닫기 state
   const [bobeMain, setBobeMain] = useState(false);
   const [bobeSign, setBobeSign] = useState(false);
@@ -72,14 +72,17 @@ const Bobe = () => {
       </ProjectsNameDiv>
       <IntroAndWorkDetail>
         <IntroDateDiv>
-          <WorkDate>2022년 11월</WorkDate>
+          <WorkDate isdark={isDark}>2022년 11월</WorkDate>
           <IntroDiv>
             <h1>서비스 소개</h1>
             {bobeIntro &&
               bobeIntro.map((el) => {
                 return (
                   <h2 key={el.id}>
-                    <RxCheck size='30' color='#3cb371' />
+                    <RxCheck
+                      size='30'
+                      color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+                    />
                     {el.text}
                   </h2>
                 );
@@ -90,7 +93,10 @@ const Bobe = () => {
               bobeWork.map((el) => {
                 return (
                   <h2 key={el.id}>
-                    <RxCheck size='30' color='#3cb371' />
+                    <RxCheck
+                      size='30'
+                      color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+                    />
                     {el.text}
                   </h2>
                 );
@@ -347,8 +353,8 @@ const Bobe = () => {
         관련링크
       </LinkTitleDiv>
       <S.BobeLinkContainer>
-        <S.BobeLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.BobeLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {
@@ -359,8 +365,8 @@ const Bobe = () => {
             </span>
           </div>
         </S.BobeLinkTextDiv>
-        <S.BobeLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.BobeLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {
@@ -371,8 +377,8 @@ const Bobe = () => {
             </span>
           </div>
         </S.BobeLinkTextDiv>
-        <S.BobeLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.BobeLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {
@@ -383,8 +389,8 @@ const Bobe = () => {
             </span>
           </div>
         </S.BobeLinkTextDiv>
-        <S.BobeLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.BobeLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {
@@ -395,8 +401,8 @@ const Bobe = () => {
             </span>
           </div>
         </S.BobeLinkTextDiv>
-        <S.BobeLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.BobeLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {
@@ -407,8 +413,8 @@ const Bobe = () => {
             </span>
           </div>
         </S.BobeLinkTextDiv>
-        <S.BobeLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.BobeLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {

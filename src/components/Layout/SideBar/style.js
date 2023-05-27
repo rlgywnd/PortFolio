@@ -57,6 +57,11 @@ export const SideBarContainer = styled.div`
   @media (max-width: 1100px) {
     display: none;
   }
+  /* div {
+    li {
+      color: white;
+    }
+  } */
 `;
 
 // -------------- 사이드바 타이틀 텍스트들 --------------
@@ -110,14 +115,18 @@ export const StudiesUl = styled.ul`
       9427 <= props.scrolls && props.scrolls < 9724 ? '18px' : '15px'};
   }
 `;
-
+// rgb(248,206,7)
 // -------------------- 사이드바 리스트Div + li 두 태그 다 --------------
 export const ProfileLiDiv = styled.div`
   display: flex;
   align-items: center;
   transition: all 0.25s linear;
   color: ${(props) =>
-    1034 <= props.scrolls && props.scrolls < 1514 ? '#3cb371' : '#667085'};
+    1034 <= props.scrolls && props.scrolls < 1514 && !props.isdark
+      ? '#3cb371'
+      : 1034 <= props.scrolls && props.scrolls < 1514 && props.isdark
+      ? 'rgb(248,206,7)'
+      : ''};
 `;
 export const ProfileLi = styled.li`
   font-size: 13px;
@@ -136,7 +145,11 @@ export const IntroLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    1514 <= props.scrolls && props.scrolls < 2107 ? '#3cb371' : '#667085'};
+    1514 <= props.scrolls && props.scrolls < 2107 && !props.isdark
+      ? '#3cb371'
+      : 1514 <= props.scrolls && props.scrolls < 2107 && props.isdark
+      ? 'rgb(248,206,7)'
+      : ''};
 `;
 export const IntroLi = styled.li`
   font-size: 13px;
@@ -155,7 +168,11 @@ export const PortLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    2413 <= props.scrolls && props.scrolls < 3347 ? '#3cb371' : '#667085'};
+    2413 <= props.scrolls && props.scrolls < 3347 && !props.isdark
+      ? '#3cb371'
+      : 2413 <= props.scrolls && props.scrolls < 3347 && props.isdark
+      ? 'rgb(248,206,7)'
+      : ''};
 `;
 export const PortLi = styled.li`
   font-size: 13px;
@@ -174,7 +191,11 @@ export const UyouLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    3347 <= props.scrolls && props.scrolls < 4904 ? '#3cb371' : '#667085'};
+    3347 <= props.scrolls && props.scrolls < 4904 && !props.isdark
+      ? '#3cb371'
+      : 3347 <= props.scrolls && props.scrolls < 4904 && props.isdark
+      ? 'rgb(248,206,7)'
+      : ''};
 `;
 export const UyouLi = styled.li`
   font-size: 13px;
@@ -193,7 +214,11 @@ export const BobeLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    4904 <= props.scrolls && props.scrolls < 6494 ? '#3cb371' : '#667085'};
+    4904 <= props.scrolls && (props.scrolls < 6494) & !props.isdark
+      ? '#3cb371'
+      : 4904 <= props.scrolls && props.scrolls < 6494 && props.isdark
+      ? 'rgb(248,206,7)'
+      : ''};
 `;
 export const BobeLi = styled.li`
   font-size: 13px;
@@ -212,7 +237,11 @@ export const PadakLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    6494 <= props.scrolls && props.scrolls < 7482 ? '#3cb371' : '#667085'};
+    6494 <= props.scrolls && props.scrolls < 7482 && !props.isdark
+      ? '#3cb371'
+      : 6494 <= props.scrolls && props.scrolls < 7482 && props.isdark
+      ? 'rgb(248,206,7)'
+      : ''};
 `;
 export const PadakLi = styled.li`
   font-size: 13px;
@@ -231,7 +260,11 @@ export const CodeLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    7840 <= props.scrolls && props.scrolls < 8445 ? '#3cb371' : '#667085'};
+    7840 <= props.scrolls && props.scrolls < 8445 && !props.isdark
+      ? '#3cb371'
+      : 7840 <= props.scrolls && props.scrolls < 8445 && props.isdark
+      ? 'rgb(248,206,7)'
+      : ''};
 `;
 export const CodeLi = styled.li`
   font-size: 13px;
@@ -250,7 +283,11 @@ export const NaraLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    8817 <= props.scrolls && props.scrolls < 9179 ? '#3cb371' : '#667085'};
+    8817 <= props.scrolls && props.scrolls < 9179 && !props.isdark
+      ? '#3cb371'
+      : 8817 <= props.scrolls && props.scrolls < 9179 && props.isdark
+      ? 'rgb(248,206,7)'
+      : ''};
 `;
 export const NaraLi = styled.li`
   font-size: 13px;
@@ -269,7 +306,11 @@ export const FitLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    9179 <= props.scrolls && props.scrolls < 9427 ? '#3cb371' : '#667085'};
+    9179 <= props.scrolls && props.scrolls < 9427 && !props.isdark
+      ? '#3cb371'
+      : 9179 <= props.scrolls && props.scrolls < 9427 && props.isdark
+      ? 'rgb(248,206,7)'
+      : ''};
 `;
 export const FitLi = styled.li`
   font-size: 13px;
@@ -288,7 +329,11 @@ export const SoloLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    9724 <= props.scrolls && props.scrolls < 10104 ? '#3cb371' : '#667085'};
+    9724 <= props.scrolls && props.scrolls < 10104 && !props.isdark
+      ? '#3cb371'
+      : 9724 <= props.scrolls && props.scrolls < 10104 && props.isdark
+      ? 'rgb(248,206,7)'
+      : ''};
 `;
 export const SoloLi = styled.li`
   font-size: 13px;
@@ -307,7 +352,11 @@ export const PoliceLiDiv = styled.div`
   align-items: center;
   transition: color 0.25s linear;
   color: ${(props) =>
-    10104 <= props.scrolls && props.scrolls < 11000 ? '#3cb371' : '#667085'};
+    10104 <= props.scrolls && props.scrolls < 11000 && !props.isdark
+      ? '#3cb371'
+      : 10104 <= props.scrolls && props.scrolls < 11000 && props.isdark
+      ? 'rgb(248,206,7)'
+      : ''};
 `;
 export const PoliceLi = styled.li`
   font-size: 13px;

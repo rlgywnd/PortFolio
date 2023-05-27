@@ -24,50 +24,72 @@ import r20 from '../../assets/r20.png';
 import r21 from '../../assets/r21.png';
 import r22 from '../../assets/r22.png';
 import r23 from '../../assets/r23.png';
-import { useRecoilState } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { darkmode } from '../../recoil/darkmode';
 
 const Education = () => {
-  const [isDark, setIsDark] = useRecoilState(darkmode);
+  const isDark = useRecoilValue(darkmode);
   const [rating, setRating] = useState(false);
 
   return (
     <S.EduContainer id='education'>
-      <S.TitleUnderlineDiv>
+      <S.TitleUnderlineDiv isdark={isDark}>
         <S.EduTitleH1>EDUCATION.</S.EduTitleH1>
       </S.TitleUnderlineDiv>
       <S.EduDiv>
         <S.CodeStatesDiv id='codestates'>
           <S.MarginDiv></S.MarginDiv>
-          <S.EduDate>2022.06 - 2022.12</S.EduDate>
+          <S.EduDate isdark={isDark}>2022.06 - 2022.12</S.EduDate>
           <S.IntroDiv>
             <h1>코드스테이츠(Code States)</h1>
             <h2>
-              <RxCheck size='30' color='#3cb371' />
+              <RxCheck
+                size='30'
+                color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+              />
               software engineering bootcamp, Front-end(40기)
             </h2>
             <h2>
-              <RxCheck size='30' color='#3cb371' />
+              <RxCheck
+                size='30'
+                color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+              />
               Javascript언어 기반으로 프론트엔드 과정 학습
             </h2>
             <h2>
-              <RxCheck size='30' color='#3cb371' />
+              <RxCheck
+                size='30'
+                color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+              />
               React 중심 WEB 구현
             </h2>
             <h2>
-              <RxCheck size='30' color='#3cb371' />
+              <RxCheck
+                size='30'
+                color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+              />
               Node.JS / EXPRESS 로 웹 서버구축
             </h2>
             <h2>
-              <RxCheck size='30' color='#3cb371' />
+              <RxCheck
+                size='30'
+                color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+              />
               페어 프로그래밍 협업 & 코드 리뷰 경험
             </h2>
             <h2>
-              <RxCheck size='30' color='#3cb371' />
+              <RxCheck
+                size='30'
+                color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+              />
               알고리즘 문제 풀이
             </h2>
             <h2>
-              <RxCheck size='30' color='#3cb371' />팀 프로젝트 개발 경험
+              <RxCheck
+                size='30'
+                color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+              />
+              팀 프로젝트 개발 경험
             </h2>
           </S.IntroDiv>
           <S.RatingTitleH1>수강생들의 나에 대한 협업 평가</S.RatingTitleH1>

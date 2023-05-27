@@ -6,7 +6,9 @@ export const AboutMeContainer = styled.div`
   flex: 1;
 `;
 export const TitleUnderlineDiv = styled.div`
-  border-bottom: 8px solid #3cb371;
+  border-bottom: ${(props) =>
+    props.isdark ? '8px solid rgb(248,206,7)' : '8px solid #3cb371'};
+  /* border-bottom: 8px solid #3cb371; */
   margin-bottom: 80px;
   @media (max-width: 1100px) {
     width: 80vw;
@@ -116,15 +118,17 @@ export const ProfileLi = styled.li`
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
       width: 101%;
-      color: white;
-      background-color: #3cb371;
+      color: ${(props) => (props.isdark ? 'black' : 'white')};
+      background-color: ${(props) =>
+        props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
     }
     :not(:hover) {
       transition: width 0.3s linear;
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
       width: 0px;
-      background-color: #3cb371;
+      background-color: ${(props) =>
+        props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
     }
   }
 `;
@@ -174,6 +178,7 @@ export const IntroLi = styled.div`
       font-size: 13px;
     }
     span {
+      color: ${(props) => (props.isdark ? 'rgb(248,206,7)' : '#3cb371')};
       font-size: 22px;
       font-weight: bolder;
       font-family: 'NEXON Lv2 Gothic' !important;

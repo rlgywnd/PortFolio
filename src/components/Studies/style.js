@@ -21,7 +21,8 @@ export const StudiesTitleH1 = styled.h1`
   }
 `;
 export const TitleUnderlineDiv = styled.div`
-  border-bottom: 8px solid #3cb371;
+  border-bottom: ${(props) =>
+    props.isdark ? '8px solid rgb(248,206,7)' : '8px solid #3cb371'};
   margin-bottom: 80px;
   @media (max-width: 1100px) {
     width: 80vw;
@@ -44,7 +45,7 @@ export const PoliceDiv = styled.div``;
 export const CareerDate = styled.div`
   font-family: 'NEXON Lv2 Gothic' !important;
   margin-bottom: 20px;
-  color: #667085;
+  color: ${(props) => (props.isdark ? '#d3d3d3' : '#667085')};
   font-weight: bold;
   font-size: 16px;
   @media (max-width: 1100px) {
@@ -108,7 +109,9 @@ export const IntroDiv = styled.div`
         transition: all 0.3s linear;
         width: 320px;
         color: white;
-        background-color: #3cb371;
+        color: ${(props) => (props.isdark ? 'black' : 'white')};
+      background-color: ${(props) =>
+        props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
         @media (max-width: 1100px) {
         width: 283px;
         }
@@ -121,7 +124,8 @@ export const IntroDiv = styled.div`
       }
       :not(:hover) {
         transition: all 0.3s linear;
-        background-color: #3cb371;
+      background-color: ${(props) =>
+        props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
         width: 0px;
       }
         @media (max-width: 500px) {

@@ -1,32 +1,35 @@
 import * as S from './style';
 import { RxCheck } from 'react-icons/rx';
+import { useRecoilValue } from 'recoil';
+import { darkmode } from '../../../recoil/darkmode';
 
 const AboutMe = () => {
+  const isDark = useRecoilValue(darkmode);
   const blogUrl = 'https://velog.io/@hyo123';
   const gitUrl = 'https://github.com/rlgywnd';
 
   return (
     <S.AboutMeContainer id='about_me'>
-      <S.TitleUnderlineDiv>
+      <S.TitleUnderlineDiv isdark={isDark}>
         <S.AboutMeTitleH1>ABOUT ME.</S.AboutMeTitleH1>
       </S.TitleUnderlineDiv>
       <S.AboutMeProfileDiv id='profile'>
         <S.ProfileImgDiv></S.ProfileImgDiv>
         <S.ProfileUl>
           <S.ProfileLi>
-            <RxCheck size='30' color='#3cb371' />
+            <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
             <h4>Name</h4>
             <h4>:</h4>
             <div>김효중</div>
           </S.ProfileLi>
           <S.ProfileLi>
-            <RxCheck size='30' color='#3cb371' />
+            <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
             <h4>Email</h4>
             <h4>:</h4>
             <div>rlgywnd@naver.com</div>
           </S.ProfileLi>
-          <S.ProfileLi>
-            <RxCheck size='30' color='#3cb371' />
+          <S.ProfileLi isdark={isDark}>
+            <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
             <h4>GitHub</h4>
             <h4>:</h4>
             <span>
@@ -40,8 +43,8 @@ const AboutMe = () => {
               </h5>
             </span>
           </S.ProfileLi>
-          <S.ProfileLi>
-            <RxCheck size='30' color='#3cb371' />
+          <S.ProfileLi isdark={isDark}>
+            <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
             <h4>Blog</h4>
             <h4>:</h4>
             <span>
@@ -58,7 +61,7 @@ const AboutMe = () => {
             </span>
           </S.ProfileLi>
           <S.ProfileLi>
-            <RxCheck size='30' color='#3cb371' />
+            <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
             <h4>Phone</h4>
             <h4>:</h4>
             <div>010-9603-0416</div>
@@ -67,7 +70,7 @@ const AboutMe = () => {
       </S.AboutMeProfileDiv>
       <S.IntroDiv id='intro'>
         <S.IntroUl>
-          <S.IntroLi>
+          <S.IntroLi isdark={isDark}>
             <h1>INTRO.</h1>
             <div>
               <span>JavaScript</span> 언어와 <span>React</span> 중심으로

@@ -19,7 +19,8 @@ export const ProjectsTitleH1 = styled.h1`
   }
 `;
 export const TitleUnderlineDiv = styled.div`
-  border-bottom: 8px solid #3cb371;
+  border-bottom: ${(props) =>
+    props.isdark ? '8px solid rgb(248,206,7)' : '8px solid #3cb371'};
   margin-bottom: 80px;
   @media (max-width: 1100px) {
     width: 80vw;
@@ -72,7 +73,7 @@ export const IntroAndWorkDetail = styled.div`
 `;
 export const WorkDate = styled.div`
   margin-bottom: 20px;
-  color: #667085;
+  color: ${(props) => (props.isdark ? '#d3d3d3' : '#667085')};
   font-weight: bold;
   font-size: 16px;
   @media (max-width: 1100px) {

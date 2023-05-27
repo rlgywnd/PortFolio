@@ -39,11 +39,11 @@ import {
 import VideoBox from 'components/@commons/VideoBox';
 import { uyouWork } from 'data/uyouWork';
 import { uyouIntro } from 'data/uyouIntro';
-import { useRecoilState } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { darkmode } from '../../../recoil/darkmode';
 
 const UyouBooDan = () => {
-  const [isDark, setIsDark] = useRecoilState(darkmode);
+  const isDark = useRecoilValue(darkmode);
 
   const [uyouMain, setUyouMain] = useState(false);
   const [uyouSign, setUyouSign] = useState(false);
@@ -66,14 +66,17 @@ const UyouBooDan = () => {
       <ProjectsNameDiv>우유부단 : 공개 투표 서비스</ProjectsNameDiv>
       <IntroAndWorkDetail>
         <IntroDateDiv>
-          <WorkDate>2023년 1월 - 진행중</WorkDate>
+          <WorkDate isdark={isDark}>2023년 1월 - 진행중</WorkDate>
           <IntroDiv>
             <h1>서비스 소개</h1>
             {uyouIntro &&
               uyouIntro.map((el) => {
                 return (
                   <h2 key={el.id}>
-                    <RxCheck size='30' color='#3cb371' />
+                    <RxCheck
+                      size='30'
+                      color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+                    />
                     {el.text}
                   </h2>
                 );
@@ -84,7 +87,10 @@ const UyouBooDan = () => {
               uyouWork.map((el) => {
                 return (
                   <h2 key={el.id}>
-                    <RxCheck size='30' color='#3cb371' />
+                    <RxCheck
+                      size='30'
+                      color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+                    />
                     {el.text}
                   </h2>
                 );
@@ -345,8 +351,8 @@ const UyouBooDan = () => {
         관련링크
       </LinkTitleDiv>
       <S.UyouLinkContainer>
-        <S.UyouLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.UyouLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {
@@ -357,8 +363,8 @@ const UyouBooDan = () => {
             </span>
           </div>
         </S.UyouLinkTextDiv>
-        <S.UyouLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.UyouLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {
@@ -369,8 +375,8 @@ const UyouBooDan = () => {
             </span>
           </div>
         </S.UyouLinkTextDiv>
-        <S.UyouLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.UyouLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {
@@ -383,8 +389,8 @@ const UyouBooDan = () => {
             </span>
           </div>
         </S.UyouLinkTextDiv>
-        <S.UyouLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.UyouLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {
@@ -395,8 +401,8 @@ const UyouBooDan = () => {
             </span>
           </div>
         </S.UyouLinkTextDiv>
-        <S.UyouLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.UyouLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {

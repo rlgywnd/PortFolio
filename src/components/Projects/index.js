@@ -4,15 +4,15 @@ import PortFolio from './PortFolio';
 import UyouBooDan from './UyouBooDan';
 import Bobe from './Bobe';
 import Padak from './Padak';
-// import {useRecoilState} from 'recoil';
-// import {darkmode} from '../../recoil/darkmode';
+import { useRecoilValue } from 'recoil';
+import { darkmode } from '../../recoil/darkmode';
 
 const Projects = () => {
-  // const [isDark, setIsDark] = useRecoilState(darkmode);
+  const isDark = useRecoilValue(darkmode);
 
   return (
     <S.ProjectsContainer id='projects'>
-      <S.TitleUnderlineDiv>
+      <S.TitleUnderlineDiv isdark={isDark}>
         <S.ProjectsTitleH1>PROJECTS.</S.ProjectsTitleH1>
       </S.TitleUnderlineDiv>
       <S.ProjectsDiv>

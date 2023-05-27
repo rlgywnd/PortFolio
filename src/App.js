@@ -17,7 +17,7 @@ function App() {
     } else {
       setIsDark(false);
     }
-  }, []);
+  }, [setIsDark]);
 
   return (
     <>

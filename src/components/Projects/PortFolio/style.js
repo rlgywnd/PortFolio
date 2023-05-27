@@ -220,12 +220,14 @@ export const PortLinkTextDiv = styled.div`
     :hover {
       transition: all 0.3s linear;
       width: 100%;
-      color: white;
-      background-color: #3cb371;
+      color: ${(props) => (props.isdark ? 'black' : 'white')};
+      background-color: ${(props) =>
+        props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
     }
     :not(:hover) {
       transition: 0.3s linear;
-      background-color: #3cb371;
+      background-color: ${(props) =>
+        props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
     }
     h1 {
       width: 290px;

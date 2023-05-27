@@ -3,11 +3,11 @@ import { Link } from 'react-scroll';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
 import { IoIosArrowUp } from 'react-icons/io';
-import { useRecoilState } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { darkmode } from '../../../recoil/darkmode';
 
 const Header = ({ scrollposition }) => {
-  const [isDark, setIsDark] = useRecoilState(darkmode);
+  const isDark = useRecoilValue(darkmode);
 
   const [hamburger, setHamburger] = useState(false);
 

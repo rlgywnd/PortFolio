@@ -1,11 +1,14 @@
 import * as S from './style';
 import { Link } from 'react-scroll';
+import { useRecoilValue } from 'recoil';
+import { darkmode } from '../../recoil/darkmode';
 
 const About = () => {
+  const isDark = useRecoilValue(darkmode);
   return (
     <S.AboutContainer id='about'>
       <S.ShortAboutDiv>
-        <S.ShortAboutSection>
+        <S.ShortAboutSection isdark={isDark}>
           <div>이해될 때까지 하는</div>
           <div>
             <span>김효중</span>

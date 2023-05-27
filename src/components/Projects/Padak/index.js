@@ -26,11 +26,11 @@ import {
 
 import { padakIntro } from 'data/padakIntro';
 import { padakWork } from 'data/padakWork';
-import { useRecoilState } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { darkmode } from '../../../recoil/darkmode';
 
 const Padak = () => {
-  const [isDark, setIsDark] = useRecoilState(darkmode);
+  const isDark = useRecoilValue(darkmode);
   // 스킬셋쪽 버튼 열고닫기 state
   const [padakReact, setPadakReact] = useState(false);
   const [padakRedux, setPadakRedux] = useState(false);
@@ -44,14 +44,17 @@ const Padak = () => {
       <ProjectsNameDiv>Stack OverFlow 클론</ProjectsNameDiv>
       <IntroAndWorkDetail>
         <IntroDateDiv>
-          <WorkDate>2022년 10월</WorkDate>
+          <WorkDate isdark={isDark}>2022년 10월</WorkDate>
           <IntroDiv>
             <h1>서비스 소개</h1>
             {padakIntro &&
               padakIntro.map((el) => {
                 return (
                   <h2 key={el.id}>
-                    <RxCheck size='30' color='#3cb371' />
+                    <RxCheck
+                      size='30'
+                      color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+                    />
                     {el.text}
                   </h2>
                 );
@@ -62,7 +65,10 @@ const Padak = () => {
               padakWork.map((el) => {
                 return (
                   <h2 key={el.id}>
-                    <RxCheck size='30' color='#3cb371' />
+                    <RxCheck
+                      size='30'
+                      color={isDark ? 'rgb(248,206,7)' : '#3cb371'}
+                    />
                     {el.text}
                   </h2>
                 );
@@ -184,8 +190,8 @@ const Padak = () => {
         관련링크
       </LinkTitleDiv>
       <S.PadakLinkContainer>
-        <S.PadakLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.PadakLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {
@@ -196,8 +202,8 @@ const Padak = () => {
             </span>
           </div>
         </S.PadakLinkTextDiv>
-        <S.PadakLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.PadakLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {
@@ -208,8 +214,8 @@ const Padak = () => {
             </span>
           </div>
         </S.PadakLinkTextDiv>
-        <S.PadakLinkTextDiv>
-          <RxCheck size='30' color='#3cb371' />
+        <S.PadakLinkTextDiv isdark={isDark}>
+          <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
           <div>
             <span
               onClick={() => {

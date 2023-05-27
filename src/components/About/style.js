@@ -74,7 +74,9 @@ export const ShortAboutSection = styled.div`
   }
   span {
     font-size: 90px;
-    border-bottom: 13px solid #3cb371;
+    border-bottom: ${(props) =>
+      props.isdark ? '13px solid rgb(248,206,7)' : '13px solid #3cb371'};
+    /* border-bottom: 13px solid #3cb371; */
     text-underline-offset: 3.5px;
     display: inline-block;
     @media (max-width: 1100px) {
