@@ -53,30 +53,30 @@ const Header = ({ scrollposition }) => {
             >
               <IoIosArrowUp size='30' color='' />
             </div>
-            <ul scrollposition={scrollposition}>
+            <ul scrollposition={scrollposition} isdark={isDark}>
               <li>
                 <Link to='about_me' spy={true} smooth={true}>
-                  <h1 isdark={isDark}>ABOUT</h1>
+                  ABOUT
                 </Link>
               </li>
               <li>
                 <Link to='projects' spy={true} smooth={true}>
-                  <h1 isdark={isDark}>PROJECTS</h1>
+                  PROJECTS
                 </Link>
               </li>
               <li>
                 <Link to='education' spy={true} smooth={true}>
-                  <h1 isdark={isDark}>EDUCATION</h1>
+                  EDUCATION
                 </Link>
               </li>
               <li>
                 <Link to='career' spy={true} smooth={true}>
-                  <h1 isdark={isDark}>CAREER</h1>
+                  CAREER
                 </Link>
               </li>
               <li>
                 <Link to='studies' spy={true} smooth={true}>
-                  <h1 isdark={isDark}>STUDIES</h1>
+                  STUDIES
                 </Link>
               </li>
             </ul>

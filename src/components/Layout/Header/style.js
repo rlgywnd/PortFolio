@@ -99,7 +99,7 @@ export const HamburgerOpen = styled.section`
     align-items: flex-end;
     transition: color 0.5s linear;
     color: ${(props) =>
-      props.scrollposition === 0 ? 'white' : props.isdark ? 'gray' : '#a9a9a9'};
+      props.scrollposition === 0 ? 'white' : 'props.isdark ? #a9a9a9 : black'};
     gap: 20px;
     z-index: 2;
     li {
