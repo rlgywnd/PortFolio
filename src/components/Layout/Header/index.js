@@ -3,8 +3,12 @@ import { Link } from 'react-scroll';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
 import { IoIosArrowUp } from 'react-icons/io';
+import { useRecoilState } from 'recoil';
+import { darkmode } from '../../../recoil/darkmode';
 
 const Header = ({ scrollposition }) => {
+  const [isDark, setIsDark] = useRecoilState(darkmode);
+
   const [hamburger, setHamburger] = useState(false);
 
   return (
@@ -52,27 +56,27 @@ const Header = ({ scrollposition }) => {
             <ul scrollposition={scrollposition}>
               <li>
                 <Link to='about_me' spy={true} smooth={true}>
-                  ABOUT
+                  <h1 isdark={isDark}>ABOUT</h1>
                 </Link>
               </li>
               <li>
                 <Link to='projects' spy={true} smooth={true}>
-                  PROJECTS
+                  <h1 isdark={isDark}>PROJECTS</h1>
                 </Link>
               </li>
               <li>
                 <Link to='education' spy={true} smooth={true}>
-                  EDUCATION
+                  <h1 isdark={isDark}>EDUCATION</h1>
                 </Link>
               </li>
               <li>
                 <Link to='career' spy={true} smooth={true}>
-                  CAREER
+                  <h1 isdark={isDark}>CAREER</h1>
                 </Link>
               </li>
               <li>
                 <Link to='studies' spy={true} smooth={true}>
-                  STUDIES
+                  <h1 isdark={isDark}>STUDIES</h1>
                 </Link>
               </li>
             </ul>

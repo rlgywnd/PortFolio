@@ -98,7 +98,8 @@ export const HamburgerOpen = styled.section`
     flex-direction: column;
     align-items: flex-end;
     transition: color 0.5s linear;
-    color: ${(props) => (props.scrollposition === 0 ? 'white' : 'black')};
+    color: ${(props) =>
+      props.scrollposition === 0 ? 'white' : props.isdark ? 'gray' : '#a9a9a9'};
     gap: 20px;
     z-index: 2;
     li {
