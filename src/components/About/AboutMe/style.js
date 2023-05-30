@@ -8,7 +8,6 @@ export const AboutMeContainer = styled.div`
 export const TitleUnderlineDiv = styled.div`
   border-bottom: ${(props) =>
     props.isdark ? '8px solid rgb(248,206,7)' : '8px solid #3cb371'};
-  /* border-bottom: 8px solid #3cb371; */
   margin-bottom: 80px;
   @media (max-width: 1100px) {
     width: 80vw;

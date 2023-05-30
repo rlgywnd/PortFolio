@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const SideBarReal = styled.div`
   display: grid;
   grid-template-columns: 250px 800px 50px 50px;
-  /* background-color: rgb(245, 245, 245); */
 `;
 export const SideBarContainer = styled.div`
   display: flex;
@@ -57,11 +56,6 @@ export const SideBarContainer = styled.div`
   @media (max-width: 1100px) {
     display: none;
   }
-  /* div {
-    li {
-      color: white;
-    }
-  } */
 `;
 
 // -------------- 사이드바 타이틀 텍스트들 --------------
@@ -115,7 +109,6 @@ export const StudiesUl = styled.ul`
       9427 <= props.scrolls && props.scrolls < 9724 ? '18px' : '15px'};
   }
 `;
-// rgb(248,206,7)
 // -------------------- 사이드바 리스트Div + li 두 태그 다 --------------
 export const ProfileLiDiv = styled.div`
   display: flex;
@@ -380,9 +373,7 @@ export const AllComponentsDiv = styled.div`
 `;
 
 // ---------- 상단끌어올리기 버튼 ------------
-export const UpBtnContainer = styled.div`
-  /* position: fixed; */
-`;
+export const UpBtnContainer = styled.div``;
 export const UpBtnDiv = styled.div`
   display: flex;
   justify-content: center;

@@ -29,7 +29,8 @@ export const TitleUnderlineDiv = styled.div`
 export const ProjectsDiv = styled.div`
   width: 80vw;
 `;
-// 사이드바 눌러서 scroll 갈때 깔끔하게 하기위해 만든 div
+
+// --------- 사이드바 눌러서 scroll 갈때 깔끔하게 하기위해 만든 div
 export const MarginDiv = styled.div`
   height: 65px;
   @media (max-width: 1100px) {
@@ -67,7 +68,6 @@ export const ProjectsNameDiv = styled.div`
 `;
 export const IntroAndWorkDetail = styled.div`
   div {
-    /* font-weight: bold; */
     font-family: 'NEXON Lv2 Gothic' !important;
   }
 `;

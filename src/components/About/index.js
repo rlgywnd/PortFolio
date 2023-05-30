@@ -7,7 +7,7 @@ const About = () => {
   const isDark = useRecoilValue(darkmode);
   return (
     <S.AboutContainer id='about'>
-      <S.ShortAboutDiv>
+      <S.ShortAboutDiv isdark={isDark}>
         <S.ShortAboutSection isdark={isDark}>
           <div>이해될 때까지 하는</div>
           <div>
