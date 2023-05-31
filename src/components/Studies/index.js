@@ -2,11 +2,10 @@ import * as S from './style';
 import { RxCheck } from 'react-icons/rx';
 import { useRecoilValue } from 'recoil';
 import { darkmode } from '../../recoil/darkmode';
+import { soloStudyBlogUrl } from 'constants/url';
 
 const Studies = () => {
   const isDark = useRecoilValue(darkmode);
-  const soloStudyBlogUrl =
-    'https://velog.io/@hyo123/series/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8C%A9%EA%B8%B0%EC%B4%88';
 
   return (
     <S.StudiesContainer id='studies'>

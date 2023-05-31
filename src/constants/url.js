@@ -24,6 +24,9 @@ const portGitUrl = 'https://github.com/rlgywnd/PortFolio';
 const portBlogUrl =
   'https://velog.io/@hyo123/Deploy-AWS-S3-%EC%A0%95%EC%A0%81-%EC%9B%B9-%ED%98%B8%EC%8A%A4%ED%8C%85';
 
+const soloStudyBlogUrl =
+  'https://velog.io/@hyo123/series/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8C%A9%EA%B8%B0%EC%B4%88';
+
 export {
   uyouDeployUrl,
   uyouGitUrl,
@@ -41,3 +44,4 @@ export {
 };
 export { padakDemoUrl, padakDeployUrl, padakGitUrl };
 export { portBlogUrl, portGitUrl };
+export { soloStudyBlogUrl };
