@@ -2,9 +2,12 @@ import * as S from './style';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import { useRecoilValue } from 'recoil';
 import { darkmode } from '../../../recoil/darkmode';
+import { useState } from 'react';
 
-const VideoBox = ({ open, setOpen, title, video }) => {
+const VideoBox = ({ title, video }) => {
   const isDark = useRecoilValue(darkmode);
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <S.VideoTextAndBtn
