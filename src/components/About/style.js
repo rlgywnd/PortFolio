@@ -76,8 +76,7 @@ export const ShortAboutSection = styled.div`
     font-size: 90px;
     border-bottom: ${(props) =>
       props.isdark ? '13px solid rgb(248,206,7)' : '13px solid #3cb371'};
-    /* border-bottom: 13px solid #3cb371; */
-    text-underline-offset: 3.5px;
+    /* text-underline-offset: 3.5px; */
     display: inline-block;
     @media (max-width: 1100px) {
       font-size: 75px;
