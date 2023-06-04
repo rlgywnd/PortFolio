@@ -104,7 +104,6 @@ export const ProfileLi = styled.li`
     font-family: 'NEXON Lv2 Gothic' !important;
     font-weight: bold;
   }
-
   h5 {
     display: flex;
     align-items: center;
