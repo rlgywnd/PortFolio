@@ -1,3 +1,5 @@
+const blogUrl = 'https://velog.io/@hyo123';
+const gitUrl = 'https://github.com/rlgywnd';
 const uyouDeployUrl =
   'http://uyouboodan-bucket-deploy.s3-website.ap-northeast-2.amazonaws.com/';
 const uyouGitUrl = 'https://github.com/Team-Big-Dipper/UYouBooDan/tree/fe';
@@ -27,6 +29,7 @@ const portBlogUrl =
 const soloStudyBlogUrl =
   'https://velog.io/@hyo123/series/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8C%A9%EA%B8%B0%EC%B4%88';
 
+export { blogUrl, gitUrl };
 export {
   uyouDeployUrl,
   uyouGitUrl,

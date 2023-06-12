@@ -2,11 +2,10 @@ import * as S from './style';
 import { RxCheck } from 'react-icons/rx';
 import { useRecoilValue } from 'recoil';
 import { darkmode } from '../../../recoil/darkmode';
+import { gitUrl, blogUrl } from 'constants/url';
 
 const AboutMe = () => {
   const isDark = useRecoilValue(darkmode);
-  const blogUrl = 'https://velog.io/@hyo123';
-  const gitUrl = 'https://github.com/rlgywnd';
 
   return (
     <S.AboutMeContainer id='about_me'>
