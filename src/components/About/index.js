@@ -9,17 +9,16 @@ const About = () => {
     <S.AboutContainer id='about'>
       <S.ShortAboutDiv isdark={isDark}>
         <S.ShortAboutSection isdark={isDark}>
-          <div>도전하길 좋아하는</div>
+          <div>배움과 기록을 좋아하는</div>
           <div>
             <span>김효중</span>
             <div>입니다.</div>
           </div>
         </S.ShortAboutSection>
         <S.ShortAboutTextDiv>
-          <div>이해될 때까지 기록하며 </div>
+          <div>이해될 때까지 기록하며</div>
           <div>학습하는걸 좋아합니다.</div>
-          <div>뒤처지는 거 싫어합니다.</div>
-          {/* <div>계속해서</div> */}
+          <div>뒤처지는 게 싫어 배워가며</div>
           <div>계속해서 성장하고 싶습니다.</div>
         </S.ShortAboutTextDiv>
         <S.ArrowContainer>
