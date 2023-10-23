@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SideBarReal = styled.div`
   display: grid;
-  grid-template-columns: 250px 800px 50px 50px;
+  /* grid-template-columns: 250px 800px 50px 50px; */
 `;
 export const SideBarContainer = styled.div`
   display: flex;
