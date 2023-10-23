@@ -9,7 +9,7 @@ const About = () => {
     <S.AboutContainer id='about'>
       <S.ShortAboutDiv isdark={isDark}>
         <S.ShortAboutSection isdark={isDark}>
-          <div>배움과 기록을 좋아하는</div>
+          <div>기록하며 배우는</div>
           <div>
             <span>김효중</span>
             <div>입니다.</div>
