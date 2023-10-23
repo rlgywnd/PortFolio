@@ -2,12 +2,6 @@ import styled from 'styled-components';
 import videoImg from '../assets/video4.gif';
 import { Link } from 'react-router-dom';
 
-/* color: #4285f4; 푸른색  */
-/* color: #d6d9dc; 연한회색 */
-/* color: #00c988; 민트연두? */
-/* color: #ff2f2f; 빨간색 */
-/* color: #667085; 회색 */
-
 export const HomeContainer = styled.div`
   width: 100vw;
   height: 100vh;

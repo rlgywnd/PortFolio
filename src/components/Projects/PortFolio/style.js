@@ -12,7 +12,6 @@ export const PortLinkContainer = styled.div`
   font-size: 20px;
   font-family: 'NEXON Lv2 Gothic' !important;
 `;
-
 export const PortLinkTextDiv = styled.div`
   display: flex;
   align-items: center;
@@ -36,12 +35,6 @@ export const PortLinkTextDiv = styled.div`
     width: 0;
     height: 23px;
     padding-top: 4px;
-    @media (max-width: 500px) {
-      height: 17px;
-    }
-    @media (max-width: 390px) {
-      height: 15px;
-    }
     :hover {
       transition: all 0.3s linear;
       width: 100%;
@@ -53,6 +46,12 @@ export const PortLinkTextDiv = styled.div`
       transition: 0.3s linear;
       background-color: ${(props) =>
         props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
+    }
+    @media (max-width: 500px) {
+      height: 17px;
+    }
+    @media (max-width: 390px) {
+      height: 15px;
     }
     h1 {
       width: 290px;

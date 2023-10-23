@@ -48,9 +48,7 @@ const AboutMe = () => {
             <h4>:</h4>
             <span>
               <h5
-                style={{
-                  cursor: 'pointer',
-                }}
+                style={{ cursor: 'pointer' }}
                 onClick={() => {
                   window.open(blogUrl);
                 }}
