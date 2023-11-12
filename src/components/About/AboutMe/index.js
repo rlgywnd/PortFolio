@@ -61,7 +61,7 @@ const AboutMe = () => {
             <RxCheck size='30' color={isDark ? 'rgb(248,206,7)' : '#3cb371'} />
             <h4>Phone</h4>
             <h4>:</h4>
-            <div>010-9603-0416</div>
+            <div>01096030416</div>
           </S.ProfileLi>
         </S.ProfileUl>
       </S.AboutMeProfileDiv>
