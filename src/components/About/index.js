@@ -17,8 +17,8 @@ const About = () => {
         </S.ShortAboutSection>
         <S.ShortAboutTextDiv>
           <div>배운 걸 기록하며 다양하게 응용하며 학습하길 좋아합니다.</div>
-          <div>왜?라는 생각으로 이해될 때까지 파고들며 학습합니다.</div>
-          <div>배운 것을 팀원과 공유하며 피드백 받길 좋아합니다.</div>
+          <div>왜?라는 생각으로 파고들며 학습하길 좋아합니다.</div>
+          <div>배운 것을 공유하며 피드백 받길 좋아합니다.</div>
         </S.ShortAboutTextDiv>
         <S.ArrowContainer>
           <S.ArrowDiv>
