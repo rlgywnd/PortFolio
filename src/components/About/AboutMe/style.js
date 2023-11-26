@@ -112,18 +112,18 @@ export const ProfileLi = styled.li`
     font-weight: bold;
     height: 28px;
     :hover {
-      transition: all 0.3s linear;
-      -webkit-transition: all 0.3s linear;
-      -moz-transition: all 0.3s linear;
+      transition: all 0.25s linear;
+      -webkit-transition: all 0.25s linear;
+      -moz-transition: all 0.25s linear;
       width: 101%;
       color: ${(props) => (props.isdark ? 'black' : 'white')};
       background-color: ${(props) =>
         props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
     }
     :not(:hover) {
-      transition: width 0.3s linear;
-      -webkit-transition: all 0.3s linear;
-      -moz-transition: all 0.3s linear;
+      transition: width 0.25s linear;
+      -webkit-transition: all 0.25s linear;
+      -moz-transition: all 0.25s linear;
       width: 0px;
       background-color: ${(props) =>
         props.isdark ? 'rgb(248,206,7)' : '#3cb371'};

@@ -36,14 +36,14 @@ export const PortLinkTextDiv = styled.div`
     height: 23px;
     padding-top: 4px;
     :hover {
-      transition: all 0.3s linear;
+      transition: all 0.25s linear;
       width: 100%;
       color: ${(props) => (props.isdark ? 'black' : 'white')};
       background-color: ${(props) =>
         props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
     }
     :not(:hover) {
-      transition: 0.3s linear;
+      transition: 0.25s linear;
       background-color: ${(props) =>
         props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
     }

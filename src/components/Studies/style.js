@@ -106,7 +106,7 @@ export const IntroDiv = styled.div`
       align-items: center;
       width: 0;
       :hover {
-        transition: all 0.3s linear;
+        transition: all 0.25s linear;
         width: 320px;
         color: white;
         color: ${(props) => (props.isdark ? 'black' : 'white')};
@@ -123,7 +123,7 @@ export const IntroDiv = styled.div`
          }
       }
       :not(:hover) {
-        transition: all 0.3s linear;
+        transition: all 0.25s linear;
       background-color: ${(props) =>
         props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
         width: 0px;
