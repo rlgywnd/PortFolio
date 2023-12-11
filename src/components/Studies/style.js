@@ -96,7 +96,7 @@ export const IntroDiv = styled.div`
     @media (max-width: 390px) {
       font-size: 12px;
     }
-   
+
     span {
       height: 23px;
       padding-top: 4px;
@@ -110,31 +110,31 @@ export const IntroDiv = styled.div`
         width: 320px;
         color: white;
         color: ${(props) => (props.isdark ? 'black' : 'white')};
-      background-color: ${(props) =>
-        props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
+        background-color: ${(props) =>
+          props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
         @media (max-width: 1100px) {
-        width: 283px;
+          width: 283px;
         }
         @media (max-width: 500px) {
           width: 225px;
         }
         @media (max-width: 390px) {
           width: 210px;
-         }
+        }
       }
       :not(:hover) {
         transition: all 0.25s linear;
-      background-color: ${(props) =>
-        props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
+        background-color: ${(props) =>
+          props.isdark ? 'rgb(248,206,7)' : '#3cb371'};
         width: 0px;
       }
-        @media (max-width: 500px) {
-          height: 15px;
-          padding-top: 3px;
-        }
-        @media (max-width: 390px) {
-          width: 210px;
-         }
+      @media (max-width: 500px) {
+        height: 15px;
+        padding-top: 3px;
+      }
+      @media (max-width: 390px) {
+        width: 210px;
+      }
     }
     h2 {
       display: flex;
@@ -147,6 +147,7 @@ export const IntroDiv = styled.div`
       }
       @media (max-width: 390px) {
         width: 215px;
+      }
     }
   }
 `;
